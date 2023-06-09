@@ -122,11 +122,12 @@ hr{
     font-size: 26px;
     font-family: 'Genos', sans-serif;
 }
-.overview{
-    display: none;
-}
+
 .areas-of-focus{
     display: none;
+}
+.areas-of-focus p{
+    font-size: 20px;
 }
 .partnerships{
     display: none;
@@ -146,7 +147,7 @@ hr{
 }
 .areas-of-focus-paragraphs{
     font-family: 'Genos', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 30px;
 }
 .about-us-button{
