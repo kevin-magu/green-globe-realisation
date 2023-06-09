@@ -124,8 +124,11 @@ hr{
 .overview{
     display: none;
 }
-.partnerships{
+.areas-of-focus{
     display: none;
+}
+.partnerships{
+    display: one;
 }
 #areas-of-focus-pic{
     transform: scale(0.65);
