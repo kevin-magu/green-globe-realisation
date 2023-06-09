@@ -62,14 +62,15 @@ margin-bottom: -46%;
     font-size: 30px;
     color: #00AA01;
     font-weight: bold;
+    margin-top: 50px;
 }
 .about-us-leadership{
-    height: auto;
+    height: 100vh;
     width: 100%;
-    background-color: red;
+    background-color: #F5F5F5;
 }
 .leadership-container{
-    display: flex;
+    
 }
 #about-us-img-bg-svg{
     transform: scale(.7);
@@ -88,4 +89,31 @@ margin-bottom: -46%;
     position: absolute;
     left: -400px;
     top: -395px;
+}
+
+.about-us-description-container{
+    position: absolute;
+    right: 16%;
+    margin-top: 100px;
+    width: 40%;
+}
+hr{
+    transform: rotate(90deg);
+}
+
+.about-us-description-title{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.about-us-description-title p{
+    margin-right: 20px;
+    margin-left: 30px;
+    font-family: 'Genos', sans-serif;
+    font-size: 28px;
+    color: #00AA01;
+    font-weight: bold;
+}
+#description-paragraph{
+    text-align: center;
 }
