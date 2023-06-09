@@ -12,8 +12,25 @@
     background-repeat: no-repeat;
     font-family: 'Genos', sans-serif;
 }
-.test{
-    width: 100%;
-    height: 600px;
-    background-color: yellow;
+nav{
+    margin-left: 10px;
+    height: auto;
+    padding: 7px;
+
+}
+nav a{
+    color: #00C02A;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    width: auto;
+    margin-left: 50px;
+}
+nav ul{
+    display: flex; 
+    margin-top: 30px;
+}
+nav ul li{
+    
+    font-size: 29px;
 }
