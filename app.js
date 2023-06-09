@@ -2,12 +2,44 @@ overviewDiv = document.querySelector(".overview");
 areasoffocuswDiv = document.querySelector(".areas-of-focus");
 patnershipsDiv = document.querySelector(".partnerships");
 visionmissionDiv = document.querySelector(".vision");
-corevalueswDiv = document.querySelector(".core-values");
+corevaluesDiv = document.querySelector(".core-values");
 
 function displayOverviewDiv(){
     overviewDiv.style.display="block";
     areasoffocuswDiv.style.display="none";
-    patnershipsDi.style.display="none";
+    patnershipsDiv.style.display="none";
     visionmissionDiv.style.display="none";
-    corevalueswDiv.style.display="none";
+    corevaluesDiv.style.display="none";
+}
+ 
+function displayAreasoffocusDiv(){
+    overviewDiv.style.display="none";
+    areasoffocuswDiv.style.display="block";
+    patnershipsDiv.style.display="none";
+    visionmissionDiv.style.display="none";
+    corevaluesDiv.style.display="none";
+}
+
+function displaypartnershipsDiv(){
+    overviewDiv.style.display="none";
+    areasoffocuswDiv.style.display="none";
+    patnershipsDiv.style.display="block";
+    visionmissionDiv.style.display="none";
+    corevaluesDiv.style.display="none";
+}
+
+function displayVisionmissionDiv(){
+    overviewDiv.style.display="none";
+    areasoffocuswDiv.style.display="none";
+    patnershipsDiv.style.display="none";
+    visionmissionDiv.style.display="block";
+    corevaluesDiv.style.display="none";
+}
+
+function displayCorevaluesDiv(){
+    overviewDiv.style.display="none";
+    areasoffocuswDiv.style.display="none";
+    patnershipsDiv.style.display="none";
+    visionmissionDiv.style.display="none";
+    corevaluesDiv.style.display="block";
 }

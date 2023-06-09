@@ -134,7 +134,9 @@ hr{
 .vision{
     display: none;
 }
-
+.core-values{
+    display: none;
+}
 #areas-of-focus-pic{
     transform: scale(0.65);
     position: absolute;
