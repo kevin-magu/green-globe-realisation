@@ -129,8 +129,12 @@ hr{
     display: none;
 }
 .partnerships{
-    display: one;
+    display: none;
 }
+.vision{
+    display: none;
+}
+
 #areas-of-focus-pic{
     transform: scale(0.65);
     position: absolute;
