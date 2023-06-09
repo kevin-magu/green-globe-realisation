@@ -63,8 +63,11 @@ margin-bottom: -46%;
     font-weight: bold;
 }
 .about-us-leadership{
-    height: 600px;
+    height: auto;
     background-color: #F5F5F5;
+}
+.leadership-container{
+    display: flex;
 }
 #about-us-img-bg-svg{
     transform: scale(.7);
