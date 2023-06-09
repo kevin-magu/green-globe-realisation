@@ -19,7 +19,7 @@ nav{
 
 }
 nav a{
-    color: #00C02A;
+    color: #00AA01;
     font-weight: bold;
     text-decoration: none;
     list-style: none;
@@ -31,6 +31,41 @@ nav ul{
     margin-top: 30px;
 }
 nav ul li{
-    
     font-size: 29px;
+}
+
+#down-arrows{
+transform: scale(.6);
+margin-left: 64%;
+margin-bottom: -46%;
+}
+
+.main-page-text{
+    margin-left: 90px; /*REMEBER TO STYLE THIS TO MAKE IT ATTRACTIVE*/
+    font-size: 50px;
+    margin-top: 80px;
+    font-weight: 600;
+}
+#main-page-text-p1{
+    margin-left: 60px;
+}
+.about-us-main-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.about-us-main-title p{
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Genos', sans-serif;
+    font-size: 30px;
+    color: #00AA01;
+    font-weight: bold;
+}
+.about-us-leadership{
+    height: 600px;
+    background-color: #F5F5F5;
+}
+#about-us-img-bg-svg{
+    transform: scale(.7);
 }
