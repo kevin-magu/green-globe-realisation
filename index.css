@@ -64,7 +64,7 @@ margin-bottom: -46%;
     font-size: 30px;
     color: #00AA01;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .about-us-leadership{
     height: 1200px;
@@ -79,7 +79,7 @@ margin-bottom: -46%;
     position: absolute;
 }
 #about-us-img-bg-svg::after{
-    content: "hello";
+    
 }
 .about-us-img-container{
     position: relative;
@@ -146,4 +146,35 @@ hr{
     font-family: 'Genos', sans-serif;
     font-size: 30px;
     margin-top: 30px;
+}
+.about-us-button{
+    height: 40px;
+    width: 105px;
+    background-color: #31FD46;
+    display: flex;
+    justify-content: center;
+    font-family: 'Genos', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 20px;
+    align-items: center;
+    line-height: 16px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.button3{
+    width: 135px;
+}
+.about-us-navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.about-us-navigation ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+.about-us-navigation ul li{
+    margin-right: 50px;
 }
