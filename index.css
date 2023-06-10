@@ -38,12 +38,15 @@ nav ul li{
     font-size: 29px;
     position: relative;
 }
-li::after{
+nav ul a li::after{
     content: "";
-    width: 100px;
-    position: absolute;
-    height: 15px;
-    color: #000000;
+    display: block;
+    bottom: 0;
+    border-bottom: 3px solid rgb(41, 212, 19);
+    display: none;
+}
+nav ul a li:hover{
+    
 }
 
 
