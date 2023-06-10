@@ -44,11 +44,20 @@ nav ul a li::after{
     bottom: 0;
     border-bottom: 3px solid rgb(41, 212, 19);
     display: none;
+    animation: width-grow 0.2s ease-in-out;
 }
-nav ul a li:hover{
+nav ul a li:hover::after{
+    display: block;
+}
+@keyframes width-grow {
+    0%{
+        width: 20%;
+    }
     
+    100%{
+        width: 100%;
+    }
 }
-
 
 #down-arrows{
 transform: scale(.6);
@@ -286,4 +295,12 @@ hr{
 .movements .p3{
     margin-top: 200px;
     color: rgb(255, 255, 255);
+}
+.circle1{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: #31FD46;
+    border-radius: 100px;left: -90px;
+    top: -90px;
 }
