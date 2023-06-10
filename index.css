@@ -14,6 +14,7 @@ html{
     background-position: 0px -20px;
     background-repeat: no-repeat;
     font-family: 'Genos', sans-serif;
+    font-style: normal;
 }
 nav{
     margin-left: 10px;
@@ -35,7 +36,16 @@ nav ul{
 }
 nav ul li{
     font-size: 29px;
+    position: relative;
 }
+li::after{
+    content: "";
+    width: 100px;
+    position: absolute;
+    height: 15px;
+    color: #000000;
+}
+
 
 #down-arrows{
 transform: scale(.6);
@@ -49,6 +59,7 @@ margin-bottom: -46%;
     margin-top: 80px;
     font-weight: 600;
     color: #35bb42;
+    font-style: normal;
 }
 #main-page-text-p1{
     margin-left: 60px;
