@@ -150,6 +150,13 @@ hr{
     font-size: 20px;
     margin-top: 30px;
 }
+#patnership-pic{
+    transform: scale(0.38);
+    position: absolute;
+    left: -225px;
+    top: -250px;
+    border-radius: 15px;
+}
 .about-us-button{
     height: 40px;
     width: 105px;
