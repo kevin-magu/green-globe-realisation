@@ -22,7 +22,7 @@ nav{
 
 }
 nav a{
-    color: #00AA01;
+    color: #070c07;
     font-weight: bold;
     text-decoration: none;
     list-style: none;
@@ -48,6 +48,7 @@ margin-bottom: -46%;
     font-size: 50px;
     margin-top: 80px;
     font-weight: 600;
+    color: #35bb42;
 }
 #main-page-text-p1{
     margin-left: 60px;
@@ -67,7 +68,7 @@ margin-bottom: -46%;
     margin-top: 10px;
 }
 .about-us-leadership{
-    height: 1200px;
+    height: 1000px;
     width: 100%;
     background-color: #F5F5F5;
 }
@@ -123,20 +124,39 @@ hr{
     font-family: 'Genos', sans-serif;
 }
 
+.overview{
+    animation: aboutusfadein 1s ease-in-out;
+}
 .areas-of-focus{
     display: none;
+    animation: aboutusfadein 1s ease-in-out;
 }
 .areas-of-focus p{
-    font-size: 20px;
+    font-size: 20px;;
 }
 .partnerships{
     display: none;
+    animation: aboutusfadein 1s ease-in-out;
 }
 .vision{
     display: none;
+    animation: aboutusfadein 1s ease-in-out;
 }
 .core-values{
     display: none;
+    animation: aboutusfadein 1s ease-in-out;
+}
+
+@keyframes aboutusfadein {
+    0%{
+        opacity: 10%;
+    }   
+    50%{
+        opacity: 60%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 #areas-of-focus-pic{
     transform: scale(0.65);
@@ -155,6 +175,20 @@ hr{
     position: absolute;
     left: -225px;
     top: -250px;
+    border-radius: 15px;
+}
+#vision-pic{
+    transform: scale(.48);
+    position: absolute;
+    left: -130px;
+    top: -100px;
+    border-radius: 15px;
+}
+#core-values-pic{
+    transform: scale(.28);
+    position: absolute;
+    left: -410px;
+    top: -400px;
     border-radius: 15px;
 }
 .about-us-button{
