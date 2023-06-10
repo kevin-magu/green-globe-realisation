@@ -357,6 +357,7 @@ hr{
 }
 .event-brief-card:hover .event-card-overlay {
      display: none;
+     
 }
 
 .event-brief-card1{
@@ -373,6 +374,7 @@ hr{
 .event-card-overlay{
     position: absolute;
     border-radius: 10px;
+    transition: 2s ease-in-out;
     top: 0;
     left: 0;
     width: 100%;
