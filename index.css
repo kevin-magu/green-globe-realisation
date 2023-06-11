@@ -664,3 +664,11 @@ footer textarea{
   margin-top: 40px;
   margin-left: 10px;
 }
+.office-address{
+  width: 200px;
+}
+.office-address-title{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
