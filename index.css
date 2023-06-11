@@ -312,7 +312,7 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 200px;
+
 }
 .events-brief-title{
     display: flex;
@@ -413,5 +413,77 @@ hr{
 
 .event-brief-card-button:hover{
     cursor: pointer;
-
+}
+.gallery-brief{
+    width: 100%;  
+    flex-wrap: wrap;  
+}
+.gallery-brief-container{
+    display: flex;
+    background-color: #F5F5F5;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.gallery-description-title hr{
+    background-color: #31FD46;
+}
+.gallery-brief-card{
+    width: 20%;
+    height: 300px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 50px;
+}
+.gallery-brief-card:hover{
+    transform: scale(1.1);
+}
+.gallery-brief-card1{
+    background: url(images/ceo-watering-trees.jpeg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-brief-card2{
+    background: url(images/gallery-brief-card2.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-brief-card3{
+    background: url(images/gallery-brief-card3.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-brief-card4{
+    background: url(images/gallery-brief-card4.jpeg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gallery-description-title{
+    background-color: #F5F5F5;
+}
+.red-a-tag-here{
+    color: red;
+}
+.centered-button-div{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #F5F5F5;
+    margin-bottom: 100px;
+}
+.gallery-brief-button{
+    padding: 7px;
+    background-color: #31FD46;
+    border: none;
+    font-family: 'Genos', sans-serif;
+    font-size: 18px; 
+    font-weight: bold;
 }
