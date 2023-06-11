@@ -592,7 +592,7 @@ footer{
   font-weight: bold;
 }
 .footer-content-container{
-  margin: 70px;
+  margin: 40px;
   display: flex;
 }
 .footer-upper-section{
@@ -683,16 +683,23 @@ footer textarea{
   text-align: center;
 }
 .social-links{
-  width: 400px;
+  width: auto;
   margin-left: 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .social-links ul{
   display: flex;
 }
 .social-links ul li {
   color: white;
+}
+.email-div{
+  display: flex;
+  text-align: left;
+}
+.email-div p{
+  margin-left: -20px;
 }
 #linked-in-icon{
   transform: scale(.3);
@@ -704,4 +711,16 @@ footer textarea{
 #twitter-icon{
   transform: scale(.5);
   margin-bottom: -45px;
+}
+#email-icon{
+  transform: scale(.2);
+  margin-top: -22px;
+  margin-left: -10px;
+}
+.copyright{
+  width: auto;
+  margin-left: 10px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
 }
