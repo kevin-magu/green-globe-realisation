@@ -599,6 +599,7 @@ footer{
   display: flex;
 }
 .patners{
+  font-size: 15px;
   width: 100px;
   display: flex;
   flex-direction: column;
@@ -620,7 +621,7 @@ footer li a{
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 22px;
+  font-size: 21px;
   margin-left: 9px;
 }
 
@@ -633,12 +634,15 @@ footer li a{
   margin-left: 20px;
 }
 .donate p{
-  font-size: 22px;
+  font-size: 21px;
 }
 footer form{
   width: 520px;
   display: flex;
-  margin-left: 70px;
+  margin-left: 30px;
+}
+.form-title{
+  font-size: 17px;
 }
 footer .inputs{
   display: flex;
@@ -666,9 +670,38 @@ footer textarea{
 }
 .office-address{
   width: 200px;
+  margin-left: 50px;
 }
 .office-address-title{
   width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 22px;
+}
+.office-address ul li{
+  text-align: center;
+}
+.social-links{
+  width: 400px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.social-links ul{
+  display: flex;
+}
+.social-links ul li {
+  color: white;
+}
+#linked-in-icon{
+  transform: scale(.3);
+}
+#facebook-icon{
+  transform: scale(.5);
+  margin-bottom: -45px;
+}
+#twitter-icon{
+  transform: scale(.5);
+  margin-bottom: -45px;
 }
