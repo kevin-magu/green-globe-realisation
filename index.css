@@ -588,28 +588,79 @@ footer{
   display: flex;
   flex-direction: column;
   background-color: #111111;
+  color: white;
+  font-weight: bold;
 }
-.upper-and-lower-container{
+.footer-content-container{
   margin: 70px;
+  display: flex;
 }
 .footer-upper-section{
   display: flex;
 }
 .patners{
+  width: 100px;
   display: flex;
   flex-direction: column;
-  width: 10%;
+  justify-content: center;
+  align-items: center;
+
 }
-.patners-title{
+footer li {
+  list-style: none;
+text-decoration: none;
+
+}
+footer li a{
+  color: white;
+}
+.patners p{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   margin-left: 9px;
 }
 
-*{
-  outline: 2px solid white ;
+.donate{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.donate p{
+  font-size: 22px;
+}
+footer form{
+  width: 520px;
+  display: flex;
+  margin-left: 70px;
+}
+footer .inputs{
+  display: flex;
+  flex-direction: column;
+}
+.inputs input{
+  height: 30px;
+  margin-top: 10px;
+}
+.inputs input,textarea:focus{
+  outline: none;
+}
+footer textarea{
+  height: 100px;
+  margin-left: 10px;
+}
+.send-button{
+  height: 2%;
+  padding: 5px;
+  width: 60px;
+  background-color: #31fd46;
+  border: none;
+  margin-top: 40px;
+  margin-left: 10px;
 }
