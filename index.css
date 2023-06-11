@@ -8,13 +8,16 @@ html{
 }
 .home{
     width: 100%;
-    height: 790px;
+    height: 110vh;
     background: url(images/ggr-home-bg.jpeg);
     background-size: cover;
     background-position: 0px -20px;
     background-repeat: no-repeat;
     font-family: 'Genos', sans-serif;
     font-style: normal;
+}
+.home{
+    background-color: #F5F5F5;
 }
 nav{
     margin-left: 10px;
@@ -92,8 +95,8 @@ margin-bottom: -46%;
     margin-top: 10px;
 }
 .about-us-leadership{
-    width: 100%;
-    height: 100vh;
+    height: 104vh;
+
     background-color: #F5F5F5;
 }
 .leadership-container{
@@ -102,9 +105,6 @@ margin-bottom: -46%;
 #about-us-img-bg-svg{
     transform: scale(.7);
     position: absolute;
-}
-#about-us-img-bg-svg::after{
-    
 }
 .about-us-img-container{
     position: relative;
@@ -171,17 +171,6 @@ hr{
     animation: aboutusfadein 1s ease-in-out;
 }
 
-@keyframes aboutusfadein {
-    0%{
-        opacity: 10%;
-    }   
-    50%{
-        opacity: 60%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}
 #areas-of-focus-pic{
     transform: scale(0.65);
     position: absolute;
@@ -253,6 +242,7 @@ hr{
 }
 
 .movements{
+    position: relative;
     overflow: hidden;
     border-radius: 4px;
     width: 100%;
@@ -348,15 +338,31 @@ hr{
     border-radius: 10px;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .event-brief-card:hover{
     cursor: pointer;
+}
+.event-brief-card:hover .event-brief-card-button{
+    display: block;
 }
 .event-brief-card:hover .event-card-content{
     display: none;
 }
 .event-brief-card:hover .event-card-overlay {
      display: none;
+     @keyframes overlayfadeout {
+        0%{
+            opacity: 70%;
+        }
+        50%{
+            opacity: 30%;
+        }
+        100%{
+            opacity: 0%;
+        }
+     }
      
 }
 
@@ -374,12 +380,13 @@ hr{
 .event-card-overlay{
     position: absolute;
     border-radius: 10px;
-    transition: 2s ease-in-out;
+    transition: 2s infinite;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.678);
+    animation: overlayfadeout 2s infinite;
 }
 .event-card-content{
     position: relative;
@@ -388,4 +395,23 @@ hr{
     margin-right: 30px;
     color: white;
     font-size: 23px;
+}
+.event-brief-card-button{
+    padding: 7px;
+    position: absolute;
+    z-index: 1;
+    bottom: -16px;
+    left: 170px;
+    background-color: #31FD46;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 6px;
+    font-family: 'Genos', sans-serif;
+    font-weight: bold;
+}
+
+.event-brief-card-button:hover{
+    cursor: pointer;
+
 }
