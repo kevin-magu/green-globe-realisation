@@ -584,3 +584,31 @@ hr {
 .blog-brief-card-description a{
   color: black;
 }
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #111111;
+}
+.upper-and-lower-container{
+  margin: 30px;
+}
+.footer-upper-section{
+  display: flex;
+}
+.patners{
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+.patners-title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.patners-svg{
+  transform: scale(.3);
+  margin-top: -50px;
+  margin-left: -65px;
+}
