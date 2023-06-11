@@ -577,7 +577,7 @@ hr {
   display: flex;
   padding: 10px;
   justify-content: center;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   align-items: center;
 }
@@ -590,7 +590,7 @@ footer{
   background-color: #111111;
 }
 .upper-and-lower-container{
-  margin: 30px;
+  margin: 70px;
 }
 .footer-upper-section{
   display: flex;
@@ -606,9 +606,10 @@ footer{
   justify-content: center;
   align-items: center;
   color: white;
+  font-size: 20px;
+  margin-left: 9px;
 }
-.patners-svg{
-  transform: scale(.3);
-  margin-top: -50px;
-  margin-left: -65px;
+
+*{
+  outline: 2px solid white ;
 }
