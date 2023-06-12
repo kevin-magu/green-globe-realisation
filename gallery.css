@@ -1,0 +1,27 @@
+nav{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 7px;
+    font-family: "Genos", sans-serif;
+}
+nav ul a li{
+    font-family: "Genos", sans-serif;
+}
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.images-card{
+    width: 25%;
+    height: 400px;
+    background-color: aqua;
+    margin: 10px;
+    border-radius: 7px;
+    transition: 0.5s ease-in-out;
+}
+.images-card:hover{
+    transform: scale(1.1);
+}
