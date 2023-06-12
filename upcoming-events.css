@@ -1,0 +1,29 @@
+body{
+    background-color: #f5f5f5;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 7px;
+}
+nav ul a li{
+    font-family: "Genos", sans-serif;
+}
+.upcoming-events-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Genos", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #00aa01;
+}
+.upcoming-events-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
