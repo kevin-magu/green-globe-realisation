@@ -26,7 +26,7 @@ span{
     background-color: rgb(213, 217, 240);
     margin: 20px;
     outline: 2px solid green;
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.527);
     transition: 0.2s ease-in-out;
     display: flex;
     justify-content: center;
@@ -47,4 +47,15 @@ span{
 }
 .main-links ul{
     display: flex;
+}
+.main-links ul li{
+    margin: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+.main-links ul a{
+    text-decoration: none;
+    color: rgb(3, 160, 3);
+    margin: 10px;
+    
 }
