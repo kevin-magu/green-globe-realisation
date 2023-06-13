@@ -1,0 +1,9 @@
+.blogs-container{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #f5f5f5;
+}
