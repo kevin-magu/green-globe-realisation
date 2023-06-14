@@ -10,14 +10,17 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;height: 70%;
 }
 .home {
   background-color: #f5f5f5;
   background: url(images/ggr-home-bg.jpg);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
-  height: 720px;
+
+  justify-content: center;
+  height: 100vh;
 }
 nav {
   justify-content: center;
@@ -64,13 +67,33 @@ nav ul a li:hover::after {
   }
 }
 
-#down-arrows {
-  transform: scale(0.6);
-  margin-left: 64%;
-  margin-bottom: -46%;
-}
 .main-page-col-1{
   width: 50%;
+}
+.main-page-col-1 #p1{
+  font-size: 45px;
+  background-color: rgb(72, 255, 0);
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+}
+#p2{
+  display: flex;
+  margin-top: 50px;
+}
+#p2 hr{
+  transform: rotate(180deg);
+  height: 230px;
+}
+#p2 p{
+  margin-top: 20px;
+  color: white;
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: bold;
+ 
 }
 
 
@@ -94,6 +117,7 @@ nav ul a li:hover::after {
   background-color: #f5f5f5;
 }
 .leadership-container {
+
 }
 #about-us-img-bg-svg {
   transform: scale(0.7);
