@@ -96,7 +96,19 @@ nav ul a li:hover::after {
  
 }
 
-
+.read-more-articles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.read-more-articles a{
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #070c07;
+  font-weight: bold;
+  }
 .about-us-main-title {
   width: 100%;
   display: flex;
@@ -349,8 +361,8 @@ hr {
   margin-top: 0px;
 }
 .event-brief-card {
-  height: 600px;
-  width: 600px;
+  height: 400px;
+  width: 30%;
   margin: 70px;
   position: relative;
   border-radius: 10px;
@@ -418,7 +430,7 @@ hr {
   position: absolute;
   z-index: 1;
   bottom: -16px;
-  left: 170px;
+  left: 70px;
   background-color: #31fd46;
   outline: none;
   border: none;
@@ -441,6 +453,7 @@ hr {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  height: 100%;
 }
 .gallery-description-title hr {
   background-color: #31fd46;
@@ -656,7 +669,7 @@ footer li a{
   font-size: 21px;
 }
 footer form{
-  width: 520px;
+  width: 440px;
   display: flex;
   margin-left: 30px;
 }
@@ -666,6 +679,7 @@ footer form{
 footer .inputs{
   display: flex;
   flex-direction: column;
+
 }
 .inputs input{
   height: 30px;
