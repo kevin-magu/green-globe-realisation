@@ -626,6 +626,8 @@ footer{
 .footer-content-container{
   margin: 40px;
   display: flex;
+  flex-direction: row;
+
 }
 .footer-upper-section{
   display: flex;
@@ -710,10 +712,11 @@ footer textarea{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
+  font-size: 15px;
 }
 .office-address ul li{
   text-align: center;
+  font-size: 12px;
 }
 .social-links{
   width: auto;
@@ -758,8 +761,9 @@ footer textarea{
   font-size: 14px;
 }
 
+
 /*HOME PAGE responsive design*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1454px){
   .main-page-col-1 #p1{
     font-size: 30px;
   }
@@ -768,5 +772,17 @@ footer textarea{
   }
   .about-us-leadership{
     
+  }
+}
+@media screen and (max-width: 1204px){
+  .footer-content-container{
+    
+  }
+  .upper-footer-column{
+  
+  }
+  .lower-footer-column{
+    display: flex;
+    flex-direction: row;
   }
 }
