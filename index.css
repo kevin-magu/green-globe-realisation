@@ -673,4 +673,22 @@ footer ul li i{
   .about-us-navigation{
     margin-left: 60px;
   }
+  .events-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .event-brief-card{
+    width: 40%;
+    height: 450px;
+  }
+  .blogs-brief-container{
+    flex-direction: column;
+  }
+  .blog-brief-card{
+    width: 45%;
+    height: 450px;
+  }
+  .blog-brief-card-description p{
+   
+  }
 }
