@@ -3,6 +3,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
+body{
+  background-color: #f5f5f5;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -129,6 +132,8 @@ nav ul a li:hover::after {
 .about-us-info-container{
   display: flex;
   margin: 50px;
+  flex-direction: row;
+  
 }
 .about-us-card{
   width: 300px;
@@ -144,17 +149,34 @@ nav ul a li:hover::after {
 
 }
 .about-us-info-description{
+  width: 60%;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 21px;
+}
+.about-us-info-description p{
 
+}
+
+.areas-of-focus{
+  display: none;
+}
+.partnerships{
+  display: none;
+}
+.vision{
+  display: none;
+}
+.core-values{
+  display: none;
 }
 
 
 
 
 
-
-
-
-
+hr{
+  width: 20px;
+}
 .about-us-button {
   height: 40px;
   width: 105px;
@@ -607,6 +629,7 @@ footer ul li i{
 .copyright {
   display: flex;
   flex-direction: row;
+  margin-bottom: 46px;
 }
 
 
@@ -626,14 +649,28 @@ footer ul li i{
 @media screen and (max-width: 1270px){
   .gallery-brief-container{
   flex-direction: column;
-  }
-  .gallery-brief-card{
+}
+    .gallery-brief-card{
     width: 60%;
     height: 500px;
   }
-  .leadership-container{
+  
+}
+@media screen and (max-width: 1210px){
+  .about-us-info-container{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .about-us-info-container svg{
+    width: 120px;
+    transform: rotate(90deg);
+  }
+  .about-us-button{
+    transform: scale(.6);
+    margin-left: -60px;
+  }
+  .about-us-navigation{
+    margin-left: 60px;
   }
 }
