@@ -623,143 +623,51 @@ footer{
   color: white;
   font-weight: bold;
 }
-.footer-content-container{
-  margin: 40px;
-  display: flex;
-  flex-direction: row;
-
-}
-.footer-upper-section{
-  display: flex;
-}
-.patners{
-  font-size: 15px;
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-footer li {
-  list-style: none;
-text-decoration: none;
-
-}
-footer li a{
-  color: white;
-}
-.patners p{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 21px;
-  margin-left: 9px;
-}
-
-.donate{
-  width: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
-}
-.donate p{
-  font-size: 21px;
-}
 footer form{
-  width: 440px;
-  display: flex;
-  margin-left: 30px;
-}
-.form-title{
-  font-size: 17px;
-}
-footer .inputs{
   display: flex;
   flex-direction: column;
-
+  width: 300px;
 }
-.inputs input{
+footer form button{
+  width: 60px;
+  padding: 7px;
+}
+footer form input{
   height: 30px;
-  margin-top: 10px;
 }
-.inputs input,textarea:focus{
+footer input,textarea:focus{
   outline: none;
 }
-footer textarea{
-  height: 100px;
-  margin-left: 10px;
-}
-.send-button{
-  height: 2%;
-  padding: 5px;
-  width: 60px;
-  background-color: #31fd46;
-  border: none;
-  margin-top: 40px;
-  margin-left: 10px;
-}
-.office-address{
-  width: 200px;
-  margin-left: 50px;
-}
-.office-address-title{
-  width: 100%;
+.footer-upper-column{
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
+  justify-content: space-around;
+  width: 80%;
+  margin-left: 90px;
+
 }
-.office-address ul li{
-  text-align: center;
-  font-size: 12px;
+footer form textarea{
+  height: 100px;
 }
-.social-links{
-  width: auto;
-  margin-left: 30px;
+.patners,.donate{
   display: flex;
   flex-direction: column;
 }
-.social-links ul{
+footer hr{
+  transform: rotate(-180deg);
+  width: 70%;
+}
+.footer-line{
   display: flex;
+  justify-content: center;
 }
-.social-links ul li {
-  color: white;
-}
-.email-div{
+.footer-lower-column{
   display: flex;
-  text-align: left;
+  justify-content: center;
 }
-.email-div p{
-  margin-left: -20px;
-}
-#linked-in-icon{
-  transform: scale(.3);
-}
-#facebook-icon{
-  transform: scale(.5);
-  margin-bottom: -45px;
-}
-#twitter-icon{
-  transform: scale(.5);
-  margin-bottom: -45px;
-}
-#email-icon{
-  transform: scale(.2);
-  margin-top: -22px;
-  margin-left: -10px;
-}
-.copyright{
-  width: auto;
-  margin-left: 10px;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-}
+
 
 
 /*HOME PAGE responsive design*/
