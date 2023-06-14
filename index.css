@@ -622,6 +622,7 @@ footer{
   background-color: #111111;
   color: white;
   font-weight: bold;
+  font-family: 'Roboto Flex', sans-serif;
 }
 footer form{
   display: flex;
@@ -666,6 +667,23 @@ footer hr{
 .footer-lower-column{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  margin: 30px;
+  list-style: none;
+}
+footer ul li i{
+  font-size: 25px;
+  color: white;
+}
+.copyright {
+  display: flex;
+  flex-direction: row;
 }
 
 
