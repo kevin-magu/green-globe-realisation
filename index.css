@@ -689,6 +689,28 @@ footer ul li i{
     height: 450px;
   }
   .blog-brief-card-description p{
-   
+    font-size: 22px;
+  }
+  .blog-brief-hero-text{
+    width: 70%;
+    margin-bottom: 10px;
+  }
+  .blogs-brief-container svg{
+    transform: rotate(90deg);
+    width: 100px;
+  }
+  .blog-brief-card-picture-section-content{
+    margin-top: 20%;
+  }
+  .movements .p2,.p3{
+    font-size: 30px;
+  }
+  .circle1 {
+    top: -150px;
+    left: -110px;
+  }
+  .circle2{
+    right: -150px;
+    bottom: -180px;
   }
 }
