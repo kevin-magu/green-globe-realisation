@@ -430,7 +430,7 @@ hr {
   position: absolute;
   z-index: 1;
   bottom: -16px;
-  left: 70px;
+  left: 0;
   background-color: #31fd46;
   outline: none;
   border: none;
