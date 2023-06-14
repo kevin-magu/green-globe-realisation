@@ -170,13 +170,6 @@ nav ul a li:hover::after {
   display: none;
 }
 
-
-
-
-
-hr{
-  width: 20px;
-}
 .about-us-button {
   height: 40px;
   width: 105px;
@@ -400,9 +393,7 @@ hr{
   max-width: 100%;
 
 }
-.gallery-description-title hr {
-  background-color: #31fd46;
-}
+
 .gallery-brief-card {
   width: 20%;
   height: 300px;
@@ -415,6 +406,25 @@ hr{
 }
 .gallery-brief-card:hover {
   transform: scale(1.1);
+}
+.gallery-description-title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.gallery-description-title hr{
+  background: none;
+  width: 20px;
+  height: none;
+}
+#hr-gallery{
+  all: unset;
+}
+.gallery-description-title p{
+  font-size: 27px;
+  font-family: 'Roboto Flex', sans-serif;
+  font-weight: bolder;
+  color: #0b8517;
 }
 .gallery-brief-card1 {
   background: url(images/ceo-watering-trees.jpeg);
@@ -594,6 +604,21 @@ footer input,textarea:focus{
   margin-left: 90px;
 
 }
+.contacts{
+  margin-left: 30px;
+}
+.patners,.donate,.quick-links{
+  margin-right: 90px;
+}
+.quick-links{
+  margin-left: 20px;
+}
+.footer-content{
+  margin-top: 10px;
+}
+.upper-column-section1,.upper-column-section2{
+  display: flex;
+}
 footer form textarea{
   height: 100px;
 }
@@ -651,7 +676,7 @@ footer ul li i{
   flex-direction: column;
 }
     .gallery-brief-card{
-    width: 60%;
+    width: 50%;
     height: 500px;
   }
   
@@ -712,5 +737,23 @@ footer ul li i{
   .circle2{
     right: -150px;
     bottom: -180px;
+  }
+  .upper-column-section1{
+    flex-direction: column;
+  }
+  .contacts{
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 1045px){
+  .footer-upper-column{
+    flex-direction: column;
+  }
+  .upper-column-section2{
+    margin-top: 20px;
+  }
+  .quick-links{
+    margin-left: 0;
   }
 }
