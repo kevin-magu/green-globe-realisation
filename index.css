@@ -490,6 +490,9 @@ nav ul a li:hover::after {
 #blogs-brief {
   background-color: #f5f5f5;
 }
+.blog-span{
+  color: #31fd46;
+}
 .blogs-brief-container {
   margin-top: 50px;
   display: flex;
