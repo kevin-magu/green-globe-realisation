@@ -2,11 +2,9 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  outline: 1px solid red;
+}
 
-}
-.body-container{
-  width: 100%;
-}
 body {
   background-color: #f5f5f5;
 }
@@ -174,8 +172,6 @@ nav ul a li:hover::after {
   font-family: "Roboto Flex", sans-serif;
   font-size: 21px;
 }
-.about-us-info-description p {
-}
 
 .areas-of-focus {
   display: none;
@@ -230,6 +226,8 @@ nav ul a li:hover::after {
 .about-us-navigation-column1,
 .about-us-navigation-column2 {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .movements {
@@ -700,8 +698,6 @@ footer ul li i {
   }
   #p2 p {
     font-size: 23px;
-  }
-  .about-us-leadership {
   }
 }
 @media screen and (max-width: 1270px) {
