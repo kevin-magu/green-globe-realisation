@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 body {
   background-color: #f5f5f5;
@@ -226,7 +225,6 @@ nav ul a li:hover::after {
 .about-us-navigation-column1,
 .about-us-navigation-column2 {
   display: flex;
-
 }
 
 .movements {
