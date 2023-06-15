@@ -82,6 +82,7 @@ nav ul a li:hover::after {
   justify-content: flex-end;
   margin-right: 30px;
   position: relative;
+  
 }
 .menu-div i{
   transform: scale(2);
