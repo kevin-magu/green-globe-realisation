@@ -788,6 +788,7 @@ footer ul li i {
   }
   .menu-div{
     display: block;
+    margin-left: 20px;
   }
   .main-page-col-1 {
     width: 100%;
@@ -803,6 +804,7 @@ footer ul li i {
   }
   #p2 {
     font-size: 55px;
+    margin-left: 10px;
   }
   .read-more-articles a {
     margin-top: 60px;
