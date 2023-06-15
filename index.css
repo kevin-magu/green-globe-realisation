@@ -95,7 +95,7 @@ nav ul a li:hover::after {
   justify-content: center;
   padding: 5px;
   flex-direction: column;
-  font-family: "Mate SC", serif;
+  font-family: 'Cinzel', serif;
 }
 #p2 {
   display: flex;
@@ -805,6 +805,7 @@ footer ul li i {
   #p2 {
     font-size: 55px;
     margin-left: 10px;
+
   }
   .read-more-articles a {
     margin-top: 60px;
