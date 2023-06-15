@@ -728,9 +728,7 @@ footer ul li i {
     margin-left: -10px;
     margin-top: 5px;
   }
-  .about-us-navigation {
-    margin-left: 60px;
-  }
+
   .events-container {
     flex-direction: column;
     font-family: "Roboto Flex", sans-serif;
@@ -856,6 +854,9 @@ footer ul li i {
   }
   .about-us-navigation-column2 {
     width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .about-us-button:hover {
     transform: translateY(-0px);
