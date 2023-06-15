@@ -76,6 +76,7 @@ nav ul a li:hover::after {
   justify-content: flex-end;
   margin-right: 30px;
   position: relative;
+  display: none;
 }
 .menu-div i {
   transform: scale(2);
@@ -87,14 +88,14 @@ nav ul a li:hover::after {
   width: 50%;
 }
 .main-page-col-1 #p1 {
-  font-size: 45px;
-  background-color: rgb(72, 255, 0);
+  font-size: 49px;
+  font-weight: bolder;
+  color: #03ff3a;
   display: flex;
   justify-content: center;
   padding: 5px;
   flex-direction: column;
   font-family: "Mate SC", serif;
-  color: rgb(0, 0, 0);
 }
 #p2 {
   display: flex;
@@ -784,6 +785,9 @@ footer ul li i {
 @media screen and (max-width: 965px) {
   nav {
     display: none;
+  }
+  .menu-div{
+    display: block;
   }
   .main-page-col-1 {
     width: 90%;
