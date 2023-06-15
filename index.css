@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 body {
   background-color: #f5f5f5;
@@ -887,7 +886,7 @@ footer ul li i {
     width: 80%;
   }
   .footer-upper-column {
-    margin-left: 10px;
+    margin-left: 17px;
   }
   .footer-lower-column {
     width: 95%;
