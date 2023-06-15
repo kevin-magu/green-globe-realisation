@@ -630,6 +630,7 @@ footer input,textarea:focus{
 }
 .contacts{
   margin-left: 30px;
+  width: 80%;
 }
 .patners,.donate,.quick-links{
   margin-right: 90px;
@@ -642,7 +643,9 @@ footer input,textarea:focus{
 }
 .upper-column-section1,.upper-column-section2{
   display: flex;
+  width: 80%;
 }
+.upper-column-section1
 footer form textarea{
   height: 100px;
 }
@@ -885,9 +888,16 @@ footer ul li i{
   }
 .upper-column-section2{
   flex-direction: column;
+  width: 80%;
+}
+.footer-upper-column{
+  
 }
 .footer-title{
   margin-top: 10px;
   font-size: 22px;
+}
+.social-links{
+  
 }
 }
