@@ -69,20 +69,13 @@ nav ul a li:hover::after {
     width: 100%;
   }
 }
-.nav-line{
-  height: 10px;
-  width: 30px;
-  background-color: white;
-  right: 50px;
-  top: 50px;
-  margin-top: 4px;
-}
+
 .menu-div{
   display: flex;
   justify-content: flex-end;
   margin-right: 30px;
   position: relative;
-  
+
 }
 .menu-div i{
   transform: scale(2);
@@ -858,6 +851,9 @@ footer ul li i{
 @media screen and (max-width: 568px){
   .blog-brief-card-picture-section-content{
     font-size: 17px;
+  }
+  #p2 hr{
+    height: 260px;
   }
 }
 @media screen and (max-width: 468px){
