@@ -69,6 +69,19 @@ nav ul a li:hover::after {
     width: 100%;
   }
 }
+.nav-line{
+  height: 10px;
+  width: 30px;
+  background-color: white;
+  right: 50px;
+  top: 50px;
+  margin-top: 4px;
+}
+.menu-div{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
 
 .main-page-col-1{
   width: 50%;
