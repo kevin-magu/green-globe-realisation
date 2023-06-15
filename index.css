@@ -663,6 +663,7 @@ footer hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 footer ul {
   display: flex;
@@ -891,6 +892,7 @@ footer ul li i {
   .footer-lower-column {
     width: 95%;
   }
+
   .footer-title {
     margin-top: 10px;
     font-size: 22px;
