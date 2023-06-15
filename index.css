@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  outline: 6px solid red;
 }
 
 body {
@@ -897,6 +896,9 @@ footer ul li i {
 @media screen and (max-width: 468px) {
   .main-page-col-2 {
     margin-left: -20px;
+  }
+  .circle2{
+    display: none;
   }
   .movements-title {
     font-size: 32px;
