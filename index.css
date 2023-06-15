@@ -897,9 +897,7 @@ footer ul li i {
   .main-page-col-2 {
     margin-left: -20px;
   }
-  .circle2{
-    display: none;
-  }
+
   .movements-title {
     font-size: 32px;
   }
@@ -936,6 +934,7 @@ footer ul li i {
     margin-top: 10px;
     font-size: 22px;
   }
-  .social-links {
+  .social-links ul{
+    width: 96%;
   }
 }
