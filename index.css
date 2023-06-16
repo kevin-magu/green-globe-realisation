@@ -165,6 +165,7 @@ nav ul a li:hover::after {
   background-size: cover;
 }
 .about-us-card-svg {
+  position: relative;
 }
 .about-us-info-description {
   width: 60%;
