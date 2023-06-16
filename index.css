@@ -59,7 +59,6 @@ nav ul li {
   display: none;
 }
 
-
 .cancel-bars{
   transform: scale(2);
   margin-top: 20px;
@@ -859,8 +858,14 @@ footer ul li i {
     animation: ulopacity 2s ease-in-out;
     
   }
-  nav ul li{
-
+  .nav2 p{
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    left: -49px;
+    font-size: 20px;
+    opacity: 60%;
+    color: #087720;
   }
   nav ul a {
     height: 20px;
