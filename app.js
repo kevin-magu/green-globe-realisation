@@ -4,7 +4,15 @@ patnershipsDiv = document.querySelector(".partnerships");
 visionmissionDiv = document.querySelector(".vision");
 corevaluesDiv = document.querySelector(".core-values");
 successDiv = document.querySelector(".success-stories");
+menuDiv = document.querySelector(".nav2");
 
+function showNav2(){
+    if (menuDiv.style.display="none") {
+        menuDiv.style.display="block";
+    } else {
+        menuDiv.style.display="none";
+    }
+}
 function displayOverviewDiv(){
     overviewDiv.style.display="block";
     areasoffocuswDiv.style.display="none";
