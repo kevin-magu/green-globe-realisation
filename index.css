@@ -78,17 +78,23 @@ nav ul a li:hover::after {
   }
 }
 
-.menu-div {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 30px;
-  position: relative;
-  display: none;
-}
-.menu-div i {
+.cancel-bars{
   transform: scale(2);
   margin-top: 20px;
   color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: none;
+}
+.menu-bars {
+  transform: scale(2);
+  margin-top: 20px;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  display: none;
 }
 
 .main-page-col-1 {
@@ -822,6 +828,9 @@ footer ul li i {
   .nav1{
     display: none;
   }
+  .menu-bars{
+    display: block;
+  }
  
   .nav2{
     position: absolute;
@@ -829,7 +838,7 @@ footer ul li i {
     top: 6%;
     flex-direction: column;
     z-index: 2;
-    width: 50%;
+    width: 300px;
     height: 70vh;
     
   }
@@ -840,10 +849,7 @@ footer ul li i {
   nav ul li{
     margin-top: 50px;
   }
-  .menu-div{
-    display: block;
-    margin-left: 20px;
-  }
+ 
   .main-page-col-1 {
     width: 100%;
     font-family: "Roboto Flex", sans-serif;

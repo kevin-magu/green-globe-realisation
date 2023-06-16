@@ -6,14 +6,19 @@ corevaluesDiv = document.querySelector(".core-values");
 successDiv = document.querySelector(".success-stories");
 menuDiv = document.querySelector(".nav2");
 menuIcon = document.querySelector(".menu-bars");
+cancelIcon = document.querySelector(".cancel-bars");
 
-menuIcon.addEventListener("clic", function() {
-    if (menuDiv.style.display="none") {
+menuIcon.addEventListener("click", function() {
         menuDiv.style.display="block";
-    } else if(menuDiv.style.display="block"){
-        menuDiv.style.display="none";
-    }
-})
+        cancelIcon.style.display="block";
+        menuIcon.style.display="none";
+});
+
+cancelIcon.addEventListener("click", function() {
+        menuDiv.style.display="none"
+        menuIcon.style.display="block";
+        cancelIcon.style.display="none";
+});
 
 function displayOverviewDiv(){
     overviewDiv.style.display="block";
