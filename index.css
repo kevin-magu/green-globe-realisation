@@ -175,16 +175,47 @@ nav ul a li:hover::after {
 .areas-of-focus {
   display: none;
 }
+.areas-of-focus-card{
+  background: url(images/areas-of-focus-pic.jpg);
+  background-position: center;
+  background-size: cover;
+}
 .partnerships {
   display: none;
+}.partnerships-card{
+  background: url(images/handshake.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: 1px solid #03ff3a;
 }
 .vision {
   display: none;
 }
+.vision-card{
+  background: url(images/vision.jpeg);
+  background-position: center;
+  background-size: cover;
+}
 .core-values {
   display: none;
 }
-
+.core-values-card{
+  background: url(images/watering-a-tree.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.success-stories{
+  display: none;
+}
+.success-card{
+  width: 350px;
+  height: 350px;
+  background-repeat: no-repeat;
+  background: url(images/CEO-cert.jpeg);
+  background-position: center;
+  background-size: contain;
+}
 .about-us-button {
   height: 40px;
   width: 105px;
