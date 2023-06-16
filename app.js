@@ -8,6 +8,7 @@ menuDiv = document.querySelector(".nav2");
 menuIcon = document.querySelector(".menu-bars");
 cancelIcon = document.querySelector(".cancel-bars");
 
+
 menuIcon.addEventListener("click", function() {
         menuDiv.style.display="block";
         cancelIcon.style.display="block";
@@ -15,7 +16,7 @@ menuIcon.addEventListener("click", function() {
 });
 
 cancelIcon.addEventListener("click", function() {
-        menuDiv.style.display="none"
+        menuDiv.style.display="none";
         menuIcon.style.display="block";
         cancelIcon.style.display="none";
 });

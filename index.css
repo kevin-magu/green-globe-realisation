@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 body {
@@ -734,11 +733,17 @@ footer ul li i {
   .main-page-col-1 #p1 {
     font-size: 35px;
   }
+  .nav2{
+    display: none;
+  }
   #p2 p {
     font-size: 23px;
   }
 }
 @media screen and (max-width: 1270px) {
+  .nav2{
+    display: none;
+  }
   .gallery-brief-container {
     flex-direction: column;
   }
@@ -748,6 +753,9 @@ footer ul li i {
   }
 }
 @media screen and (max-width: 1210px) {
+  .nav2{
+    display: none;
+  }
   .about-us-info-container {
     flex-direction: column;
     justify-content: center;
@@ -818,6 +826,9 @@ footer ul li i {
   .footer-upper-column {
     flex-direction: column;
   }
+  .nav2{
+    display: none;
+  }
   .upper-column-section2 {
     margin-top: 20px;
   }
@@ -835,11 +846,11 @@ footer ul li i {
  
   .nav2{
     position: absolute;
-    border-radius: 7px;
+    border-radius: 3px;
     top: 6%;
     flex-direction: column;
     z-index: 2;
-    width: 300px;
+    width: 200px;
     height: 70vh;
     
   }
@@ -941,6 +952,9 @@ footer ul li i {
   }
   .about-us-card-svg {
     display: none;
+  }
+  .about-us-card{
+    margin-bottom: 10px;
   }
   .main-page-col-1 #p2{
     border-left: 3px solid white;
