@@ -822,6 +822,9 @@ footer ul li i {
   .nav1{
     display: none;
   }
+  .about-us-card-svg {
+    display: none;
+  }
   .nav2{
     position: absolute;
     border-radius: 7px;
