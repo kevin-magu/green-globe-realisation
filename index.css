@@ -1030,3 +1030,8 @@ footer ul li i {
     width: 96%;
   }
 }
+@media screen and (min-width: 967px) {
+  .nav2 ul,p{
+    display: none;
+  }
+}
