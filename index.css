@@ -30,7 +30,7 @@ html {
   justify-content: center;
   height: 100vh;
 }
-nav {
+.nav1{
   justify-content: center;
   display: flex;
   align-items: center;
@@ -38,7 +38,7 @@ nav {
   font-family: "Genos", sans-serif;
   background-color: white;
 }
-nav a {
+.nav1 a {
   color: #070c07;
   font-weight: bold;
   text-decoration: none;
@@ -46,11 +46,11 @@ nav a {
   width: auto;
   margin-left: 50px;
 }
-nav ul {
+.nav1 ul {
   display: flex;
   margin: 10px;
 }
-nav ul li {
+.nav1 ul li {
   font-size: 29px;
   position: relative;
 }
@@ -837,6 +837,7 @@ footer ul li i {
     height: auto;
     margin-top: 20px;
     animation: widthgrow 0.7s ease-in-out;
+    background-color: #ffffff;
   }
 @keyframes widthgrow {
   0%{
@@ -846,7 +847,7 @@ footer ul li i {
     width: 230px;
   }
 }
-@keyframes ulopacity {
+@keyframes ul-opacity {
   0%{
     opacity: 0%;
   }
@@ -854,22 +855,29 @@ footer ul li i {
   .nav2 ul{
     margin-bottom: 50px;
     flex-direction: column;
-    justify-content: flex-end;
-    animation: ulopacity 2s ease-in-out;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: ul-opacity 2s ease-in-out;
+    font-family: "Genos", sans-serif;
+    font-size: 25px;
   }
   .nav2 p{
     transform: rotate(-90deg);
     position: absolute;
     top: 50%;
     left: -49px;
-    font-size: 20px;
+    font-size: 22px;
     opacity: 60%;
     color: #087720;
+    font-family: "Genos", sans-serif;
   }
-  nav ul a {
+  .nav2 ul a {
     height: 20px;
     margin-top: 40px;
+  }
+  .nav2 ul a:hover{
+    color: green;
   }
  
   .main-page-col-1 {
@@ -878,6 +886,14 @@ footer ul li i {
     font-size: 35px;
   }
 
+  .nav2 a {
+    color: #070c07;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    width: auto;
+    margin-left: 50px;
+  }
   .main-page-col-1 #p1 {
     align-items: center;
     font-size: 28px;
