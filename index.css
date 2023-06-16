@@ -875,6 +875,7 @@ footer ul li i {
   }
   .about-us-navigation-column1 {
     width: 100%;
+    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
