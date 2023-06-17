@@ -31,9 +31,11 @@ nav ul a li{
 .event-card{
     width: 25%;
     position: relative;
-    min-height: 500px;
+   
     border-radius: 7px;
     transition: 0.5s ease-in-out;
+    transform: scale(.7);
+
 }
 .event-card textarea{
     z-index: 1;
@@ -79,7 +81,7 @@ nav ul a li{
     font-size: 26px;
 }
 .event-card:hover{
-    transform: scale(1.1);
+    transform: scale(.72);
 }
 .send-to-past-events{
     z-index: 2;
@@ -90,4 +92,12 @@ nav ul a li{
 }
 .event-card form{
     display: none;
+}
+#event-description{
+    text-align: center;
+}
+@media screen and (max-width: 1313px) {
+    .event-card{
+        scale: 1;
+    }
 }
