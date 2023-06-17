@@ -1,9 +1,16 @@
 .blogs-container{
     display: flex;
     margin-top: 50px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 body{
     background-color: #f5f5f5;
+}
+.menu-bars{
+    color: rgb(255, 0, 0);
+}
+#black-icon{
+    color: black;
 }

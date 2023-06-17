@@ -56,6 +56,9 @@ html {
 .nav2{
   display: none;
 }
+.nav2 i{
+  color: black;
+}
 .nav1 ul a:hover{
   color: green;
 }
@@ -725,6 +728,9 @@ footer ul li i {
   .nav2{
     display: none;
   }
+  .nav2 i{
+    color: #070c07;
+  }
   .gallery-brief-container {
     flex-direction: column;
   }
@@ -988,6 +994,9 @@ footer ul li i {
     font-size: 8px;
   }
 
+  .nav2 i{
+    color: #070c07;
+  }
   .movements-title {
     font-size: 32px;
   }
