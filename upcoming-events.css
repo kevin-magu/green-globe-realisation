@@ -99,6 +99,9 @@ nav ul a li{
 #event-description{
     text-align: center;
 }
+footer{
+    
+}
 @media screen and (max-width: 1313px) {
     .event-card{
         scale: 1;
