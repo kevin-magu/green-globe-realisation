@@ -10,6 +10,9 @@ nav{
 nav ul a li{
     font-family: "Genos", sans-serif;
 }
+.menu-bars,.cancel-bars{
+    color: black;
+}
 .upcoming-events-title{
     width: 100%;
     display: flex;
@@ -31,7 +34,7 @@ nav ul a li{
 .event-card{
     width: 25%;
     position: relative;
-   
+    height: 530px;
     border-radius: 7px;
     transition: 0.5s ease-in-out;
     transform: scale(.7);
@@ -99,5 +102,20 @@ nav ul a li{
 @media screen and (max-width: 1313px) {
     .event-card{
         scale: 1;
+    }
+}
+@media screen and (max-width: 1095px) {
+    .event-card{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 610px) {
+    .event-card{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 460px) {
+    .event-card{
+        width: 90%;
     }
 }
