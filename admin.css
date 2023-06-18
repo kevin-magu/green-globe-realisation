@@ -75,5 +75,6 @@ span{
 @media screen and (max-width: 529px) {
     .admin-page-card{
         width: 80%;
+        
     }
 }
