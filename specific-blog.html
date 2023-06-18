@@ -4,7 +4,10 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,300&display=swap");
     </style>
-    
+    <script
+    src="https://kit.fontawesome.com/e4c074505f.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="specific-blog.css" />
     <meta charset="UTF-8" />
@@ -13,20 +16,37 @@
     <title>Specific Blog</title>
   </head>
   <body>
-    <nav>
+    <nav class="nav1">
       <ul>
         <a href=""><li>Home</li></a>
-        <a href="#aboutus"><li>Past Events</li></a>
+        <a href="#aboutus"><li>About Us</li></a>
+        <a href="#events"><li>Events</li></a>
         <a href=""><li>Blog</li></a>
         <a href=""><li>Donate</li></a>
         <a href=""><li>Contacts</li></a>
       </ul>
     </nav>
+    
+    <nav class="nav2">
+      <ul>
+        <a href=""><li>Home</li></a>
+        <a href="#aboutus"><li>About Us</li></a>
+        <a href="#events"><li>Events</li></a>
+        <a href=""><li>Blog</li></a>
+        <a href=""><li>Donate</li></a>
+        <a href=""><li>Contacts</li></a>
+      </ul>
+      <p>Plant For The Planet</p>
+    </nav>
+    <div class="menu-div">
+      <i class="fa-solid fa-bars menu-bars"></i>
+    </div>
+    <div class="menu-div">
+      <i class="fa-solid fa-xmark cancel-bars"></i>
+    </div>
 
     <div class="gallery-description-title about-us-description-title">
-      <hr />
       <p>Specific Blog</p>
-      <hr />
     </div>
     <div class="blog-container">
       <div class="blog-introduction">
@@ -90,63 +110,89 @@
     </div>
 
     <footer>
-        <div class="footer-content-container">
-          <div class="patners">
-            <p>Patners</p>
-            <ul>
-              <li>
-                <a
-                  href="https://climateconnect.earth/organizations/GlobalEnvironmentalandClimateConservationInitiative(GECCI)224"
-                  >GECCI</a>
-              </li>
-            </ul>
-          </div>
-          <div class="donate">
-            <p>Donate</p>
-            <ul>
-              <li><a href="">PayPal</a></li>
-              <li><a href="">Mpesa</a></li>
-            </ul>
-          </div>
-          <div class="email-us">
-            <form action="">
-              <div class="inputs">
-                <div class="form-title">
-                  <p>Email Us</p>
-                </div>
-                <input type="text" placeholder="Enter your name">
-                <input type="text" value="" placeholder="Enter yourEmail">
-              </div>
-              <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-              <button class="send-button">Send</button>
-            </form>
-          </div>
-          <div class="office-address">
-            <div class="office-address-title"><p>Office Address</p></div>
-            <ul>
-              <li>680 Hotel, Kenyatta Avenue</li>
-              <li>P.O Box 22660-00100, Nairobi </li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="social-links">
-            <ul>
-              <li><img id="facebook-icon" src="images/facebook-icon.svg" alt=""></li>
-              <li><img id="linked-in-icon" src="images/linked-in-icon.svg" alt=""></li>
-              <li><img id="twitter-icon" src="images/twitter-icon.svg" alt=""></li>
-              <li><img id="twitter-icon" src="images/insta-icon.svg" alt=""></li>
-            </ul>
-            <div class="email-div">
-              <img id="email-icon" src="images/email-icon.svg" alt=""> 
-              <p>info@greengloberealisation.org</p>
-            </div>
-            
-          </div>
-          <div class="copyright">
-            <p>&#169; 2023 Green Globe Realisation</p>
-            <p>All Rights Reserved</p>
+      <div class="footer-upper-column">
+        <div class="upper-column-section1">
+          <form action="">
+            <p class="footer-title">Leave us a Message</p>
+            <input type="text" />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Send</button>
+          </form>
+
+          <div class="contacts">
+            <p class="footer-title">Contacts</p>
+            <p class="footer-content">
+              <i class="fa-solid fa-envelope"></i>
+              info@greengloberealisation.org
+            </p>
+            <p class="footer-content">
+              <i class="fa-solid fa-phone"></i> 0722465663
+            </p>
+            <p class="footer-content">
+              <i class="fa-brands fa-whatsapp"></i> 0722465663
+            </p>
+            <p class="footer-content">
+              <i class="fa-sharp fa-solid fa-location-dot"></i> 680 Hotel,
+              Kenyatta Avenue
+            </p>
           </div>
         </div>
-      </footer>
+        <div class="upper-column-section2">
+          <div class="quick-links">
+            <p class="footer-title">Quick Links</p>
+            <p class="footer-content"><a href="">Back to top</a></p>
+            <p class="footer-content"><a href="">Blogs</a></p>
+            <p class="footer-content"><a href="">Gallery</a></p>
+            <p class="footer-content"><a href="">About Us</a></p>
+          </div>
+          <div class="donate">
+            <p class="footer-title">Donate</p>
+            <p class="footer-content">
+              <i class="fa-solid fa-dollar-sign"></i> Mpesa
+            </p>
+            <p class="footer-content">
+              <i class="fa-brands fa-paypal"></i> PayPal
+            </p>
+          </div>
+          <div class="patners">
+            <p class="footer-title">
+              <i class="fa-solid fa-handshake"></i> Patners
+            </p>
+            <a
+              href="https://climateconnect.earth/organizations/GlobalEnvironmentalandClimateConservationInitiative(GECCI)224"
+              >GECCI</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+        <hr />
+      </div>
+      <div class="footer-lower-column">
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="copyrignt">
+          <p>&copy; 2023 Green Globe Realisation | All rignts reserved</p>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
