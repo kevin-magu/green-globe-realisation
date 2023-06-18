@@ -1,20 +1,10 @@
-body{
-    background-color: #f5f5f5;
-}
-nav{
-    display: flex;
-    justify-content: center;
-    padding: 7px;
-    font-family: "Genos", sans-serif;
-}
-nav ul a li{
-    font-family: "Genos", sans-serif;
-}
+
 .gallery-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
+    align-items: center;
+    z-index: 1;
 }
 .images-card{
     width: 25%;
@@ -25,11 +15,29 @@ nav ul a li{
     transition: 0.2s ease-in-out;
 }
 .images-card:hover{
-    transform: scale(1.1);
+    transform: scale(1.04);
 }
-#gallery-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+.menu-bar{
+    display: block;
+    color: black;
+}
+@media screen and (max-width:943px) {
+    .gallery-container{
+        flex-direction: column;
+    }
+    .images-card{
+        width: 50%;
+    }
+}
+@media screen and (max-width:553px) {
+    .images-card{
+        width: 80%;
+    }
+}
+.menu-bars{
+    width: 90px;
+    height: 90px;
+    z-index: 2;
+    color: black;
 }
 
