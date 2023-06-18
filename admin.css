@@ -19,6 +19,7 @@ span{
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
+    align-items: center;
 }
 .admin-page-card {
     min-width: 25%;
@@ -56,6 +57,23 @@ span{
 .main-links ul a{
     text-decoration: none;
     color: rgb(3, 160, 3);
-    margin: 10px;
-    
+    margin: 10px;   
+}
+@media screen and (max-width:1120px) {
+    .admin-page-cards-container{
+        flex-direction: column;
+    }
+    .admin-page-card{
+        width: 40%;
+    }
+}
+@media screen and (max-width:772px) {
+    .admin-page-card{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 529px) {
+    .admin-page-card{
+        width: 80%;
+    }
 }

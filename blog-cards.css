@@ -11,6 +11,6 @@ body{
 .menu-bars{
     color: rgb(255, 0, 0);
 }
-#black-icon{
+#black-icon,.menu-bars{
     color: black;
 }
