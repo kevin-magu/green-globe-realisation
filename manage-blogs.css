@@ -6,3 +6,6 @@ form textarea{
     width: 80%;
     
 }
+form input{
+    width: 200px;
+}

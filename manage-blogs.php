@@ -21,7 +21,9 @@
         <fieldset>
           <legend>Make a new blog entry</legend>
           <textarea name="" id="" cols="30" rows="10"></textarea>
-
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <input type="text">
           <p><b>Choose image 1 </b><input type="file" /></p>
           <p><b>Choose image 2 </b><input type="file" /></p>
           <p><b>Choose image 3  </b><input type="file" /></p>
