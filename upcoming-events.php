@@ -69,13 +69,12 @@ $result = mysqli_query($connection,$query);
                 <p id="time"><b>TIME: </b><?php echo $row['timee']; ?></p>
                 <button class="enqure-more">Enquire more via email</button>
                 <form action="push-to-past-events.php" method="POST" enctype="multipart/form-data">
-                  <input type="hidden" value="<?php echo $row['place'];?>">
-                  <input type="hidden" value="<?php echo $row['datee'];?>">
-                  <input type="hidden" value="<?php echo $row['timee'];?>">
-                  <input type="hidden" value="<?php echo $row['place'];?>">
-                  <input type="hidden" value="<?php echo $row['event_title'];?>">
-                  <input type="hidden" value="<?php echo $row['photo'];?>">
-                  <input type="hidden" name="event_id" value="<?php echo $row['id']; ?>">
+                  <input type="hidden" name="timee" value="<?php echo $row['datee'];?>">
+                  <input type="hidden"name="timee" value="<?php echo $row['timee'];?>">
+                  <input type="hidden" name="place" value="<?php echo $row['place'];?>">
+                  <input type="hidden"name="event_title" value="<?php echo $row['event_title'];?>">
+                  <input type="hidden"name="photo" value="<?php echo $row['photo'];?>">
+                  <input type="text" name="event_id"  value="<?php echo $row['id']; ?>">
                   <button name="submit" class="mark-as-done enqure-more" >Mark as done</button>
                 </form>
             </div>
