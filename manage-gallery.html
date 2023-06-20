@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Events</title>
+    <title>Manage Gallery</title>
 </head>
 <body>
     <div class="admin-home-title">
@@ -16,12 +16,12 @@
         <p><u>MANAGE GALLERY</u></p>
     </div>
     <div class="form-container">
-        <form action="">
+        <form action="manage-gallery-processing.php" method="POST" enctype="multipart/form-data">
             <fieldset>
                 <legend>Make a new image entry</legend>
-                <input type="text" placeholder="Enter the image title. eg 'planting trees at huruma estate'">
+                <input type="text" name="image_title" placeholder="Enter the image title. eg 'planting trees at huruma estate'">
 
-                <p><b>Choose an image</b><input type="file"></p>
+                <p><b>Choose an image</b><input name='photo' type="file"></p>
                 <button type="submit">UPLOAD</button>
             </fieldset>
         </form>
