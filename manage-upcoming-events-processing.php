@@ -13,7 +13,6 @@ ini_set('display_errors', 1);
     $place = mysqli_real_escape_string($connection,$_POST['place']);
     $date= mysqli_real_escape_string($connection,$_POST['datee']);
     $time = mysqli_real_escape_string($connection,$_POST['timee']);
-    $event_description = mysqli_real_escape_string($connection,$_POST['event_description']);
     $photo = $_FILES['photo'];
 
     // Validate file
@@ -36,9 +35,9 @@ ini_set('display_errors', 1);
     }
     
 
-    $sql = "INSERT INTO upcoming_events(event_title, place, datee, timee, event_description, photo) VALUES (?,?,?,?,?,?)";
+    $sql = "INSERT INTO upcoming_events(event_title, place, datee, timee, photo) VALUES (?,?,?,?,?)";
     $stmt = mysqli_prepare($connection, $sql);
-    mysqli_stmt_bind_param($stmt, "ssssss", $event_title, $place, $date, $time, $event_description, $filename);
+    mysqli_stmt_bind_param($stmt, "sssss", $event_title, $place, $date, $time, $filename);
                 
     // Execute prepared statement
     if (mysqli_stmt_execute($stmt)) {

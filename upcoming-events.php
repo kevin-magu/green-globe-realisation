@@ -1,7 +1,7 @@
 <?php 
 include 'includes.php';
 
-$query = "SELECT id,event_title,place,datee,timee,event_description,photo FROM upcoming_events";
+$query = "SELECT id,event_title,place,datee,timee,photo FROM upcoming_events";
 $result = mysqli_query($connection,$query);
 ?>
 
@@ -59,11 +59,6 @@ $result = mysqli_query($connection,$query);
       <div class="upcoming-events-container">
         <?php while($row=mysqli_fetch_assoc($result)) {?>
         <div class="event-card">
-            <form action="">
-                <textarea name="" id="" cols="30" rows="10">
-                </textarea>
-                <button class="send-to-past-events enqure-more">Send to past events</button>
-            </form>
             <div class="event-description-pic" style="background-image: url('uploads/<?php echo $row['photo']; ?>');">
                 <div class="event-card-overlay"></div>
                 <div class="event-card-title"><?php echo $row['event_title']; ?></div>
@@ -72,14 +67,22 @@ $result = mysqli_query($connection,$query);
                 <p id="where"><b>WHERE: </b> <?php echo $row['place'];?></p>
                 <p id="when"><b>WHEN: </b><?php echo $row['datee']; ?></p>
                 <p id="time"><b>TIME: </b><?php echo $row['timee']; ?></p>
-                <p id="event-description"><?php echo $row['event_description'] ?></p>
                 <button class="enqure-more">Enquire more via email</button>
-                <button class="mark-as-done enqure-more">Mark as done</button>
+                <form action="push-to-past-events.php" method="POST" enctype="multipart/form-data">
+                  <input type="hidden" value="<?php echo $row['place'];?>">
+                  <input type="hidden" value="<?php echo $row['datee'];?>">
+                  <input type="hidden" value="<?php echo $row['timee'];?>">
+                  <input type="hidden" value="<?php echo $row['place'];?>">
+                  <input type="hidden" value="<?php echo $row['event_title'];?>">
+                  <input type="hidden" value="<?php echo $row['photo'];?>">
+                  <input type="hidden" name="event_id" value="<?php echo $row['id']; ?>">
+                  <button name="submit" class="mark-as-done enqure-more" >Mark as done</button>
+                </form>
             </div>
         </div>
         <?php } ?>
       </div>
-
+      
       <footer>
         <div class="footer-upper-column">
           <div class="upper-column-section1">
