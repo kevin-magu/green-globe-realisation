@@ -9,10 +9,11 @@
 .images-card{
     width: 25%;
     height: 300px;
-    background-color: aqua;
+    background-repeat: no-repeat;
     margin: 10px;
     border-radius: 7px;
     transition: 0.2s ease-in-out;
+    background-size: cover;
 }
 .images-card:hover{
     transform: scale(1.04);

@@ -1,6 +1,9 @@
 <?php 
 include 'includes.php';
 ini_set('display_errors', 1);
+
+$query = "SELECT * FROM gallery";
+$exe = mysqli_query($connection,$query);
 ?>
 
 
@@ -8,6 +11,10 @@ ini_set('display_errors', 1);
 <html lang="en">
 <head>
     <head>
+    <script
+      src="https://kit.fontawesome.com/e4c074505f.js"
+      crossorigin="anonymous"
+    ></script>
         <style>
           @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,300&display=swap");
         </style>
@@ -52,9 +59,16 @@ ini_set('display_errors', 1);
         <p>Gallery<i class="fa-solid fa-xmark"></i></p>
     </div>
     <div class="gallery-container">
-        <div class="images-card"></div>
-        <div class="images-card"></div>
-        <div class="images-card"></div>
+        <?php
+        if($exe && mysqli_num_rows($exe) > 0){
+          while($row = mysqli_fetch_assoc($exe)){?>
+          <div class="images-card" style="background-image: url('uploads/<?php echo $row['photo']; ?>');
+           background-repeat: no-repeat;
+           background-position: center;
+          "></div>
+      <?php } } ?>
+       
+        
     </div>
 
     <footer>
