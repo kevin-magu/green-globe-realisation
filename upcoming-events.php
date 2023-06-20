@@ -16,8 +16,8 @@ $result = mysqli_query($connection,$query);
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,300&display=swap");
       </style>
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="upcoming-events.css">
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,7 +57,10 @@ $result = mysqli_query($connection,$query);
         Upcoming Events
       </div>
       <div class="upcoming-events-container">
-        <?php while($row=mysqli_fetch_assoc($result)) {?>
+        <?php 
+        if ($result && mysqli_num_rows($result) > 0) {
+          
+        while($row=mysqli_fetch_assoc($result)) {?>
         <div class="event-card">
             <div class="event-description-pic" style="background-image: url('uploads/<?php echo $row['photo']; ?>');">
                 <div class="event-card-overlay"></div>
@@ -69,17 +72,19 @@ $result = mysqli_query($connection,$query);
                 <p id="time"><b>TIME: </b><?php echo $row['timee']; ?></p>
                 <button class="enqure-more">Enquire more via email</button>
                 <form action="push-to-past-events.php" method="POST" enctype="multipart/form-data">
-                  <input type="hidden" name="timee" value="<?php echo $row['datee'];?>">
-                  <input type="hidden"name="timee" value="<?php echo $row['timee'];?>">
+                  <input type="hidden" name="datee" value="<?php echo $row['datee'];?>">
+                  <input type="hidden" name="timee" value="<?php echo $row['timee'];?>">
                   <input type="hidden" name="place" value="<?php echo $row['place'];?>">
-                  <input type="hidden"name="event_title" value="<?php echo $row['event_title'];?>">
-                  <input type="hidden"name="photo" value="<?php echo $row['photo'];?>">
-                  <input type="text" name="event_id"  value="<?php echo $row['id']; ?>">
+                  <input type="hidden" name="photo" value="<?php echo $row['photo'];?>">
+                  <input type="hidden" name="event_id"  value="<?php echo $row['id']; ?>">
                   <button name="submit" class="mark-as-done enqure-more" >Mark as done</button>
                 </form>
             </div>
         </div>
         <?php } ?>
+        <?php } else{ ?>
+          <h2>THERE ARE NO UPCOMNG EVENTS YET</h2>
+          <?php }?>
       </div>
       
       <footer>

@@ -1,3 +1,12 @@
+<?php include 'includes.php'; 
+ini_set('display_errors', 1);
+
+$query = "SELECT * FROM past_events";
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +18,7 @@
         @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,300&display=swap");
       </style>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="past-events.css">
     <link rel="stylesheet" href="upcoming-events.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
