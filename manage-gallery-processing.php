@@ -1,4 +1,5 @@
 <?php 
+include 'includes.php';
 ini_set('display_errors', 1);
 if (isset($_POST['submit'])) {
     $image_title = $_POST['image_title'];
