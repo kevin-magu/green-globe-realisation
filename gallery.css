@@ -3,8 +3,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     z-index: 1;
+    min-height: 100vh;
 }
 .images-card{
     width: 25%;
@@ -24,6 +24,7 @@
 @media screen and (max-width:943px) {
     .gallery-container{
         flex-direction: column;
+        align-items: center;
     }
     .images-card{
         width: 50%;
