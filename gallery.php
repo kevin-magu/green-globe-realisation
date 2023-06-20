@@ -56,7 +56,7 @@ $exe = mysqli_query($connection,$query);
   </div>
 
       <div class="gallery-description-title about-us-description-title">
-        <p>Gallery<i class="fa-solid fa-xmark"></i></p>
+        <p>Gallery</p>
     </div>
     <div class="gallery-container">
         <?php
