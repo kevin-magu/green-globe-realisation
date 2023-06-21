@@ -20,10 +20,10 @@
       <form action="">
         <fieldset>
           <legend>Make a new blog entry</legend>
+          <textarea name="" id="myTextarea" cols="30" rows="10"></textarea>
           <textarea name="" id="" cols="30" rows="10"></textarea>
           <textarea name="" id="" cols="30" rows="10"></textarea>
           <textarea name="" id="" cols="30" rows="10"></textarea>
-          <input type="text">
           <p><b>Choose image 1 </b><input type="file" /></p>
           <p><b>Choose image 2 </b><input type="file" /></p>
           <p><b>Choose image 3  </b><input type="file" /></p>
@@ -43,5 +43,29 @@
         <a href="#"><li>GALLERY</li></a>
       </ul>
     </div>
+    <script>
+    function limitWords() {
+      var textarea = document.getElementById("myTextarea");
+      var wordCount = textarea.value.trim().split(/\s+/).length;
+      
+      // Define the maximum word count
+      var maxWords = 50;
+      
+      if (wordCount > maxWords) {
+        // Split the textarea value into an array of words
+        var words = textarea.value.trim().split(/\s+/);
+        
+        // Remove any extra words above the limit
+        words = words.slice(0, maxWords);
+        
+        // Join the words back into a string
+        var truncatedText = words.join("");
+        
+        // Update the textarea value with the truncated text
+        textarea.value = truncatedText;
+      }
+    }
+  </script>
+
   </body>
 </html>

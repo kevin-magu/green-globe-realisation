@@ -23,7 +23,15 @@ nav{
     justify-content: center;
     margin-top: 30px;
     flex-wrap: wrap;
+}
 
+.blog-header{
+    height: 300px;
+    width: 100%;
+    background: url(images/forestlandscape.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: c;
 }
 .blog-picture-card{
     width: 25%;
