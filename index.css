@@ -570,7 +570,7 @@ html {
 .blog-brief-card-picture {
   width: 100%;
   height: 50%;
-  background: url(images/blog-brief-card-bg.jpg);
+  background-color: #070c07;
   background-size: cover;
   background-position: center;
   border-radius: 7px;

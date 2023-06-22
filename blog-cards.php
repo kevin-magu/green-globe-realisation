@@ -54,10 +54,8 @@ $query_exe = mysqli_query($connection,$query);
     <div class="menu-div">
       <i class="fa-solid fa-xmark cancel-bars" id="black-icon"></i>
     </div>
-    <div class="gallery-description-title about-us-description-title">
-      
-      <p>BLOGS</p>
-  
+    <div class="gallery-description-title  page-title">
+      <p>Blogs</p>
     </div>
     <div class="blogs-container">
       <?php if ($query_exe && mysqli_num_rows($query_exe) > 0) { ?>
@@ -67,19 +65,22 @@ $query_exe = mysqli_query($connection,$query);
         $wordArray = str_word_count($paragraph, 1); // Split paragraph into an array of words
         $teaser_title = implode(' ', array_slice($wordArray, 0, $wordsToRetrieve_title)); // Join the first 30 words
          ?>
-      <div class="blog-brief-card">
+      <div class="blog-brief-card" style="background-image: url('uploads/<?php echo $row['photo1']; ?>'">
         <div class="blog-brief-card-picture">
           <div class="blog-brief-card-overlay">
             <div class="blog-brief-card-picture-section-content">
-              <p> </p>
+              <p> <?php echo $row['blog_title']?></p>
             </div>
           </div>
         </div>
         <div class="blog-brief-card-description">
           <p>
           <?php echo $teaser_title ?> ...
-            <a href="#">Read More</a>
           </p>
+          <form action="">
+            <input type="hidden" value="<?php echo $row['id'] ?>">
+            <p><a href="#">Read More</a></p>
+          </form>
         </div>
       </div>
 

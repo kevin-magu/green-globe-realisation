@@ -3,8 +3,10 @@
     margin-top: 50px;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     min-height: 100vh;
+}
+.page-title p {
+    margin-top: 20px;
 }
 body{
     background-color: #f5f5f5;
@@ -17,4 +19,13 @@ body{
 }
 .blog-brief-card{
     margin: 30px;
+}
+.blog-brief-card-description{
+    display: flexf;
+    flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+    .blog-brief-card-description{
+        font-size: 16px;
+    }
 }
