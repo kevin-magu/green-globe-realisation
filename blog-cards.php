@@ -65,8 +65,8 @@ $query_exe = mysqli_query($connection,$query);
         $wordArray = str_word_count($paragraph, 1); // Split paragraph into an array of words
         $teaser_title = implode(' ', array_slice($wordArray, 0, $wordsToRetrieve_title)); // Join the first 30 words
          ?>
-      <div class="blog-brief-card" style="background-image: url('uploads/<?php echo $row['photo1']; ?>'">
-        <div class="blog-brief-card-picture">
+      <div class="blog-brief-card">
+        <div class="blog-brief-card-picture" style="background-image: url('uploads/<?php echo $row['photo1']; ?>'">
           <div class="blog-brief-card-overlay">
             <div class="blog-brief-card-picture-section-content">
               <p> <?php echo $row['blog_title']?></p>
