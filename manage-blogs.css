@@ -1,24 +1,25 @@
 form{
+    display: flex;
     width: 100%;
+    flex-direction: column;
 }
 form textarea{
     height: 150px;
     width: 80%;
     
 }
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
 form input{
-    width: 200px;
+    width: 400px;
 }
 @media screen and (max-width:753px) {
     .main-links{
-        font-size: 10px;
+        font-size: 15px;
     }
     .main-links ul{
         flex-direction: column;
-    }
-}
-@media screen and (max-width:498px) {
-    .main-links{
-        font-size: 7px;
     }
 }

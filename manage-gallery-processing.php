@@ -23,6 +23,7 @@ if (isset($_POST['submit'])) {
     if (!move_uploaded_file($photo['tmp_name'], $destination)) {
         die("Failed to upload file.");
     }
+    
     $query = "INSERT INTO gallery(image_title,photo)VALUES('$image_title', '$filename')";
     $exe = mysqli_query($connection,$query);
     if ($exe) {

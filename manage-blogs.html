@@ -20,10 +20,12 @@
       <form action="manage-blogs-processing.php" method="POST" enctype="multipart/form-data">
         <fieldset>
           <legend>Make a new blog entry</legend>
+          <input type="text" name="blog_title" placeholder="Blog title">
           <textarea name="paragraph1" id="myTextarea" cols="30" rows="10" placeholder="introduction"></textarea>
           <textarea name="paragraph2" id="" cols="30" rows="10" placeholder="paragraph1"></textarea>
           <textarea name="paragraph3" id="" cols="30" rows="10" placeholder="paragraph2"></textarea>
           <textarea name="paragraph4" id="" cols="30" rows="10" placeholder="paragraph3"></textarea>
+           <input name="author" type="text" placeholder="author">
           <p>Choose 3 images related to the blog</p>
           <p><b>Choose image 1 </b><input name="photo1" type="file" /></p>
           <p><b>Choose image 2 </b><input name="photo2" type="file" /></p>
