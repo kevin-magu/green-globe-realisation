@@ -17,17 +17,18 @@
       <p><u>MANAGE BLOG</u></p>
     </div>
     <div class="form-container">
-      <form action="">
+      <form action="manage-blogs-processing.php" method="POST" enctype="multipart/form-data">
         <fieldset>
           <legend>Make a new blog entry</legend>
-          <textarea name="" id="myTextarea" cols="30" rows="10"></textarea>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <p><b>Choose image 1 </b><input type="file" /></p>
-          <p><b>Choose image 2 </b><input type="file" /></p>
-          <p><b>Choose image 3  </b><input type="file" /></p>
-          <button type="submit">UPLOAD</button>
+          <textarea name="paragraph1" id="myTextarea" cols="30" rows="10" placeholder="introduction"></textarea>
+          <textarea name="paragraph2" id="" cols="30" rows="10" placeholder="paragraph1"></textarea>
+          <textarea name="paragraph3" id="" cols="30" rows="10" placeholder="paragraph2"></textarea>
+          <textarea name="paragraph4" id="" cols="30" rows="10" placeholder="paragraph3"></textarea>
+          <p>Choose 3 images related to the blog</p>
+          <p><b>Choose image 1 </b><input name="photo1" type="file" /></p>
+          <p><b>Choose image 2 </b><input name="photo2" type="file" /></p>
+          <p><b>Choose image 3  </b><input name="photo3" type="file" /></p>
+          <button type="submit">POST</button>
         </fieldset>
       </form>
     </div>
@@ -43,29 +44,6 @@
         <a href="#"><li>GALLERY</li></a>
       </ul>
     </div>
-    <script>
-    function limitWords() {
-      var textarea = document.getElementById("myTextarea");
-      var wordCount = textarea.value.trim().split(/\s+/).length;
-      
-      // Define the maximum word count
-      var maxWords = 50;
-      
-      if (wordCount > maxWords) {
-        // Split the textarea value into an array of words
-        var words = textarea.value.trim().split(/\s+/);
-        
-        // Remove any extra words above the limit
-        words = words.slice(0, maxWords);
-        
-        // Join the words back into a string
-        var truncatedText = words.join("");
-        
-        // Update the textarea value with the truncated text
-        textarea.value = truncatedText;
-      }
-    }
-  </script>
 
   </body>
 </html>

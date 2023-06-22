@@ -9,3 +9,16 @@ form textarea{
 form input{
     width: 200px;
 }
+@media screen and (max-width:753px) {
+    .main-links{
+        font-size: 10px;
+    }
+    .main-links ul{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:498px) {
+    .main-links{
+        font-size: 7px;
+    }
+}
