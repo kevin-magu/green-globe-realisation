@@ -1,3 +1,13 @@
+<?php 
+ini_set ('display_errors', 1);
+include 'includes.php';
+$query = "SELECT * FROM blogs";
+$query_exe = mysqli_query($connection,$query);
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,25 +60,34 @@
   
     </div>
     <div class="blogs-container">
+      <?php if ($query_exe && mysqli_num_rows($query_exe) > 0) { ?>
+        <?php while ($row = mysqli_fetch_assoc($query_exe)) { ?>
+        <?php $wordsToRetrieve_title = 46;
+        $paragraph = $row['paragraph1'];
+        $wordArray = str_word_count($paragraph, 1); // Split paragraph into an array of words
+        $teaser_title = implode(' ', array_slice($wordArray, 0, $wordsToRetrieve_title)); // Join the first 30 words
+         ?>
       <div class="blog-brief-card">
         <div class="blog-brief-card-picture">
           <div class="blog-brief-card-overlay">
             <div class="blog-brief-card-picture-section-content">
-              <p>Exploring Trees, Nature, and Sustainable Living.</p>
+              <p> </p>
             </div>
           </div>
         </div>
         <div class="blog-brief-card-description">
           <p>
-            Uncover the wonders of tree species from around the world, explore
-            their unique characteristics, and learn how they contribute to our
-            ecosystem. Discover the fascinating interplay between nature and
-            sustainable living practices, as we dive into topics such as
-            eco-friendly homes, renewable energy, and ethical consumption...
+          <?php echo $teaser_title ?> ...
             <a href="#">Read More</a>
           </p>
         </div>
       </div>
+
+      <?php }?> 
+
+      <?php  } else{
+        echo "THERE ARE NO BLOGS YET";
+      } ?>
     </div>
     <footer>
       <div class="footer-upper-column">
