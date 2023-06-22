@@ -73,6 +73,9 @@ nav{
     font-size: 22px;
     margin-top: 10px;
 }
+.author{
+    margin-top: 30px;
+}
 @media screen and (max-width:943px) {
     .specific-blog-pictures{
         flex-direction: column;
