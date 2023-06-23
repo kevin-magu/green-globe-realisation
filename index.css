@@ -994,11 +994,12 @@ footer ul li i {
     font-size: 8px;
   }
 .about-us-navigation-column1{
-  margin-left: 75px;
+  transform: scale(.7);
   overflow: hidden;
+
 }
 .about-us-navigation-column2{
-  margin-left: 90px;
+  transform: scale(.7);
   overflow: hidden;
 }
   .nav2 i{
