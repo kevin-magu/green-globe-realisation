@@ -993,7 +993,12 @@ footer ul li i {
     width: 90%;
     font-size: 8px;
   }
-
+.about-us-navigation-column1{
+  margin-left: 90px;
+}
+.about-us-navigation-column2{
+  margin-left: 100px;
+}
   .nav2 i{
     color: #070c07;
   }
