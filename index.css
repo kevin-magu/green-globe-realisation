@@ -995,9 +995,11 @@ footer ul li i {
   }
 .about-us-navigation-column1{
   margin-left: 75px;
+  overflow: hidden;
 }
 .about-us-navigation-column2{
   margin-left: 90px;
+  overflow: hidden;
 }
   .nav2 i{
     color: #070c07;
