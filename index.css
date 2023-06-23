@@ -341,6 +341,7 @@ html {
   margin-bottom: 50px;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin-top: 0px;
 }
 .event-brief-card {
@@ -353,6 +354,12 @@ html {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  font-family: "Roboto Flex", sans-serif;
+}
+.evend-card2{
+  width: 40%;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 23px;
 }
 .event-brief-card:hover {
   cursor: pointer;
