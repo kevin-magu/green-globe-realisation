@@ -156,10 +156,13 @@ html {
   color: #0B8517;
   font-weight: bolder;
 }
+.about-us-main-title p{
+  margin-top: 30px;
+}
 
 .about-us-main-title p {
-  font-size: 45px;
-  font-family: "Genos", sans-serif;
+  font-size: 30px;
+  font-family: "Roboto Flex", sans-serif;
   font-size: 30px;
   color: #0c690c;
   font-weight: bold;
@@ -356,10 +359,13 @@ html {
   display: flex;
   color: #0B8517;
   background-color: #f5f5f5;
-  font-size: 40px;
+  font-size: 30px;
   justify-content: center;
-  font-family: "Genos", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   font-weight: bold;
+}
+.events-brief-title p{
+  margin-top: 30px;
 }
 .events-container {
   display: flex;
@@ -470,6 +476,7 @@ html {
   justify-content: center;
   flex-wrap: wrap;
   max-width: 100%;
+  margin-top: 30px;
 }
 
 .gallery-brief-card {
@@ -499,7 +506,7 @@ html {
   all: unset;
 }
 .gallery-description-title p {
-  font-size: 27px;
+  font-size: 30px;
   font-family: "Roboto Flex", sans-serif;
   font-weight: bolder;
   color: #0b8517;
@@ -551,15 +558,16 @@ html {
   margin-bottom: 50px;
 }
 .blogs-brief-title {
-  font-size: 38px;
+  font-size: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Genos", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   color: #0B8517;
   font-weight: bold;
 }
+
 #blogs-brief {
   background-color: #f5f5f5;
 }
