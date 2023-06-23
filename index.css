@@ -36,6 +36,10 @@ html {
   font-family: "Genos", sans-serif;
   background-color: white;
 }
+.nav1 i{
+  color: #03FF3A;
+  transform: scale(.9);
+}
 .nav1 a {
   color: #070c07;
   font-weight: bold;
@@ -724,17 +728,11 @@ footer ul li i {
   .main-page-col-1 #p1 {
     font-size: 35px;
   }
-  .nav2{
-    display: none;
-  }
   #p2 p {
     font-size: 23px;
   }
 }
 @media screen and (max-width: 1270px) {
-  .nav2{
-    display: none;
-  }
   .nav2 i{
     color: #070c07;
   }
@@ -747,13 +745,15 @@ footer ul li i {
   }
 }
 @media screen and (max-width: 1210px) {
-  .nav2{
-    display: none;
-  }
   .about-us-info-container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .evend-card2{
+    width: 80%;
+    text-align: center;
+    margin-top: 40px;
   }
   .about-us-info-container svg {
     width: 120px;
@@ -820,9 +820,6 @@ footer ul li i {
   .footer-upper-column {
     flex-direction: column;
   }
-  .nav2{
-    display: none;
-  }
   .upper-column-section2 {
     margin-top: 20px;
   }
@@ -830,15 +827,15 @@ footer ul li i {
     margin-left: 0;
   }
 }
-@media screen and (max-width: 965px) {
+@media screen and (max-width: 1065px) {
   .nav1{
     display: none;
   }
   .menu-bars{
     display: block;
   }
- 
   .nav2{
+    display: block;
     position: absolute;
     border-radius: 3px;
     top: 6%;
@@ -852,19 +849,15 @@ footer ul li i {
     animation: widthgrow 0.7s ease-in-out;
     background-color: #ffffff;
   }
-@keyframes widthgrow {
-  0%{
-    width: 0%;
+  .nav2 a {
+    color: #070c07;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    width: auto;
+    margin-left: 50px;
   }
-  100%{
-    width: 230px;
-  }
-}
-@keyframes ul-opacity {
-  0%{
-    opacity: 0%;
-  }
-}
+
   .nav2 ul{
     margin-bottom: 50px;
     flex-direction: column;
@@ -889,22 +882,27 @@ footer ul li i {
     height: 20px;
     margin-top: 40px;
   }
-  
- 
-  .main-page-col-1 {
+  @keyframes widthgrow {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 230px;
+    }
+  }
+  @keyframes ul-opacity {
+    0%{
+      opacity: 0%;
+    }
+  }
+}
+@media screen and (max-width: 965px) {
+.main-page-col-1 {
     width: 100%;
     font-family: "Roboto Flex", sans-serif;
     font-size: 35px;
   }
 
-  .nav2 a {
-    color: #070c07;
-    font-weight: bold;
-    text-decoration: none;
-    list-style: none;
-    width: auto;
-    margin-left: 50px;
-  }
   .main-page-col-1 #p1 {
     align-items: center;
     font-size: 28px;
