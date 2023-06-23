@@ -864,7 +864,7 @@ footer ul li i {
     height: 100vh;
   }
   .nav2{
-    display: block;
+    display: none;
     position: absolute;
     border-radius: 3px;
     top: 6%;
