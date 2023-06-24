@@ -12,7 +12,7 @@ nav{
     display: flex;
     flex-direction: row;
     margin: 50px;
-    text-align: center;
+    text-align: left;
     font-family: "Roboto Flex", sans-serif;
     min-height: 100vh;
 }
