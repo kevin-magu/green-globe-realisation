@@ -34,6 +34,16 @@ nav{
     background-size: cover;
     background-position: center;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-header P{
+    font-size: 30px;
+    color: white;
+    z-index: 1;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: bold;
 }
 .blog-header .overlay{
     position: absolute;
