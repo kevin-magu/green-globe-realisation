@@ -1,3 +1,4 @@
 changes
 --- footer office number
 --- finish the blog page design
+--- make the payment system
