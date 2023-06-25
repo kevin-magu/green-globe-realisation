@@ -69,7 +69,7 @@ $query_exe2 = mysqli_query($connection,$query2);
        $teaser_title = implode(' ', array_slice($wordArray, 0, $wordsToRetrieve_title)); // Join the first 30 words
          ?>
       <div class="blog-brief-card">
-        <div class="blog-brief-card-picture" style="background-image: url('uploads/<?php echo $row['photo1']; ?>');
+        <div class="blog-brief-card-picture" style="background-image: url('uploads/<?php echo $row['photo3']; ?>');
            background-repeat: no-repeat;
            background-position: center;">
 
