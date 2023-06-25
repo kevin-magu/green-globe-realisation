@@ -10,7 +10,6 @@ nav{
 }
 .blog-container{
     display: flex;
-    flex-direction: row;
     margin: 50px;
     text-align: left;
     font-family: "Roboto Flex", sans-serif;
@@ -91,7 +90,16 @@ nav{
 }
 @media screen and (max-width:1255px) {
     .blog-container{
+        display: flex;
         flex-direction: column;
+    }
+    .specific-blog-pictures{
+        flex-direction: row;
+        width: 100%;
+    }
+    .blog-text-content{
+        width: 100%;
+        
     }
 }
 @media screen and (max-width:943px) {
