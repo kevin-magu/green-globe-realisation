@@ -25,7 +25,7 @@ $query_exe = mysqli_query($connection,$query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BLOGS</title>
   </head>
-  <body style="background-image: url('uploads/<?php echo $row['photo1']; ?>');">
+  <body>
     <nav class="nav1">
       <ul>
         <a href=""><li>Home</li></a>
@@ -66,7 +66,10 @@ $query_exe = mysqli_query($connection,$query);
         $teaser_title = implode(' ', array_slice($wordArray, 0, $wordsToRetrieve_title)); // Join the first 30 words
          ?>
       <div class="blog-brief-card">
-        <div class="blog-brief-card-picture" style="background-image: url('uploads/<?php echo $row['photo1']; ?>');">
+        <div class="blog-brief-card-picture" style="background-image: url('uploads/<?php echo $row['photo1']; ?>');
+           background-repeat: no-repeat;
+           background-position: center;">
+
           <div class="blog-brief-card-overlay">
             <div class="blog-brief-card-picture-section-content">
               <p> <?php echo $row['blog_title']?></p>
