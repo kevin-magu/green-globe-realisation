@@ -132,6 +132,7 @@ html {
 }
 .main-page-col-2{
   position: relative;
+  opacity: 50%;
 }
 
 .read-more-articles {
