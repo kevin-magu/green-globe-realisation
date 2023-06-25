@@ -2,7 +2,9 @@
 ini_set ('display_errors', 1);
 include 'includes.php';
 $query = "SELECT * FROM blogs";
+$query2 = "SELECT * FROM gallery";
 $query_exe = mysqli_query($connection,$query);
+$query_exe2 = mysqli_query($connection,$query2);
 
 ?>
 
@@ -26,6 +28,7 @@ $query_exe = mysqli_query($connection,$query);
     <title>BLOGS</title>
   </head>
   <body>
+
     <nav class="nav1">
       <ul>
         <a href=""><li>Home</li></a>
@@ -61,12 +64,12 @@ $query_exe = mysqli_query($connection,$query);
       <?php if ($query_exe && mysqli_num_rows($query_exe) > 0) { ?>
         <?php while ($row = mysqli_fetch_assoc($query_exe)) { ?>
         <?php $wordsToRetrieve_title = 46;
-        $paragraph = $row['paragraph1'];
-        $wordArray = str_word_count($paragraph, 1); // Split paragraph into an array of words
-        $teaser_title = implode(' ', array_slice($wordArray, 0, $wordsToRetrieve_title)); // Join the first 30 words
+       $paragraph = $row['paragraph1'];
+       $wordArray = str_word_count($paragraph, 1); // Split paragraph into an array of words
+       $teaser_title = implode(' ', array_slice($wordArray, 0, $wordsToRetrieve_title)); // Join the first 30 words
          ?>
       <div class="blog-brief-card">
-        <div class="blog-brief-card-picture" style="background-image: url('uploads/<?php echo $row['photo2']; ?>');
+        <div class="blog-brief-card-picture" style="background-image: url('uploads/<?php echo $row['photo1']; ?>');
            background-repeat: no-repeat;
            background-position: center;">
 
