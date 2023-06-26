@@ -5,7 +5,7 @@ $query = "SELECT * FROM blogs";
 $query2 = "SELECT * FROM gallery";
 $query_exe = mysqli_query($connection,$query);
 $query_exe2 = mysqli_query($connection,$query2);
-
+$row2=mysqli_fetch_assoc($query_exe2);
 ?>
 
 
@@ -69,7 +69,7 @@ $query_exe2 = mysqli_query($connection,$query2);
        $teaser_title = implode(' ', array_slice($wordArray, 0, $wordsToRetrieve_title)); // Join the first 30 words
          ?>
       <div class="blog-brief-card">
-        <div class="blog-brief-card-picture" style="background-image: url('uploads/<?php echo $row['photo3']; ?>');
+        <div class="blog-brief-card-picture" style="background-image: url('uploads/<?php echo $row2['photo']; ?>');
            background-repeat: no-repeat;
            background-position: center;">
 

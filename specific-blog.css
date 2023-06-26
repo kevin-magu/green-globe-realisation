@@ -67,20 +67,10 @@ nav{
     transform: scale(1.1);
 }
 .blog-picture-card1{
-    background: url(images/ceo-watering-trees.jpeg);
     background-position: center;
     background-size: cover;
 }
-.blog-picture-card2{
-    background: url(images/ceo-watering-trees.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-.blog-picture-card3{
-    background: url(images/ceo-watering-trees.jpeg);
-    background-position: center;
-    background-size: cover;
-}
+
 .blog-conclusion{
     font-size: 22px;
     margin-top: 10px;

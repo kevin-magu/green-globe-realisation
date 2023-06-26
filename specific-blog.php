@@ -91,8 +91,7 @@ if (isset($_POST['read-more'])) {
       </div>
       <div class="specific-blog-pictures">
         <div class="blog-picture-card blog-picture-card1" style="background-image: url('uploads/<?php echo $row['photo3']; ?>');"></div>
-        <div class="blog-picture-card blog-picture-card2" style="background-image: url('uploads/<?php echo $row['photo2']; ?>');"></div>
-        <div class="blog-picture-card blog-picture-card3" style="background-image: url('uploads/<?php echo $row['photo1']; ?>');"></div>
+        
       </div>
     </div>
 
