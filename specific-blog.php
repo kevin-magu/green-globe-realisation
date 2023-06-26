@@ -5,6 +5,7 @@ if (isset($_POST['read-more'])) {
   $blog_id = $_POST['id'];
   $query = "SELECT * FROM blogs WHERE id= $blog_id";
   $query_exe = mysqli_query($connection,$query);
+  $row = mysqli_fetch_assoc($query_exe);
 }else{
   header("location: blog-cards.php");
 }
@@ -27,7 +28,7 @@ if (isset($_POST['read-more'])) {
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Specific Blog</title>
+    <title><?php echo $row['blog_title'] ?></title>
   </head>
   <body>
     <?php echo $blog_id ?>
@@ -62,7 +63,7 @@ if (isset($_POST['read-more'])) {
 
     <div class="blog-header">
       <div class="overlay"></div>
-      <p>PLANTING TREES</p> <br>
+      <p><?php echo $row['blog_title']  ?></p> <br>
       <p><h4>GGR BLOGS</h4></p>
     </div>
     <div class="blog-container">
