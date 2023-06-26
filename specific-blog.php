@@ -31,7 +31,6 @@ if (isset($_POST['read-more'])) {
     <title><?php echo $row['blog_title'] ?></title>
   </head>
   <body>
-    <?php echo $blog_id ?>
     <nav class="nav1">
       <ul>
         <a href=""><li>Home</li></a>
@@ -63,28 +62,34 @@ if (isset($_POST['read-more'])) {
 
     <div class="blog-header">
       <div class="overlay"></div>
-      <p><?php echo $row['blog_title']  ?></p> <span>  </span>
-      <p><h4 style="color: white; z-index: 1;">GGR BLOGS</h4></p>
+      <p><?php echo $row['blog_title']  ?></p> <span></span>
+      <p><h4 style="color: white; z-index: 1;
+      position: absolute;
+      top: 0; left: 0;
+      ">GGR BLOGS</h4></p>
     </div>
     <div class="blog-container">
       <div class="blog-text-content">
       <div class="blog-introduction">
         <p>
-          
+          <?php echo $_POST['paragraph1']; 
+          echo $_POST['paragraph2'];
+          echo $_POST['paragraph3'];
+          ?>
         </p>
       </div>
       <div class="blog-conclusion">
         <p>
              
-          </p>
+        </p>
       </div>
 
       <p class="author"><b>Author: <i>Farah Ali</i></b></p>
       </div>
       <div class="specific-blog-pictures">
-        <div class="blog-picture-card blog-picture-card1"></div>
-        <div class="blog-picture-card blog-picture-card2"></div>
-        <div class="blog-picture-card blog-picture-card3"></div>
+        <div class="blog-picture-card blog-picture-card1" style="background-image: url('uploads/<?php echo $row['photo3']; ?>');"></div>
+        <div class="blog-picture-card blog-picture-card2" style="background-image: url('uploads/<?php echo $row['photo2']; ?>');"></div>
+        <div class="blog-picture-card blog-picture-card3" style="background-image: url('uploads/<?php echo $row['photo1']; ?>');"></div>
       </div>
     </div>
 
