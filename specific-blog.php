@@ -90,7 +90,10 @@ if (isset($_POST['read-more'])) {
       <p class="author"><b>Author: <i><?php echo $row['author'] ?></i></b></p>
       </div>
       <div class="specific-blog-pictures">
-        <div class="blog-picture-card blog-picture-card1" style="background-image: url('uploads/<?php echo $row['photo3']; ?>');"></div>
+        <div class="blog-picture-card blog-picture-card1" style="background-image: url('uploads/<?php echo $row['photo1']; ?>');
+        background-repeat: no-repeat;
+           background-position: center;
+        "></div>
         
       </div>
     </div>

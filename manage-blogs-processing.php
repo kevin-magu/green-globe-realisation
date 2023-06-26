@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
          die("Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed.");
      }
 
-     if (($photo1['size'] > $max_size) || ($photo2['size'] > $max_size) || ($photo3['size'] > $max_size)) {
+     if (($photo1['size'] > $max_size)) {
          die("File size limit exceeded. Maximum file size is 5MB.");
      }
      // Save file
