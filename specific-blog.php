@@ -72,19 +72,22 @@ if (isset($_POST['read-more'])) {
       <div class="blog-text-content">
       <div class="blog-introduction">
         <p>
-          <?php echo $_POST['paragraph1']; 
-          echo $_POST['paragraph2'];
-          echo $_POST['paragraph3'];
+          <?php echo $row['paragraph1']; 
           ?>
         </p>
       </div>
       <div class="blog-conclusion">
         <p>
-             
+        <?php echo $row['paragraph2'];?>
+        </p>
+      </div>
+      <div class="blog-conclusion">
+        <p>
+        <?php echo $row['paragraph3'];?>
         </p>
       </div>
 
-      <p class="author"><b>Author: <i>Farah Ali</i></b></p>
+      <p class="author"><b>Author: <i><?php echo $row['author'] ?></i></b></p>
       </div>
       <div class="specific-blog-pictures">
         <div class="blog-picture-card blog-picture-card1" style="background-image: url('uploads/<?php echo $row['photo3']; ?>');"></div>
