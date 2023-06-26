@@ -2,8 +2,8 @@
 ini_set('display_errors', 1);
 include 'includes.php';
 if (isset($_POST['read-more'])) {
-  $blog_id=$_POST['id'];
-  $query = "SELECT * FROM blogs WHERE id=$blog_id";
+  $blog_id = $_POST['id'];
+  $query = "SELECT * FROM blogs WHERE id= $blog_id";
   $query_exe = mysqli_query($connection,$query);
 }else{
   header("location: blog-cards.php");
