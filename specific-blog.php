@@ -63,8 +63,8 @@ if (isset($_POST['read-more'])) {
 
     <div class="blog-header">
       <div class="overlay"></div>
-      <p><?php echo $row['blog_title']  ?></p> <br>
-      <p><h4>GGR BLOGS</h4></p>
+      <p><?php echo $row['blog_title']  ?></p> <span>  </span>
+      <p><h4 style="color: white; z-index: 1;">GGR BLOGS</h4></p>
     </div>
     <div class="blog-container">
       <div class="blog-text-content">
@@ -75,28 +75,7 @@ if (isset($_POST['read-more'])) {
       </div>
       <div class="blog-conclusion">
         <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-            reiciendis dolor, soluta exercitationem praesentium est architecto
-            corrupti cupiditate. Fuga beatae, deserunt saepe et modi placeat
-            incidunt quaerat. Voluptatum, magni sapiente. Lorem, ipsum dolor sit
-            amet consectetur adipisicing elit. Voluptatum architecto ducimus
-            debitis tenetur praesentium ut, culpa ipsam, earum nobis at deleniti
-            nostrum odit aliquam libero obcaecati ratione rerum adipisci possimus
-            reiciendis. Delectus reiciendis rem accusantium sed nobis eos optio
-            laborum quia exercitationem magnam expedita consequatur repellendus,
-            nisi ipsum totam accusamus dolore, blanditiis molestiae! Fugiat illo
-            nesciunt blanditiis reiciendis recusandae, neque voluptates delectus
-            in, esse provident iure. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Cupiditate, quaerat! Cupiditate asperiores
-            reiciendis enim, maxime aspernatur temporibus ea itaque labore esse
-            voluptatum molestiae tempore iusto perferendis laborum ipsam corrupti
-            illo accusantium similique veniam libero sapiente saepe quaerat sint.
-            Maiores accusantium itaque, quia ducimus nobis iusto eum veniam et
-            doloremque? Sit similique animi, neque expedita error natus doloribus
-            harum voluptas corporis perspiciatis unde ipsam magni iure iste
-            sapiente eos quisquam, veritatis optio saepe? Molestiae possimus,
-            fugit dignissimos maiores qui, odit quidem architecto accusantium
-            debitis a sapiente ipsa. 
+             
           </p>
       </div>
 
