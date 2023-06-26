@@ -83,9 +83,9 @@ $query_exe2 = mysqli_query($connection,$query2);
           <p>
           <?php echo $teaser_title ?> ...
           </p>
-          <form action="">
-            <input type="hidden" value="<?php echo $row['id'] ?>">
-            <p><a href="#">Read More</a></p>
+          <form action="specific-blog.php" method="POST">
+            <input type="text" name= 'id' value="<?php echo $row['id'] ?>">
+            <button type='submit' name='read-more'>Read more </button>
           </form>
         </div>
       </div>

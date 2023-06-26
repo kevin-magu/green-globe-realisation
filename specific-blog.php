@@ -1,3 +1,17 @@
+<?php 
+ini_set('display_errors', 1);
+include 'includes.php';
+if (isset($_POST['read-more'])) {
+  $blog_id=$_POST['id'];
+  $query = "SELECT * FROM blogs WHERE id=$blog_id";
+  $query_exe = mysqli_query($connection,$query);
+}else{
+  header("location: blog-cards.php");
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,6 +30,7 @@
     <title>Specific Blog</title>
   </head>
   <body>
+    <?php echo $blog_id ?>
     <nav class="nav1">
       <ul>
         <a href=""><li>Home</li></a>
@@ -54,28 +69,7 @@
       <div class="blog-text-content">
       <div class="blog-introduction">
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-          reiciendis dolor, soluta exercitationem praesentium est architecto
-          corrupti cupiditate. Fuga beatae, deserunt saepe et modi placeat
-          incidunt quaerat. Voluptatum, magni sapiente. Lorem, ipsum dolor sit
-          amet consectetur adipisicing elit. Voluptatum architecto ducimus
-          debitis tenetur praesentium ut, culpa ipsam, earum nobis at deleniti
-          nostrum odit aliquam libero obcaecati ratione rerum adipisci possimus
-          reiciendis. Delectus reiciendis rem accusantium sed nobis eos optio
-          laborum quia exercitationem magnam expedita consequatur repellendus,
-          nisi ipsum totam accusamus dolore, blanditiis molestiae! Fugiat illo
-          nesciunt blanditiis reiciendis recusandae, neque voluptates delectus
-          in, esse provident iure. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Cupiditate, quaerat! Cupiditate asperiores
-          reiciendis enim, maxime aspernatur temporibus ea itaque labore esse
-          voluptatum molestiae tempore iusto perferendis laborum ipsam corrupti
-          illo accusantium similique veniam libero sapiente saepe quaerat sint.
-          Maiores accusantium itaque, quia ducimus nobis iusto eum veniam et
-          doloremque? Sit similique animi, neque expedita error natus doloribus
-          harum voluptas corporis perspiciatis unde ipsam magni iure iste
-          sapiente eos quisquam, veritatis optio saepe? Molestiae possimus,
-          fugit dignissimos maiores qui, odit quidem architecto accusantium
-          debitis a sapiente ipsa. 
+          
         </p>
       </div>
       <div class="blog-conclusion">
