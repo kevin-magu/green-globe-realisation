@@ -8,11 +8,11 @@
     <title>Admin-Login</title>
 </head>
 <body>
-    <form action="admin-login-processing.php" method="post">
+    <form action="admin-login-processing.php" method="POST">
         <p>GGR LOGIN </p>
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
-        <button type="submit">Login </button>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="text" name="password" placeholder="Password" required>
+        <button name="login" type="submit">Login</button>
     </form>
 </body>
 </html>
