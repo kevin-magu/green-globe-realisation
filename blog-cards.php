@@ -84,7 +84,7 @@ $row2=mysqli_fetch_assoc($query_exe2);
           <?php echo $teaser_title ?> ...
           </p>
           <form action="specific-blog.php" method="POST">
-            <input type="text" name= 'id' value="<?php echo $row['id'] ?>">
+            <input type="hidden" name= 'id' value="<?php echo $row['id'] ?>">
             <button type='submit' name='read-more'>Read more </button>
           </form>
         </div>

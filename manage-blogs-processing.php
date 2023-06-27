@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
     $photo1 = $_FILES['photo1'];
 
      $allowed_types = array('jpg', 'jpeg', 'png', 'gif');
-     $max_size = 5 * 1024 * 1024; // 5MB
+     $max_size = 2 * 1024 * 1024; // 5MB
 
      $filename_1 = $photo1['name'];
      $file_ext_1 = pathinfo($filename_1, PATHINFO_EXTENSION);
@@ -21,7 +21,7 @@ if (isset($_POST['submit'])) {
      }
 
      if (($photo1['size'] > $max_size)) {
-         die("File size limit exceeded. Maximum file size is 5MB.");
+         die("File size limit exceeded. Maximum file size is 2MB.");
      }
      // Save file
      $filename_1 = uniqid().'.'.$file_ext_1;
