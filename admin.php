@@ -1,3 +1,10 @@
+<?php 
+if (isset($_POST['login'])) {
+    
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,5 +41,8 @@
         <a href="#"><li>GALLERY</li></a>
     </ul>
 </div>
+<?php }else{
+    header("location: admin-login.php");
+    }?>
 </body>
 </html>

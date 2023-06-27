@@ -36,11 +36,13 @@ if (isset($_POST['login'])) {
     // Validate the credentials
     if (validateCredentials($connection, $username, $password)) {
         // Successful login
-        echo "Login successful!";
+        header("location: admin.html");
         // Redirect to admin dashboard or perform necessary actions
     } else {
         // Invalid username or password
         $_SESSION['error'] ="Invalid username or password";
+        header("location: admin-login.php");
+        exit();
 }
 }
 ?>
