@@ -40,7 +40,7 @@ if (isset($_POST['login'])) {
         // Redirect to admin dashboard or perform necessary actions
     } else {
         // Invalid username or password
-        echo "invalid username or password";
+        $_SESSION['error'] ="Invalid username or password";
 }
 }
 ?>

@@ -49,12 +49,11 @@ if (isset($_POST['create'])) {
     <title>New admin</title>
 </head>
 <body>
-<form action="admin-login-processing.php" method="post" enctype="multipart/form-data">
+<form action="" method="post" enctype="multipart/form-data">
         <p>CREATE A NEW ADMIN USER</p>
-      
         <input type="text" name="username" placeholder="Username" required>
         <input type="text" name="password" placeholder="Password" required>
-        <button name="login" type="submit">Register</button>
+        <button name="create" type="submit">Register</button>
     </form>
-</body>
+</body>Login successful
 </html>
