@@ -50,10 +50,10 @@ if (isset($_POST['create'])) {
 </head>
 <body>
 <form action="" method="post" enctype="multipart/form-data">
-        <p>CREATE A NEW ADMIN USER</p>
+        <p>GGR.CREATE A NEW ADMIN USER</p>
         <input type="text" name="username" placeholder="Username" required>
         <input type="text" name="password" placeholder="Password" required>
         <button name="create" type="submit">Register</button>
     </form>
-</body>Login successful
+</body>
 </html>
