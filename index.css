@@ -27,7 +27,7 @@ html {
   background-size: cover;
   overflow: hidden;
   justify-content: center;
-  min-height: 90vh;
+  height: 100vh;
 }
 .nav1 {
   justify-content: center;
@@ -942,9 +942,10 @@ footer ul li i {
 }
 @media screen and (max-width: 965px) {
   .main-page-col-1 {
-    width: 88%;
+    width: 90%;
     font-family: "Roboto Flex", sans-serif;
     font-size: 35px;
+    margin-left: 30px;
   }
 
   .main-page-col-1 #p1 {
