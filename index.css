@@ -456,13 +456,14 @@ html {
   z-index: 1;
   bottom: -16px;
   left: 0;
-  background-color: #31fd46;
+  background-color: #139620;
   outline: none;
   border: none;
   font-size: 20px;
   border-radius: 6px;
   font-family: "Genos", sans-serif;
   font-weight: bold;
+  color: white;
 }
 
 .event-brief-card-button:hover {
@@ -553,7 +554,7 @@ html {
 }
 .gallery-brief-button {
   padding: 7px;
-  background-color: #31fd46;
+  background-color: #139620;
   border: none;
   font-family: "Genos", sans-serif;
   font-size: 18px;
@@ -1083,8 +1084,9 @@ footer ul li i {
   .nav2 i {
     color: #070c07;
   }
-  .movements-title {
-    font-size: 32px;
+  .movements-title p{
+    font-size: 30px;
+    margin-left: 26px;
   }
   .movements .p2,
   .p3 {
