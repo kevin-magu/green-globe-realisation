@@ -21,40 +21,38 @@ $result = mysqli_query($connection,$query);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upcoming Events</title>
+    <title >Upcoming Events</title>
 </head>
 <body>
   <nav class="nav1">
     <ul>
-      <a href=""><li>Home</li></a>
-      <a href="#aboutus"><li>About Us</li></a>
-      <a href="#events"><li>Events</li></a>
-      <a href=""><li>Blog</li></a>
-      <a href=""><li>Donate</li></a>
-      <a href=""><li>Contacts</li></a>
+      <a href="index.html"><li><i class="fa-solid fa-house"></i> Home</li></a>
+      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i>Blogs</li></a>
+      <a href="#contact"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
+      <a href="#contact"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
     </ul>
   </nav>
   
   <nav class="nav2">
     <ul>
-      <a href=""><li>Home</li></a>
-      <a href="#aboutus"><li>About Us</li></a>
-      <a href="#events"><li>Events</li></a>
-      <a href=""><li>Blog</li></a>
-      <a href=""><li>Donate</li></a>
-      <a href=""><li>Contacts</li></a>
+      <a href="index.html"><li><i class="fa-solid fa-house"></i> Home</li></a>
+      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i>Blogs</li></a>
+      <a href="#contact"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
+      <a href="#contact"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
     </ul>
     <p>Plant For The Planet</p>
   </nav>
   <div class="menu-div">
-    <i class="fa-solid fa-bars menu-bars"></i>
+    <i class="fa-solid fa-bars menu-bars" style="color: black; margin-top: 40px;"></i>
   </div>
   <div class="menu-div">
-    <i class="fa-solid fa-xmark cancel-bars"></i>
+    <i class="fa-solid fa-xmark cancel-bars" style="color: black; margin-top: 40px;"></i>
   </div>
 
-      <div class="upcoming-events-title">
-        Upcoming Events
+      <div class="upcoming-events-main-page-title">
+        <p>Upcoming Events</p>
       </div>
       <div class="upcoming-events-container">
         <?php 
