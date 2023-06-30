@@ -1051,6 +1051,10 @@ footer ul li i {
   .gallery-description-title p{
     font-size: 23px;
   }
+  
+  .centered-button{
+    margin-left: 40px;
+  }
   .read-more-articles a{
     width: 90%;
     justify-content: center;
