@@ -2,7 +2,6 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 body {
@@ -30,7 +29,7 @@ html {
   justify-content: center;
   height: 100vh;
 }
-.nav1{
+.nav1 {
   justify-content: center;
   display: flex;
   align-items: center;
@@ -38,9 +37,9 @@ html {
   font-family: "Genos", sans-serif;
   background-color: white;
 }
-.nav1 i{
-  color: #03FF3A;
-  transform: scale(.9);
+.nav1 i {
+  color: #03ff3a;
+  transform: scale(0.9);
 }
 .nav1 a {
   color: #070c07;
@@ -59,16 +58,16 @@ html {
   position: relative;
 }
 
-.nav2{
+.nav2 {
   display: none;
 }
-.nav2 i{
+.nav2 i {
   color: black;
 }
-.nav1 ul a:hover{
+.nav1 ul a:hover {
   color: green;
 }
-.cancel-bars{
+.cancel-bars {
   transform: scale(2);
   margin-top: 20px;
   color: white;
@@ -92,7 +91,7 @@ html {
   position: relative;
 }
 
-.main-page-container .overlay{
+.main-page-container .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -102,14 +101,14 @@ html {
   z-index: 0.6;
 }
 .main-page-col-1 #p1 {
-  font-size: 49px;
+  font-size: 43px;
   font-weight: bolder;
   color: #03ff3a;
   display: flex;
   justify-content: center;
   padding: 5px;
   flex-direction: column;
-  font-family: 'Cinzel', serif;
+  font-family: "Cinzel", serif;
   z-index: 1;
   position: relative;
 }
@@ -131,7 +130,7 @@ html {
   font-size: 30px;
   font-weight: bold;
 }
-.main-page-col-2{
+.main-page-col-2 {
   position: relative;
   opacity: 50%;
 }
@@ -154,10 +153,10 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
-  color: #0B8517;
+  color: #0b8517;
   font-weight: bolder;
 }
-.about-us-main-title p{
+.about-us-main-title p {
   margin-top: 30px;
 }
 
@@ -196,14 +195,15 @@ html {
 .areas-of-focus {
   display: none;
 }
-.areas-of-focus-card{
+.areas-of-focus-card {
   background: url(images/areas-of-focus-pic.jpg);
   background-position: center;
   background-size: cover;
 }
 .partnerships {
   display: none;
-}.partnerships-card{
+}
+.partnerships-card {
   background: url(images/handshake.jpg);
   background-position: center;
   background-size: contain;
@@ -213,7 +213,7 @@ html {
 .vision {
   display: none;
 }
-.vision-card{
+.vision-card {
   background: url(images/vision.jpeg);
   background-position: center;
   background-size: cover;
@@ -221,15 +221,15 @@ html {
 .core-values {
   display: none;
 }
-.core-values-card{
+.core-values-card {
   background: url(images/watering-a-tree.jpg);
   background-position: center;
   background-size: cover;
 }
-.success-stories{
+.success-stories {
   display: none;
 }
-.success-card{
+.success-card {
   width: 360px;
   height: 300px;
   background-repeat: no-repeat;
@@ -358,14 +358,14 @@ html {
 }
 .events-brief-title {
   display: flex;
-  color: #0B8517;
+  color: #0b8517;
   background-color: #f5f5f5;
   font-size: 30px;
   justify-content: center;
   font-family: "Roboto Flex", sans-serif;
   font-weight: bold;
 }
-.events-brief-title p{
+.events-brief-title p {
   margin-top: 30px;
 }
 .events-container {
@@ -389,7 +389,7 @@ html {
   justify-content: center;
   font-family: "Roboto Flex", sans-serif;
 }
-.evend-card2{
+.evend-card2 {
   width: 40%;
   font-family: "Roboto Flex", sans-serif;
   font-size: 23px;
@@ -565,7 +565,7 @@ html {
   justify-content: center;
   align-items: center;
   font-family: "Roboto Flex", sans-serif;
-  color: #0B8517;
+  color: #0b8517;
   font-weight: bold;
 }
 
@@ -600,8 +600,7 @@ html {
   font-size: 20px;
   text-decoration: none;
 }
-.blog-brief-hero-text-button a{
- 
+.blog-brief-hero-text-button a {
 }
 .blog-brief-svg {
   transform: scale(0.6);
@@ -768,7 +767,7 @@ footer ul li i {
   }
 }
 @media screen and (max-width: 1270px) {
-  .nav2 i{
+  .nav2 i {
     color: #070c07;
   }
   .gallery-brief-container {
@@ -785,7 +784,7 @@ footer ul li i {
     justify-content: center;
     align-items: center;
   }
-  .evend-card2{
+  .evend-card2 {
     width: 80%;
     text-align: center;
     margin-top: 40px;
@@ -863,20 +862,20 @@ footer ul li i {
   }
 }
 @media screen and (max-width: 1065px) {
-  .nav1{
+  .nav1 {
     display: none;
   }
-  .menu-bars{
+  .menu-bars {
     display: block;
     z-index: 1;
   }
-  .cancel-bars{
+  .cancel-bars {
     z-index: 1;
   }
-  .main-page-container .overlay{
+  .main-page-container .overlay {
     height: 100vh;
   }
-  .nav2{
+  .nav2 {
     display: none;
     position: absolute;
     border-radius: 3px;
@@ -900,7 +899,7 @@ footer ul li i {
     margin-left: 50px;
   }
 
-  .nav2 ul{
+  .nav2 ul {
     margin-bottom: 50px;
     flex-direction: column;
     display: flex;
@@ -910,7 +909,7 @@ footer ul li i {
     font-family: "Genos", sans-serif;
     font-size: 25px;
   }
-  .nav2 p{
+  .nav2 p {
     transform: rotate(-90deg);
     position: absolute;
     top: 50%;
@@ -925,21 +924,21 @@ footer ul li i {
     margin-top: 40px;
   }
   @keyframes widthgrow {
-    0%{
+    0% {
       width: 0%;
     }
-    100%{
+    100% {
       width: 230px;
     }
   }
   @keyframes ul-opacity {
-    0%{
+    0% {
       opacity: 0%;
     }
   }
 }
 @media screen and (max-width: 965px) {
-.main-page-col-1 {
+  .main-page-col-1 {
     width: 100%;
     font-family: "Roboto Flex", sans-serif;
     font-size: 35px;
@@ -947,14 +946,14 @@ footer ul li i {
 
   .main-page-col-1 #p1 {
     align-items: center;
-    font-size: 28px;
+    font-size: 25px;
     margin-top: 50px;
+    font-weight: bolder;
   }
   #p2 {
     font-size: 55px;
     margin-left: 10px;
     width: 98%;
-
   }
   .read-more-articles a {
     margin-top: 60px;
@@ -1024,35 +1023,33 @@ footer ul li i {
 }
 @media screen and (max-width: 468px) {
   .main-page-col-2 {
-    transform: scale(.8);
-    
+    transform: scale(0.8);
   }
-  .evend-card2{
+  .evend-card2 {
     font-size: 18px;
   }
   .about-us-card-svg {
     display: none;
   }
-  .about-us-card{
+  .about-us-card {
     margin-bottom: 10px;
   }
-  .main-page-col-1 #p2{
+  .main-page-col-1 #p2 {
     border-left: 3px solid white;
   }
-  #p2{
+  #p2 {
     width: 90%;
     font-size: 8px;
   }
-.about-us-navigation-column1{
-  transform: scale(.7);
-  overflow: hidden;
-
-}
-.about-us-navigation-column2{
-  transform: scale(.8);
-  overflow: hidden;
-}
-  .nav2 i{
+  .about-us-navigation-column1 {
+    transform: scale(0.7);
+    overflow: hidden;
+  }
+  .about-us-navigation-column2 {
+    transform: scale(0.8);
+    overflow: hidden;
+  }
+  .nav2 i {
     color: #070c07;
   }
   .movements-title {
@@ -1091,12 +1088,13 @@ footer ul li i {
     margin-top: 10px;
     font-size: 22px;
   }
-  .social-links ul{
+  .social-links ul {
     width: 96%;
   }
 }
 @media screen and (min-width: 1066px) {
-  .nav2 ul,.nav2 p{
+  .nav2 ul,
+  .nav2 p {
     display: none;
   }
 }
