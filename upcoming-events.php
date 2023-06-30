@@ -14,8 +14,8 @@ $result = mysqli_query($connection,$query);
       crossorigin="anonymous"
     ></script>
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,300&display=swap");
-      </style>
+      @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Genos:ital,wght@1,300&family=Mate+SC&family=Roboto+Flex:wght@500&display=swap");
+    </style>
     <link rel="stylesheet" href="upcoming-events.css">
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
@@ -45,10 +45,10 @@ $result = mysqli_query($connection,$query);
     <p>Plant For The Planet</p>
   </nav>
   <div class="menu-div">
-    <i class="fa-solid fa-bars menu-bars" style="color: black; margin-top: 40px;"></i>
+    <i class="fa-solid fa-bars menu-bars" style="color: black; margin-top: 40px; color: #139620;"></i>
   </div>
   <div class="menu-div">
-    <i class="fa-solid fa-xmark cancel-bars" style="color: black; margin-top: 40px;"></i>
+    <i class="fa-solid fa-xmark cancel-bars" style="color: black; margin-top: 40px; color: #139620;"></i>
   </div>
 
       <div class="upcoming-events-main-page-title">
@@ -105,9 +105,6 @@ $result = mysqli_query($connection,$query);
                 <i class="fa-solid fa-phone"></i> 0722465663
               </p>
               <p class="footer-content">
-                <i class="fa-brands fa-whatsapp"></i> 0722465663
-              </p>
-              <p class="footer-content">
                 <i class="fa-sharp fa-solid fa-location-dot"></i> 680 Hotel,
                 Kenyatta Avenue
               </p>
@@ -146,23 +143,23 @@ $result = mysqli_query($connection,$query);
         </div>
         <div class="footer-lower-column">
           <div class="social-links">
-            <ul>
-              <li>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-              </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="https://twitter.com/Greenglobe_ke"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/green-globe-realisation/"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="	https://wa.me/+254722465663"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+          </ul>
           </div>
           <div class="copyrignt">
             <p>&copy; 2023 Green Globe Realisation | All rignts reserved</p>
