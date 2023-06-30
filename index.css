@@ -1035,12 +1035,16 @@ footer ul li i {
   .main-page-col-2 {
     transform: scale(0.8);
   }
+  .main-page-col-1 #p1 {
+    font-size: 22px;
+  }
   .read-more-articles a{
-    width: 65%;
+    width: 90%;
     justify-content: center;
     align-items: center;
     display: flex;
-    font-size: 11px;
+    font-size: 15px;
+    font-family: "Roboto Flex", sans-serif;
   }
   .evend-card2 {
     font-size: 18px;
