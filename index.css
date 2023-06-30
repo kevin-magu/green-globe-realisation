@@ -1043,6 +1043,8 @@ footer ul li i {
   .about-us-main-title p{
     font-size: 23px;
     font-weight: bolder;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   .about-us-info-description p{
     font-size: 14px;
