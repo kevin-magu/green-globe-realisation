@@ -1,7 +1,6 @@
 <?php 
 session_start();
 if (isset($_SESSION['username'])) {
-    session_unset();
 ?>
 
 
@@ -20,6 +19,11 @@ if (isset($_SESSION['username'])) {
     </div>
     <div class="welcome-message">
         <p>You're welcome <span>Admin Farah</span></p>
+        <?php 
+        if (isset($_SESSION['create-user'])) {
+            echo $_SESSION['create-user'];
+        }
+        ?>
     </div>
 
     <div class="admin-page-cards-container">
@@ -39,11 +43,11 @@ if (isset($_SESSION['username'])) {
         <a href="#"><li>MAIN WEBSITE</li></a>
         <a href="#"><li>BLOGS</li></a>
         <a href="#"><li>GALLERY</li></a>
+        <a href="admin-new-user.php"><li>Create User</li></a>
     </ul>
 </div>
 <?php }else{
-    echo "SESSION NOT SET";
-   // header("location: admin-login.php");
+   header("location: admin-login.php");
     }?>
 </body>
 </html>

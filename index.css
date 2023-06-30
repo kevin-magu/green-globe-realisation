@@ -591,12 +591,16 @@ html {
   flex-direction: column;
 }
 .blog-brief-hero-text-button {
-  background-color: #31fd46;
+  background-color: #139620;
   border: none;
   padding: 7px;
   font-family: "Genos", sans-serif;
   font-weight: bold;
   font-size: 20px;
+  text-decoration: none;
+}
+.blog-brief-hero-text-button a{
+ 
 }
 .blog-brief-svg {
   transform: scale(0.6);

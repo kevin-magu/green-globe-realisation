@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Include the file with database connection details
 include 'includes.php';
 ini_set('display_errors', 1);
@@ -32,10 +33,13 @@ if (isset($_POST['create'])) {
     // Create the user
     if (createUser($connection, $username, $password)) {
         // User created successfully
-        echo "User created successfully!";
+        $_SESSION['create-user'] = "user created successfuly";
+        header("location: admin.php");
+        
     } else {
         // Error in user creation
-        echo "Error creating user.";
+        $_SESSION['create-user-error'] = "Error creating user";
+        
     }
 }
 ?>
@@ -51,6 +55,11 @@ if (isset($_POST['create'])) {
 <body>
 <form action="" method="post" enctype="multipart/form-data">
         <p>GGR. CREATE A NEW ADMIN USER</p>
+        <?php 
+        if (isset($_SESSION['create-user-error'])) {
+            echo $_SESSION['create-user-error'];
+        }
+        ?>
         <input type="text" name="username" placeholder="Username" required>
         <input type="text" name="password" placeholder="Password" required>
         <button name="create" type="submit">Register</button>
