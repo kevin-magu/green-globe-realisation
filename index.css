@@ -1062,7 +1062,8 @@ footer ul li i {
   }
   .about-us-card {
     margin-bottom: 10px;
-    width: 80%;
+    width: 100%;
+    height: 300px;
   }
   .main-page-col-1 #p2 {
     border-left: 3px solid white;
