@@ -540,7 +540,7 @@ html {
   background-color: #f5f5f5;
 }
 .red-a-tag-here {
-  color: red;
+  color: rgb(255, 248, 248);
 }
 .centered-button-div {
   width: 100%;
@@ -599,6 +599,8 @@ html {
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
+  color: black;
+  margin-bottom: -370px;
 }
 .blog-brief-hero-text-button a {
 }
@@ -715,7 +717,7 @@ textarea:focus {
 .upper-column-section1,
 .upper-column-section2 {
   display: flex;
-  width: 80%;
+  width: 85%;
 }
 .upper-column-section1 footer form textarea {
   height: 100px;
@@ -744,7 +746,7 @@ footer ul {
   display: flex;
 }
 footer ul li {
-  margin: 30px;
+  margin: 25px;
   list-style: none;
 }
 footer ul li i {
@@ -999,11 +1001,13 @@ footer ul li i {
     width: 80%;
     font-size: 17px;
     margin-top: -30px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
   .blog-brief-hero-text-button {
-    margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: -230px;
+  }
+  .centered-button{
+    margin-top: 30px;
   }
   .blog-brief-svg {
     margin-top: -95px;
@@ -1089,7 +1093,13 @@ footer ul li i {
     font-size: 22px;
   }
   .social-links ul {
-    width: 96%;
+    width: 60%;
+  }
+  .social-links i{
+    font-size: px;
+  }
+  .copyrignt{
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 1066px) {
