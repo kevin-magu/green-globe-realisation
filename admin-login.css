@@ -39,6 +39,12 @@ input::placeholder{
 form p{
     font-weight: bold;
 }
+
+#error-message{
+    background-color: red;
+    height: 50px;
+    padding: 5px;
+}
 @media screen and (max-width:882px) {
     form{
         width: 60%;

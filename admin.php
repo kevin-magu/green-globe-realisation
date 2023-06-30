@@ -1,7 +1,7 @@
 <?php 
-if (isset($_POST['login'])) {
-    
-
+session_start();
+if (isset($_SESSION['username'])) {
+    session_unset();
 ?>
 
 
@@ -42,7 +42,8 @@ if (isset($_POST['login'])) {
     </ul>
 </div>
 <?php }else{
-    header("location: admin-login.php");
+    echo "SESSION NOT SET";
+   // header("location: admin-login.php");
     }?>
 </body>
 </html>

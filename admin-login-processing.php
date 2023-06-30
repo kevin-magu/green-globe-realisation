@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Include the file with database connection details
 include 'includes.php';
 ini_set('display_errors', 1);
@@ -36,11 +37,12 @@ if (isset($_POST['login'])) {
     // Validate the credentials
     if (validateCredentials($connection, $username, $password)) {
         // Successful login
-        header("location: admin.html");
+        header("location: admin.php");
+        $_SESSION['username']= $_POST['username'];
         // Redirect to admin dashboard or perform necessary actions
     } else {
         // Invalid username or password
-        $_SESSION['error'] ="Invalid username or password";
+        $_SESSION['error'] ="Invalid username or password";   
         header("location: admin-login.php");
         exit();
 }
