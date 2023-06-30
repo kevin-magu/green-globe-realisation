@@ -1132,7 +1132,10 @@ footer ul li i {
 
   .footer-title {
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 18px;
+  }
+  .footer-content{
+    font-size: 15px;
   }
   .social-links ul {
     width: 60%;
