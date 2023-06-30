@@ -1000,7 +1000,8 @@ footer ul li i {
     margin-top: 30px;
   }
   .gallery-brief-card {
-    width: 65%;
+    width: 75%;
+    height: 250px;
   }
   .blog-brief-card {
     width: 80%;
