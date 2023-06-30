@@ -29,6 +29,7 @@ html {
   justify-content: center;
   height: 100vh;
 }
+
 .nav1 {
   justify-content: center;
   display: flex;
@@ -122,7 +123,7 @@ html {
 }
 #p2 hr {
   transform: rotate(180deg);
-  height: 230px;
+  height: auto;
 }
 #p2 p {
   margin-top: 20px;
@@ -1026,9 +1027,8 @@ footer ul li i {
   .blog-brief-card-picture-section-content {
     font-size: 17px;
   }
-  #p2 hr {
-    height: 260px;
-    display: none;
+  .main-titles {
+    font-size: 23px;
   }
 }
 @media screen and (max-width: 468px) {
@@ -1037,6 +1037,13 @@ footer ul li i {
   }
   .main-page-col-1 #p1 {
     font-size: 22px;
+  }
+  .about-us-main-title p{
+    font-size: 23px;
+    font-weight: bolder;
+  }
+  .gallery-description-title p{
+    font-size: 23px;
   }
   .read-more-articles a{
     width: 90%;
