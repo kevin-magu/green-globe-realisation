@@ -25,9 +25,9 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
+  overflow: hidden;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 .nav1 {
   justify-content: center;
@@ -96,9 +96,10 @@ html {
   top: 0;
   left: 0;
   width: 100%;
-  height: 93vh;
+  min-height: 335vh;
   background-color: rgba(0, 0, 0, 0.678);
   z-index: 0.6;
+  overflow: hidden;
 }
 .main-page-col-1 #p1 {
   font-size: 43px;
@@ -132,7 +133,7 @@ html {
 }
 .main-page-col-2 {
   position: relative;
-  opacity: 50%;
+  opacity: 70%;
 }
 
 .read-more-articles {
@@ -941,7 +942,7 @@ footer ul li i {
 }
 @media screen and (max-width: 965px) {
   .main-page-col-1 {
-    width: 100%;
+    width: 88%;
     font-family: "Roboto Flex", sans-serif;
     font-size: 35px;
   }
@@ -951,14 +952,18 @@ footer ul li i {
     font-size: 25px;
     margin-top: 50px;
     font-weight: bolder;
+    text-align: center;
   }
   #p2 {
-    font-size: 55px;
+    font-size: 53px;
     margin-left: 10px;
     width: 98%;
+    
   }
   .read-more-articles a {
-    margin-top: 60px;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 50px;
   }
   .about-us-info-description {
     width: 100%;
@@ -1045,13 +1050,16 @@ footer ul li i {
     width: 90%;
     font-size: 8px;
   }
+  .about-us-navigation{
+    overflow: hidden;
+    margin-left: 20px;
+  }
   .about-us-navigation-column1 {
     transform: scale(0.7);
 
   }
   .about-us-navigation-column2 {
     transform: scale(0.8);
-    overflow: hidden;
   }
   .nav2 i {
     color: #070c07;
