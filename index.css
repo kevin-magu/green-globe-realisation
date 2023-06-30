@@ -1062,6 +1062,7 @@ footer ul li i {
   }
   .about-us-card {
     margin-bottom: 10px;
+    width: 80%;
   }
   .main-page-col-1 #p2 {
     border-left: 3px solid white;
@@ -1072,14 +1073,15 @@ footer ul li i {
   }
   .about-us-navigation{
     overflow: hidden;
-    margin-left: 20px;
   }
   .about-us-navigation-column1 {
-    transform: scale(0.7);
-
+    transform: scale(0.9);
+    width: 100%;
+    margin-left: 27px;
   }
   .about-us-navigation-column2 {
-    transform: scale(0.8);
+    transform: scale(0.9);
+    margin-left: 27px;
   }
   .nav2 i {
     color: #070c07;
@@ -1090,7 +1092,7 @@ footer ul li i {
   }
   .movements .p2,
   .p3 {
-    font-size: 27px;
+    font-size: 22px;
     display: flex;
     align-items: center;
     text-align: center;
