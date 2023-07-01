@@ -33,13 +33,13 @@ if (isset($_POST['read-more'])) {
   <body>
     <nav class="nav1">
       <ul>
-      <a href="index.html"><li><i class="fa-solid fa-house"></i>  Home</li></a>
+      <a href="index.html"><li><i class="fa-solid fa-house"></i>Home</li></a>
       <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
       <a href="upcoming-events.php"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
       <a href="gallery.php"><li><i class="fa-solid fa-camera"></i> Gallery</li></a>
       <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i> Blogs</li></a>
       <a href="#contacts"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
-      <a href="#contacts"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-phone"></i>Contacts</li></a>
       </ul>
     </nav>
     
@@ -184,6 +184,30 @@ if (isset($_POST['read-more'])) {
         </div>
       </div>
     </footer>
+    <script>
+      // Function to handle the screen resize event
+  function handleResize() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+  var menuBars = document.querySelector('.menu-bars');
+  var menuBars2 = document.querySelector('.cancel-bars');
+  var menuBars3 = document.querySelector('.menu-div');
+  var nav2 = document.querySelector('.nav2');
+
+  if (screenWidth > 1180) {
+    // Hide the .menu-bars class
+    menuBars.style.display = 'none';
+    menuBars2.style.display = 'none';
+  } else{
+    // Show the .menu-bars class
+    menuBars.style.display='block';
+    menuBars2.style.display='none';
+    nav2.style.display='none';
+  }
+}
+
+// Add event listener for the resize event
+window.addEventListener('resize', handleResize);
+    </script>
     <script src="app.js"></script>
   </body>
 </html>

@@ -869,7 +869,7 @@ footer ul li i {
   }
 }
 
-@media screen and (max-width: 1065px) {
+@media screen and (max-width: 1185px) {
   .nav1 {
     display: none;
   }

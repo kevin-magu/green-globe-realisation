@@ -164,7 +164,7 @@ $exe = mysqli_query($connection,$query);
   var menuBars3 = document.querySelector('.menu-div');
   var nav2 = document.querySelector('.nav2');
 
-  if (screenWidth > 1065) {
+  if (screenWidth > 1180) {
     // Hide the .menu-bars class
     menuBars.style.display = 'none';
     menuBars2.style.display = 'none';
