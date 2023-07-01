@@ -15,9 +15,9 @@ $exe = mysqli_query($connection,$query);
       src="https://kit.fontawesome.com/e4c074505f.js"
       crossorigin="anonymous"
     ></script>
-        <style>
-          @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,300&display=swap");
-        </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Genos:ital,wght@1,300&family=Mate+SC&family=Roboto+Flex:wght@500&display=swap");
+    </style>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="gallery.css">
     <meta charset="UTF-8">
@@ -28,12 +28,12 @@ $exe = mysqli_query($connection,$query);
 <body>
   <nav class="nav1">
     <ul>
-      <a href=""><li>Home</li></a>
-      <a href="#aboutus"><li>About Us</li></a>
-      <a href="#events"><li>Events</li></a>
-      <a href=""><li>Blog</li></a>
-      <a href=""><li>Donate</li></a>
-      <a href=""><li>Contacts</li></a>
+      <a href="index.html"><li><i class="fa-solid fa-house"></i>  Home</li></a>
+      <a href="#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="#events"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
+      <a href=""><li><i class="fa-solid fa-blog"></i> Blog</li></a>
+      <a href=""><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
+      <a href=""><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
     </ul>
   </nav>
   
@@ -49,10 +49,10 @@ $exe = mysqli_query($connection,$query);
     <p>Plant For The Planet</p>
   </nav>
   <div class="menu-div">
-    <i class="fa-solid fa-bars menu-bars"></i>
+    <i class="fa-solid fa-bars menu-bars" style="margin-top: 40px; color: #139620;"></i>
   </div>
   <div class="menu-div">
-    <i class="fa-solid fa-xmark cancel-bars"></i>
+    <i class="fa-solid fa-xmark cancel-bars" style="margin-top: 40px; color: #139620;"></i>
   </div>
 
       <div class="gallery-description-title about-us-description-title">
@@ -155,6 +155,30 @@ $exe = mysqli_query($connection,$query);
         </div>
       </div>
     </footer>
+     <script>
+      // Function to handle the screen resize event
+  function handleResize() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+  var menuBars = document.querySelector('.menu-bars');
+  var menuBars2 = document.querySelector('.cancel-bars');
+  var menuBars3 = document.querySelector('.menu-div');
+  var nav2 = document.querySelector('.nav2');
+
+  if (screenWidth > 1065) {
+    // Hide the .menu-bars class
+    menuBars.style.display = 'none';
+    menuBars2.style.display = 'none';
+  } else{
+    // Show the .menu-bars class
+    menuBars.style.display='block';
+    menuBars2.style.display='none';
+    nav2.style.display='none';
+  }
+}
+
+// Add event listener for the resize event
+window.addEventListener('resize', handleResize);
+    </script>
     <script src="app.js"></script>
 </body>
 </html>
