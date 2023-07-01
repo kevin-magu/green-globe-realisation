@@ -9,14 +9,10 @@ menuIcon = document.querySelector(".menu-bars");
 cancelIcon = document.querySelector(".cancel-bars");
 phoneNav = document.querySelector(".nav2");
 
-function checkWidth(){
-    if (window.innerwidth > 1167) {
-        cancelIcon.style.display="none";
-        menuIcon.style.display="none";
-        phoneNav.style.display="none";
-    }
-}
-window.addEventListener("resize", checkWidth);
+
+  
+  
+
 menuIcon.addEventListener("click", function() {
         menuDiv.style.display="block";
         cancelIcon.style.display="block";

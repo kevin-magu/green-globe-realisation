@@ -79,7 +79,6 @@ html {
   margin-top: 20px;
   color: white;
   position: absolute;
-  opacity: 0;
   top: 0;
   left: 20px;
   display: none;
@@ -87,9 +86,7 @@ html {
 .nav1 ul a:hover {
   color: green;
 }
-.menu-div i{
-  display: none;
-}
+
 .main-page-col-1 {
   width: 50%;
   position: relative;
@@ -858,6 +855,8 @@ footer ul li i {
     margin-left: 0px;
   }
 }
+
+
 @media screen and (max-width: 1045px) {
   .footer-upper-column {
     flex-direction: column;
@@ -870,7 +869,6 @@ footer ul li i {
   }
 }
 
-
 @media screen and (max-width: 1065px) {
   .nav1 {
     display: none;
@@ -882,6 +880,7 @@ footer ul li i {
   }
   .cancel-bars {
     z-index: 1;
+    display: none;
   }
   .main-page-container .overlay {
     height: 100vh;
