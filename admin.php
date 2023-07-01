@@ -29,7 +29,7 @@ if (isset($_SESSION['username'])) {
 
     <div class="admin-page-cards-container">
         <div class="admin-page-card admin-page-card1">
-            <p><b><a href="manage-upcoming-events.html">MANAGE EVENTS</a></b></p>
+            <p><b><a href="manage-upcoming-events.php">MANAGE EVENTS</a></b></p>
         </div>
         <div class="admin-page-card admin-page-card2">
             <p><b><a href="manage-gallery.html">MANAGE GALLERY</a></b></p>

@@ -1,6 +1,6 @@
 <?php 
+session_start();
 include 'includes.php';
-
 ini_set('display_errors', 1);
 
  if (isset($_POST['submit'])) {
@@ -21,17 +21,23 @@ ini_set('display_errors', 1);
     $filename = $photo['name'];
     $file_ext = pathinfo($filename, PATHINFO_EXTENSION);
     if (!in_array(strtolower($file_ext), $allowed_types)) {
-        die("Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed.");
+        die();
+        $_SESSION['file_type']='Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed';
+        header("location: manage-upcoming-events.php");
     }
     if ($photo['size'] > $max_size) {
-        die("File size limit exceeded. Maximum file size is 5MB.");
+        die("File size limit exceeded. Maximum file size is 2MB.");
+        $_SESSION['file_size']='Maximum file size is 2MB.';
+        header("location: manage-upcoming-events.php");
     }
 
     // Save file
     $filename = uniqid().'.'.$file_ext;
     $destination = 'uploads/' .$filename;
     if (!move_uploaded_file($photo['tmp_name'], $destination)) {
-        die("Failed to upload file.");
+        $_SESSION['file_error']='File should be an image.';
+        $_SESSION['file_size']='File size should be below 2mb.';
+        header("location: manage-upcoming-events.php");
     }
     
 
@@ -41,7 +47,8 @@ ini_set('display_errors', 1);
                 
     // Execute prepared statement
     if (mysqli_stmt_execute($stmt)) {
-        header("location: manage-upcoming-events.html");
+        $_SESSION['file_success_upload']='File uploaded successfuly.';
+        header("location: manage-upcoming-events.php");
     } else {
         echo "Failed to upload data to database.";
     }
