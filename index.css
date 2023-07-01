@@ -84,7 +84,7 @@ html {
   display: none;
 }
 .nav1 ul a:hover {
-  color: green;
+  color: rgb(255, 255, 255);
 }
 
 .main-page-col-1 {
@@ -880,7 +880,7 @@ footer ul li i {
   }
   .cancel-bars {
     z-index: 1;
-    display: none;
+    
   }
   .main-page-container .overlay {
     height: 100vh;
