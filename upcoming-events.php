@@ -29,8 +29,8 @@ $result = mysqli_query($connection,$query);
       <a href="index.html"><li><i class="fa-solid fa-house"></i> Home</li></a>
       <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
       <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i>Blogs</li></a>
-      <a href="#contact"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
-      <a href="#contact"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
     </ul>
   </nav>
   
@@ -95,7 +95,7 @@ $result = mysqli_query($connection,$query);
               <button type="submit">Send</button>
             </form>
   
-            <div class="contacts">
+            <div class="contacts" id="contacts">
               <p class="footer-title">Contacts</p>
               <p class="footer-content">
                 <i class="fa-solid fa-envelope"></i>
@@ -166,6 +166,7 @@ $result = mysqli_query($connection,$query);
           </div>
         </div>
       </footer>
+
       <script src="app.js"></script>
 </body>
 </html>

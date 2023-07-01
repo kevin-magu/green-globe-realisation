@@ -82,6 +82,7 @@ html {
   margin-top: 20px;
   color: white;
   position: absolute;
+  opacity: 0;
   top: 0;
   left: 20px;
   display: none;
@@ -864,6 +865,11 @@ footer ul li i {
   }
   .quick-links {
     margin-left: 0;
+  }
+}
+@media screen and (min-width: 1066px) {
+  .menu-div{
+    opacity: 0;
   }
 }
 @media screen and (max-width: 1065px) {
