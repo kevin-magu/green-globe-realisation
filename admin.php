@@ -18,7 +18,8 @@ if (isset($_SESSION['username'])) {
         <p>GGR ADMIN PANEL</p>
     </div>
     <div class="welcome-message">
-        <p>You're welcome <span>Admin Farah</span></p>
+        <p>Welcome <span>Admin Farah</span></p>
+        <p>System is under maintenance.</p>
         <?php 
         if (isset($_SESSION['create-user'])) {
             echo $_SESSION['create-user'];
@@ -28,13 +29,13 @@ if (isset($_SESSION['username'])) {
 
     <div class="admin-page-cards-container">
         <div class="admin-page-card admin-page-card1">
-            <p><b>MANAGE EVENTS</b></p>
+            <p><b><a href="manage-upcoming-events.html">MANAGE EVENTS</a></b></p>
         </div>
         <div class="admin-page-card admin-page-card2">
-            <p><b>MANAGE GALLERY</b></p>
+            <p><b><a href="manage-gallery.html">MANAGE GALLERY</a></b></p>
         </div>
         <div class="admin-page-card admin-page-card3">
-            <p><b>MANAGE BLOGS</b></p>
+            <p><b><a href="manage-blogs.html">MANAGE BLOGS</a></b></p>
         </div>
     </div>
 <div class="main-links">
