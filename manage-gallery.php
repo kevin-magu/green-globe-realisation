@@ -1,3 +1,9 @@
+<?php 
+session_start();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +25,18 @@
         <form action="manage-gallery-processing.php" method="POST" enctype="multipart/form-data">
             <fieldset>
                 <legend>Make a new image entry</legend>
+                <?php 
+                if(isset($_SESSION['file_type'])){
+                    echo $_SESSION['file_type'];
+                }elseif (isset($_SESSION['file_size'])) {
+                    echo $_SESSION['file_size'];
+                }elseif (isset($_SESSION['file_error'])) {
+                    echo $_SESSION['file_error'];
+                }elseif (isset($_SESSION['file_success_upload'])) { 
+                    echo $_SESSION['file_success_upload'];
+                }
+                session_unset();
+                ?>
                 <input type="text" name="image_title" placeholder="Enter the image title. eg 'planting trees at huruma estate'">
 
                 <p><b>Choose an image below 2mb of size</b><input name='photo' type="file"></p>

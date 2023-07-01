@@ -1,4 +1,5 @@
 <?php 
+session_start();
 include 'includes.php';
 ini_set('display_errors', 1);
 if (isset($_POST['submit'])) {
@@ -11,23 +12,31 @@ if (isset($_POST['submit'])) {
     $filename = $photo['name'];
     $file_ext = pathinfo($filename, PATHINFO_EXTENSION);
     if (!in_array(strtolower($file_ext), $allowed_types)) {
-        die("Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed.");
+        $_SESSION['file_type']='Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed';
+        header("location: manage-gallery.php");
+        die();
     }
     if (($photo['size']) < $max_size) {
-        die("File size limit exceeded. Maximum file size is 2MB.");
+        $_SESSION['file_size']='Maximum file size is 2MB.';
+        header("location: manage-gallery.php");
+        die();
     }
 
     // Save file
     $filename = uniqid().'.'.$file_ext;
     $destination = 'uploads/' .$filename;
     if (!move_uploaded_file($photo['tmp_name'], $destination)) {
-        die("Failed to upload file.");
+        $_SESSION['file_error']='erroruploading the file.';
+        header("location: manage-gallery.php");
+        die();
     }
     
     $query = "INSERT INTO gallery(image_title,photo)VALUES('$image_title', '$filename')";
     $exe = mysqli_query($connection,$query);
     if ($exe) {
-        echo "FILED UPLOADED SUCCESSIFULLY";
+        $_SESSION['file_success_upload']='Event uploaded successfuly.';
+        header("location: manage-gallery.php");;
+        die();
 
     }else{
         echo "ERROR UPLOADING FILE";
