@@ -166,7 +166,31 @@ $result = mysqli_query($connection,$query);
           </div>
         </div>
       </footer>
+          <script>
+                
+      // Function to handle the screen resize event
+function handleResize() {
+  var screenWidth = window.innerWidth || document.documentElement.clientWidth;
+  var menuBars = document.querySelector('.menu-bars');
+  var menuBars2 = document.querySelector('.cancel-bars');
+  var menuBars3 = document.querySelector('.menu-div');
+  var nav2 = document.querySelector('.nav2');
 
+  if (screenWidth > 1065) {
+    // Hide the .menu-bars class
+    menuBars.style.display = 'none';
+    menuBars2.style.display = 'none';
+  } else{
+    // Show the .menu-bars class
+    menuBars.style.display='block';
+    menuBars2.style.display='none';
+    nav2.style.display='none';
+  }
+}
+
+// Add event listener for the resize event
+window.addEventListener('resize', handleResize);
+</script>
       <script src="app.js"></script>
 </body>
 </html>
