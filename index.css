@@ -43,7 +43,7 @@ html {
   transform: scale(0.9);
 }
 .nav1 a {
-  color: #070c07;
+  color: #f5f5f5;
   font-weight: bold;
   text-decoration: none;
   list-style: none;
@@ -84,7 +84,7 @@ html {
   display: none;
 }
 .nav1 ul a:hover {
-  color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.678);
 }
 
 .main-page-col-1 {
@@ -1007,7 +1007,7 @@ footer ul li i {
   }
   .gallery-brief-card {
     width: 75%;
-    height: 250px;
+    height: 400px;
   }
   .blog-brief-card {
     width: 80%;
@@ -1059,7 +1059,9 @@ footer ul li i {
   .gallery-description-title p{
     font-size: 23px;
   }
-  
+  .gallery-brief-card{
+    height: 250px;
+  }
   .centered-button{
     margin-left: 40px;
   }
