@@ -28,6 +28,7 @@ $result = mysqli_query($connection,$query);
     <ul>
       <a href="index.html"><li><i class="fa-solid fa-house"></i> Home</li></a>
       <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="gallery.php"><li><i class="fa-solid fa-camera"></i>Gallery</li></a>
       <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i>Blogs</li></a>
       <a href="#contacts"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
       <a href="#contacts"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
@@ -38,6 +39,7 @@ $result = mysqli_query($connection,$query);
     <ul>
       <a href="index.html"><li><i class="fa-solid fa-house"></i> Home</li></a>
       <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="gallery.php"><li><i class="fa-solid fa-camera"></i>Gallery</li></a>
       <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i>Blogs</li></a>
       <a href="#contact"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
       <a href="#contact"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
