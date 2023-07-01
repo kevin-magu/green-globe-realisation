@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
         header("location: manage-gallery.php");
         die();
     }
-    if (($photo['size']) < $max_size) {
+    if (($photo['size']) > $max_size) {
         $_SESSION['file_size']='Maximum file size is 2MB.';
         header("location: manage-gallery.php");
         die();
@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
     $query = "INSERT INTO gallery(image_title,photo)VALUES('$image_title', '$filename')";
     $exe = mysqli_query($connection,$query);
     if ($exe) {
-        $_SESSION['file_success_upload']='Event uploaded successfuly.';
+        $_SESSION['file_success_upload']='Photo uploaded successfuly.';
         header("location: manage-gallery.php");;
         die();
 

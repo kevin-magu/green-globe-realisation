@@ -23,10 +23,12 @@ ini_set('display_errors', 1);
     if (!in_array(strtolower($file_ext), $allowed_types)) {
         $_SESSION['file_type']='Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed';
         header("location: manage-upcoming-events.php");
+        die();
     }
     if ($photo['size'] > $max_size) {
         $_SESSION['file_size']='Maximum file size is 2MB.';
         header("location: manage-upcoming-events.php");
+        die();
     }
 
     // Save file
@@ -36,6 +38,7 @@ ini_set('display_errors', 1);
         $_SESSION['file_error']='File should be an image.';
         $_SESSION['file_size']='File size should be below 2mb.';
         header("location: manage-upcoming-events.php");
+        die();
     }
     
 

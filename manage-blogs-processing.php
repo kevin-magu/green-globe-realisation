@@ -20,11 +20,13 @@ if (isset($_POST['submit'])) {
      if ((!in_array(strtolower($file_ext_1), $allowed_types))) {
         $_SESSION['file_type']='Invalid file type. Only JPG, JPEG, PNG, and GIF files are allowed';
         header("location: manage-blogs.php");
+        die();
      }
 
      if (($photo1['size'] > $max_size)) {
         $_SESSION['file_size']='File size should be below 2mb.';
         header("location: manage-blogs.php");
+        die();
      }
      // Save file
      $filename_1 = uniqid().'.'.$file_ext_1;
@@ -33,6 +35,7 @@ if (isset($_POST['submit'])) {
     if ((!move_uploaded_file($photo1['tmp_name'], $destination))) {
         $_SESSION['file_error']='There was a Problem uploading the file';
         header("location: manage-blogs.php");
+        die();
      }
 
     $query = "INSERT INTO blogs(blog_title,paragraph1,paragraph2,paragraph3,photo1,author) VALUES('$blog_title','$paragraph1','$paragraph2','$paragraph3','$filename_1','$author')";
