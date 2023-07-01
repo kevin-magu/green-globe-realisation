@@ -61,7 +61,7 @@ if (isset($_POST['create'])) {
         }
         ?>
         <input type="text" name="username" placeholder="Username" required>
-        <input type="text" name="password" placeholder="Password" required>
+        <input type="password" name="password" placeholder="Password" required>
         <button name="create" type="submit">Register</button>
     </form>
 </body>

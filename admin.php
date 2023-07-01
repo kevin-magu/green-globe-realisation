@@ -18,12 +18,10 @@ if (isset($_SESSION['username'])) {
         <p>GGR ADMIN PANEL</p>
     </div>
     <div class="welcome-message">
-        <p>Welcome <span>Admin Farah</span></p>
+        <p>Welcome Admin <span><?php echo $_SESSION['username'] ?></span></p>
         <p>System is under maintenance.</p>
         <?php 
-        if (isset($_SESSION['create-user'])) {
-            echo $_SESSION['create-user'];
-        }
+        
         ?>
     </div>
 
