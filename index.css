@@ -36,10 +36,10 @@ html {
   align-items: center;
   height: auto;
   font-family: "Genos", sans-serif;
-  background-color: white;
+  background-color: #03ff3a96;
 }
 .nav1 i {
-  color: #03ff3a;
+  color: white;
   transform: scale(0.9);
 }
 .nav1 a {
@@ -65,9 +65,6 @@ html {
 .nav2 i {
   color: black;
 }
-.nav1 ul a:hover {
-  color: green;
-}
 .cancel-bars {
   transform: scale(2);
   margin-top: 20px;
@@ -87,7 +84,12 @@ html {
   left: 20px;
   display: none;
 }
-
+.nav1 ul a:hover {
+  color: green;
+}
+.menu-div i{
+  display: none;
+}
 .main-page-col-1 {
   width: 50%;
   position: relative;
@@ -867,15 +869,13 @@ footer ul li i {
     margin-left: 0;
   }
 }
-@media screen and (min-width: 1066px) {
-  .menu-div{
-    opacity: 0;
-  }
-}
+
+
 @media screen and (max-width: 1065px) {
   .nav1 {
     display: none;
   }
+
   .menu-bars {
     display: block;
     z-index: 1;
@@ -886,6 +886,7 @@ footer ul li i {
   .main-page-container .overlay {
     height: 100vh;
   }
+  
   .nav2 {
     display: none;
     position: absolute;

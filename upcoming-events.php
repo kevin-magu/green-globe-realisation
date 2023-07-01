@@ -45,7 +45,7 @@ $result = mysqli_query($connection,$query);
     <p>Plant For The Planet</p>
   </nav>
   <div class="menu-div">
-    <i class="fa-solid fa-bars menu-bars" style="color: black; margin-top: 40px; color: #139620;"></i>
+    <i class="fa-solid fa-bars menu-bars" style="margin-top: 40px; color: #139620;"></i>
   </div>
   <div class="menu-div">
     <i class="fa-solid fa-xmark cancel-bars" style="color: black; margin-top: 40px; color: #139620;"></i>

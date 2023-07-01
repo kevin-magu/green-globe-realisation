@@ -15,9 +15,7 @@ nav{
 nav ul a li{
     font-family: "Genos", sans-serif;
 }
-.menu-bars,.cancel-bars{
-    display: none;
-}
+
 .upcoming-events-main-page-title{
     display: flex;
     justify-content: center;
@@ -104,8 +102,8 @@ nav ul a li{
 #event-description{
     text-align: center;
 }
-.menu-div{
-    opacity: 0;
+body{
+    background-color: #139620;
 }
 @media screen and (max-width: 1313px) {
     .event-card{
