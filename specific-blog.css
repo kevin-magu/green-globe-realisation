@@ -106,3 +106,9 @@ nav{
         width: 80%;
     }
 }
+@media screen and (max-width:468px) {
+    .blog-text-content p{
+        font-size: 19px;
+        width: 100%;
+    }
+}
