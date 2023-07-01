@@ -16,8 +16,8 @@ if (isset($_POST['read-more'])) {
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Genos:ital,wght@1,300&display=swap");
+  <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Genos:ital,wght@1,300&family=Mate+SC&family=Roboto+Flex:wght@500&display=swap");
     </style>
     <script
     src="https://kit.fontawesome.com/e4c074505f.js"
@@ -33,31 +33,33 @@ if (isset($_POST['read-more'])) {
   <body>
     <nav class="nav1">
       <ul>
-        <a href=""><li>Home</li></a>
-        <a href="#aboutus"><li>About Us</li></a>
-        <a href="#events"><li>Events</li></a>
-        <a href=""><li>Blog</li></a>
-        <a href=""><li>Donate</li></a>
-        <a href=""><li>Contacts</li></a>
+      <a href="index.html"><li><i class="fa-solid fa-house"></i>  Home</li></a>
+      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="upcoming-events.php"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
+      <a href="gallery.php"><li><i class="fa-solid fa-camera"></i> Gallery</li></a>
+      <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i> Blogs</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
       </ul>
     </nav>
     
     <nav class="nav2">
       <ul>
-        <a href=""><li>Home</li></a>
-        <a href="#aboutus"><li>About Us</li></a>
-        <a href="#events"><li>Events</li></a>
-        <a href=""><li>Blog</li></a>
-        <a href=""><li>Donate</li></a>
-        <a href=""><li>Contacts</li></a>
+      <a href="index.html"><li><i class="fa-solid fa-house"></i>  Home</li></a>
+      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="upcoming-events.php"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
+      <a href="gallery.php"><li><i class="fa-solid fa-camera"></i> Gallery</li></a>
+      <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i> Blogs</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
       </ul>
       <p>Plant For The Planet</p>
     </nav>
     <div class="menu-div">
-      <i class="fa-solid fa-bars menu-bars"></i>
+      <i class="fa-solid fa-bars menu-bars" style="margin-top: 40px; color:"></i>
     </div>
     <div class="menu-div">
-      <i class="fa-solid fa-xmark cancel-bars"></i>
+      <i class="fa-solid fa-xmark cancel-bars" style="margin-top: 40px;"></i>
     </div>
 
     <div class="blog-header">
@@ -108,7 +110,7 @@ if (isset($_POST['read-more'])) {
             <button type="submit">Send</button>
           </form>
 
-          <div class="contacts">
+          <div class="contacts" id="contacts">
             <p class="footer-title">Contacts</p>
             <p class="footer-content">
               <i class="fa-solid fa-envelope"></i>

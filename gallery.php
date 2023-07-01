@@ -29,22 +29,22 @@ $exe = mysqli_query($connection,$query);
   <nav class="nav1">
     <ul>
       <a href="index.html"><li><i class="fa-solid fa-house"></i>  Home</li></a>
-      <a href="#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
-      <a href="#events"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
-      <a href=""><li><i class="fa-solid fa-blog"></i> Blog</li></a>
-      <a href=""><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
-      <a href=""><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
+      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="upcoming-events.php"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
+      <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i> Blog</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
     </ul>
   </nav>
   
   <nav class="nav2">
     <ul>
-      <a href=""><li>Home</li></a>
-      <a href="#aboutus"><li>About Us</li></a>
-      <a href="#events"><li>Events</li></a>
-      <a href=""><li>Blog</li></a>
-      <a href=""><li>Donate</li></a>
-      <a href=""><li>Contacts</li></a>
+      <a href="index.html"><li><i class="fa-solid fa-house"></i> Home</li></a>
+      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="upcoming-events.php"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
+      <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i> Blog</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
+      <a href="#contacts"><li><i class="fa-solid fa-phone"></i> Contacts</li></a>
     </ul>
     <p>Plant For The Planet</p>
   </nav>
@@ -81,7 +81,7 @@ $exe = mysqli_query($connection,$query);
             <button type="submit">Send</button>
           </form>
 
-          <div class="contacts">
+          <div class="contacts" id="contacts">
             <p class="footer-title">Contacts</p>
             <p class="footer-content">
               <i class="fa-solid fa-envelope"></i>
