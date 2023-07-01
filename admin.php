@@ -29,21 +29,21 @@ if (isset($_SESSION['username'])) {
 
     <div class="admin-page-cards-container">
         <div class="admin-page-card admin-page-card1">
-            <p><b><a href="manage-upcoming-events.php">MANAGE EVENTS</a></b></p>
+            <p><b><a href="manage-upcoming-events.php" target="_blank">MANAGE EVENTS</a></b></p>
         </div>
         <div class="admin-page-card admin-page-card2">
-            <p><b><a href="manage-gallery.html">MANAGE GALLERY</a></b></p>
+            <p><b><a href="manage-gallery.php" target="_blank">MANAGE GALLERY</a></b></p>
         </div>
         <div class="admin-page-card admin-page-card3">
-            <p><b><a href="manage-blogs.html">MANAGE BLOGS</a></b></p>
+            <p><b><a href="manage-blogs.php" target="_blank">MANAGE BLOGS</a></b></p>
         </div>
     </div>
 <div class="main-links">
     <p><b>Quick Links</b></p>
-    <ul>
-        <a href="#"><li>MAIN WEBSITE</li></a>
-        <a href="#"><li>BLOGS</li></a>
-        <a href="#"><li>GALLERY</li></a>
+    <ul style="font-size: 12px;">
+        <a href="index.html"><li>MAIN WEBSITE</li></a>
+        <a href="blog-cards.php"><li>BLOGS</li></a>
+        <a href="gallery.php"><li>GALLERY</li></a>
         <a href="admin-new-user.php"><li>Create User</li></a>
     </ul>
 </div>

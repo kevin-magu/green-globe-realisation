@@ -1,3 +1,8 @@
+<?php 
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,6 +34,18 @@
           <p>Choose an image related to the blog.</p>
           <p>Image size should be below 2mb.</p>
           <p><b>Choose image 1 </b><input name="photo1" type="file" /></p>
+          <?php 
+                if(isset($_SESSION['file_type'])){
+                    echo $_SESSION['file_type'];
+                }elseif (isset($_SESSION['file_size'])) {
+                    echo $_SESSION['file_size'];
+                }elseif (isset($_SESSION['file_error'])) {
+                    echo $_SESSION['file_error'];
+                }elseif (isset($_SESSION['file_success_upload'])) { 
+                    echo $_SESSION['file_success_upload'];
+                }
+                session_unset();
+                ?>
           <button name="submit" type="submit">POST</button>
         </fieldset>
       </form>

@@ -30,6 +30,8 @@ session_start();
                     echo $_SESSION['file_size'];
                 }elseif (isset($_SESSION['file_error'])) {
                     echo $_SESSION['file_error'];
+                }elseif (isset($_SESSION['file_success_upload'])) { 
+                    echo $_SESSION['file_success_upload'];
                 }
                 session_unset();
                 ?>
