@@ -83,7 +83,7 @@ $result = mysqli_query($connection,$query);
         </div>
         <?php } ?>
         <?php } else{ ?>
-          <h2>THERE ARE NO UPCOMNG EVENTS YET</h2>
+          <p>THERE ARE NO UPCOMNG EVENTS YET</p>
           <?php }?>
       </div>
       
