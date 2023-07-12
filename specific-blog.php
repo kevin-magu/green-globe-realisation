@@ -90,6 +90,7 @@ if (isset($_POST['read-more'])) {
       </div>
 
       <p class="author"><b>Author: <i><?php echo $row['author'] ?></i></b></p>
+      <p><a href="blog-cards.php">Read More blogs</a></p>
       </div>
       <div class="specific-blog-pictures">
         <div class="blog-picture-card blog-picture-card1" style="background-image: url('uploads/<?php echo $row['photo1']; ?>');

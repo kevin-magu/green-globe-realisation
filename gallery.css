@@ -18,9 +18,25 @@
     border-radius: 7px;
     transition: 0.2s ease-in-out;
     background-size: cover;
+    position: relative;
 }
 .images-card:hover{
     transform: scale(1.04);
+}
+.pic-title{
+    width: 70%;
+    height: 30px;
+    background-color: black;
+    margin-left: 17%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 @media screen and (max-width:943px) {

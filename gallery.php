@@ -65,7 +65,7 @@ $exe = mysqli_query($connection,$query);
           <div class="images-card" style="background-image: url('uploads/<?php echo $row['photo']; ?>');
            background-repeat: no-repeat;
            background-position: center;
-          "></div>
+          "> <div class="pic-title"><?php echo $row['image_title'] ?></div> </div>
       <?php } } ?>
        
         
