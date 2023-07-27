@@ -45,10 +45,10 @@
         <p class="no-of-trees"><?php echo $row['no_of_trees'] ?></p>
 
 
-        <form action="add-trees.php">
-            <input type="text"> <button class="add-trees-button">Add</button>
+        <form action="add-trees.php" method='POST'>
+            <input type="text" name='no_of_trees'> <button class="add-trees-button" name='add-tree'>Add</button>
         </form>
-        
+
     </div>
 <div class="main-links">
     <p><b>Quick Links</b></p>
