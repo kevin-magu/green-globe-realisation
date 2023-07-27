@@ -1,6 +1,11 @@
 <?php 
-session_start();
-if (isset($_SESSION['username'])) {
+//if (isset($_SESSION['username'])) {
+
+    include 'includes.php';
+    $query = "SELECT * FROM trees;";
+    $query_exe = mysqli_query($connection,$query);
+
+    $row = mysqli_fetch_assoc($query_exe);
 ?>
 
 
@@ -35,6 +40,15 @@ if (isset($_SESSION['username'])) {
         <div class="admin-page-card admin-page-card3">
             <p><b><a href="manage-blogs.php" target="_blank">MANAGE BLOGS</a></b></p>
         </div>
+
+        <h3>NUMBER OF TREES PLANTED</h3>
+        <p class="no-of-trees"><?php echo $row['no_of_trees'] ?></p>
+
+
+        <form action="add-trees.php">
+            <input type="text"> <button class="add-trees-button">Add</button>
+        </form>
+        
     </div>
 <div class="main-links">
     <p><b>Quick Links</b></p>
@@ -45,8 +59,6 @@ if (isset($_SESSION['username'])) {
         <a href="admin-new-user.php"><li>Create User</li></a>
     </ul>
 </div>
-<?php }else{
-   header("location: admin-login.php");
-    }?>
+ 
 </body>
 </html>

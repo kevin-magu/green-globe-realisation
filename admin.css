@@ -18,13 +18,15 @@ span{
 .admin-page-cards-container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
+    min-height: 90vh;
 }
 .admin-page-card {
-    min-width: 25%;
+    min-width: 75%;
     height: 400px;
-    background-color: rgb(213, 217, 240);
+    background-color: rgb(11, 199, 36);
     margin: 20px;
     outline: 2px solid green;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.527);
@@ -32,6 +34,11 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+}
+.admin-page-card a{
+    color: white;
+    text-decoration: none;
 }
 .admin-page-card p{
     font-size: 24px;
@@ -58,6 +65,22 @@ span{
     text-decoration: none;
     color: rgb(3, 160, 3);
     margin: 10px;   
+}
+.add-trees-button{
+    background-color: rgb(31, 105, 31);
+    color: white;
+    width: 65px;
+    height: 27px;
+    border: none;
+    border-radius: 7px;
+}
+.add-trees-button:hover{
+    cursor: pointer;
+}
+.no-of-trees{
+    color: green;
+    font-weight: bold;
+    font-size: 22px;
 }
 @media screen and (max-width:1120px) {
     .admin-page-cards-container{
