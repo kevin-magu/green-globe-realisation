@@ -67,7 +67,7 @@
         </div>
       </div>
 <!-- INCREAMENT SECTION -->
-<div class="no-of-trees"><p>We have planted <span style="font-size:37px;" id="no-of-trees">0</span> trees so far!</p></div>
+<div class="no-of-trees"><p>We have planted <span style="font-size:37px;" id="no-of-trees">--</span> trees so far!</p></div>
 <script>
   
 let currentCount =<?php include 'includes.php';

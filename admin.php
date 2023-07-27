@@ -1,6 +1,6 @@
 <?php 
 session_start();
-//if (isset($_SESSION['username'])) {
+if(isset($_SESSION['username'])) {
 
     include 'includes.php';
     $query = "SELECT * FROM trees;";
@@ -63,3 +63,8 @@ session_start();
  
 </body>
 </html>
+<?php } else{
+    header("Location: admin-login.php");
+}
+?>
+    

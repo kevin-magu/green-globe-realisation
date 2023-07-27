@@ -1171,3 +1171,11 @@ footer ul li i {
     display: none;
   }
 }
+@media screen and (max-width: 567px){
+  .no-of-trees{
+    font-size: 19px;
+  }
+  .no-of-trees span{
+    font-size: 20px;
+  }
+}
