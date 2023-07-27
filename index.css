@@ -136,7 +136,16 @@ html {
   position: relative;
   opacity: 70%;
 }
-
+.no-of-trees{
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto Flex", sans-serif;
+  margin-bottom: 40px;
+  margin-top: -25px;
+  font-size: 35px;
+}
 .read-more-articles {
   display: flex;
   justify-content: center;

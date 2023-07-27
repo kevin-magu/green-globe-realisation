@@ -1,4 +1,5 @@
 <?php 
+session_start();
 //if (isset($_SESSION['username'])) {
 
     include 'includes.php';
@@ -41,12 +42,12 @@
             <p><b><a href="manage-blogs.php" target="_blank">MANAGE BLOGS</a></b></p>
         </div>
 
-        <h3>NUMBER OF TREES PLANTED</h3>
+        <h4>NUMBER OF TREES PLANTED</h4>
         <p class="no-of-trees"><?php echo $row['no_of_trees'] ?></p>
 
 
-        <form action="add-trees.php" method='POST'>
-            <input type="text" name='no_of_trees'> <button class="add-trees-button" name='add-tree'>Add</button>
+        <form action="add-trees.php" method='POST' id="add-trees">
+            <input type="text" name='no_of_trees' placeholder="input no of trees you want to add"> <button class="add-trees-button" name='add-tree'>Add Trees</button>
         </form>
 
     </div>

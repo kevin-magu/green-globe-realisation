@@ -66,6 +66,42 @@
           <img src="images/org-logo.png" alt="" loading="lazy"/>
         </div>
       </div>
+<!-- INCREAMENT SECTION -->
+<div class="no-of-trees"><p>We have planted <span style="font-size:37px;" id="no-of-trees">0</span> trees so far!</p></div>
+<script>
+  
+let currentCount =<?php include 'includes.php';
+
+if (!$connection) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+$query = "SELECT no_of_trees FROM trees";
+$result = mysqli_query($connection, $query);
+
+$row = mysqli_fetch_assoc($result);
+echo $row['no_of_trees'];
+// Don't forget to close the database connection
+mysqli_close($connection);
+?>;
+
+var increment = 1;
+        var targetCount = currentCount; // Set the target count
+
+        // Function to update the displayed count incrementally
+        function updateTreeCount() {
+            if (increment <= targetCount) {
+                document.getElementById("no-of-trees").textContent = increment;
+                increment++;
+                setTimeout(updateTreeCount, 10); // Adjust the timeout to control the speed of increment
+            }
+        }
+
+        // Call the function to start the incremental count when the page loads
+        window.onload = updateTreeCount;
+</script>
+
+<!--  -->
       <div class="read-more-articles">
         <a href="blog-cards.php">Explore Tree Planting Resources and Articles</a>
       </div>
