@@ -33,8 +33,8 @@ if (isset($_POST['read-more'])) {
   <body>
     <nav class="nav1">
       <ul>
-      <a href="index.html"><li><i class="fa-solid fa-house"></i>Home</li></a>
-      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="index.php"><li><i class="fa-solid fa-house"></i>Home</li></a>
+      <a href="index.php#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
       <a href="upcoming-events.php"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
       <a href="gallery.php"><li><i class="fa-solid fa-camera"></i> Gallery</li></a>
       <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i> Blogs</li></a>
@@ -45,8 +45,8 @@ if (isset($_POST['read-more'])) {
     
     <nav class="nav2">
       <ul>
-      <a href="index.html"><li><i class="fa-solid fa-house"></i>  Home</li></a>
-      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="index.php"><li><i class="fa-solid fa-house"></i>  Home</li></a>
+      <a href="index.php#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
       <a href="upcoming-events.php"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
       <a href="gallery.php"><li><i class="fa-solid fa-camera"></i> Gallery</li></a>
       <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i> Blogs</li></a>

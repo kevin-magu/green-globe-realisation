@@ -28,8 +28,8 @@ $exe = mysqli_query($connection,$query);
 <body>
   <nav class="nav1">
     <ul>
-      <a href="index.html"><li><i class="fa-solid fa-house"></i>  Home</li></a>
-      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="index.php"><li><i class="fa-solid fa-house"></i>  Home</li></a>
+      <a href="index.php#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
       <a href="upcoming-events.php"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
       <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i> Blog</li></a>
       <a href="#contacts"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>
@@ -39,8 +39,8 @@ $exe = mysqli_query($connection,$query);
   
   <nav class="nav2">
     <ul>
-      <a href="index.html"><li><i class="fa-solid fa-house"></i> Home</li></a>
-      <a href="index.html#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
+      <a href="index.php"><li><i class="fa-solid fa-house"></i> Home</li></a>
+      <a href="index.php#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
       <a href="upcoming-events.php"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
       <a href="blog-cards.php"><li><i class="fa-solid fa-blog"></i> Blog</li></a>
       <a href="#contacts"><li><i class="fa-solid fa-circle-dollar-to-slot"></i> Donate</li></a>

@@ -18,7 +18,7 @@
     <section class="home" id="home-page">
       <nav class="nav1">
         <ul>
-          <a href="index.html"><li><i class="fa-solid fa-house"></i> Home</li></a>
+          <a href="index.php"><li><i class="fa-solid fa-house"></i> Home</li></a>
           <a href="#aboutus"><li><i class="fa-solid fa-circle-info"></i> About Us</li></a>
           <a href="#events-title"><li><i class="fa-solid fa-calendar-days"></i> Events</li></a>
           <a href="gallery.php"><li><i class="fa-solid fa-camera"></i> Gallery</li></a>
@@ -107,7 +107,7 @@ var increment = 1;
       </div>
     </section>
     <section class="about-us-leadership">
-      <div class="about-us-main-title" id="aboutus"><p
+      <div class="about-us-main-title" id="aboutuFs"><p
         style="margin-top: 30px;"
         
         >About Us</p></div>

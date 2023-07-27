@@ -54,7 +54,7 @@ session_start();
 <div class="main-links">
     <p><b>Quick Links</b></p>
     <ul style="font-size: 12px;">
-        <a href="index.html"><li>MAIN WEBSITE</li></a>
+        <a href="index.php"><li>MAIN WEBSITE</li></a>
         <a href="blog-cards.php"><li>BLOGS</li></a>
         <a href="gallery.php"><li>GALLERY</li></a>
         <a href="admin-new-user.php"><li>Create User</li></a>
