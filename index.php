@@ -67,39 +67,8 @@
         </div>
       </div>
 <!-- INCREAMENT SECTION -->
-<div class="no-of-trees"><p>We have planted <span style="font-size:37px;" id="no-of-trees">--</span> trees so far!</p></div>
-<script>
-  
-let currentCount =<?php include 'includes.php';
+<div class="no-of-trees"><p>Our goal is to plant 1 million trees in the next one year !</p></div>
 
-if (!$connection) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-
-$query = "SELECT no_of_trees FROM trees";
-$result = mysqli_query($connection, $query);
-
-$row = mysqli_fetch_assoc($result);
-echo $row['no_of_trees'];
-// Don't forget to close the database connection
-mysqli_close($connection);
-?>;
-
-var increment = 1;
-        var targetCount = currentCount; // Set the target count
-
-        // Function to update the displayed count incrementally
-        function updateTreeCount() {
-            if (increment <= targetCount) {
-                document.getElementById("no-of-trees").textContent = increment;
-                increment++;
-                setTimeout(updateTreeCount, 10); // Adjust the timeout to control the speed of increment
-            }
-        }
-
-        // Call the function to start the incremental count when the page loads
-        window.onload = updateTreeCount;
-</script>
 
 <!--  -->
       <div class="read-more-articles">
@@ -174,14 +143,13 @@ var increment = 1;
           <div class="about-us-info-description">
             <p>
               The Green Globe Realization (GGR) is a non-profit organization
-              dedicated to the preservation and conservation of arid area of
-              North Eastern Kenya. Established in 2022, GGR operates with the
-              objective of mitigating the ecological challenges faced by North
-              Eastern Kenya and ensuring its sustainable development. Our
+              dedicated to the preservation and conservation of arid areas of
+              Kenya like Wajir, Marsabit, Garissa, Mandera, Turkana, Tana River, Narok and more. Established in 2022, GGR operates with the
+              objective of mitigating the ecological challenges faced by arid areas of Kenya and ensuring its sustainable development. Our
               multidisciplinary team comprises environmental scientists,
               researchers, conservationists, and community development experts
               who collaborate to address the unique environmental issues
-              prevalent in North Eastern Kenya. Through our diverse range of
+              prevalent in arid areas of Kenya. Through our diverse range of
               projects and initiatives, we aim to create a positive and lasting
               impact on the ecosystems, biodiversity, and livelihoods in the
               region.

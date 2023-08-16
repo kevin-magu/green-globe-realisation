@@ -1,7 +1,9 @@
 <?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 include 'includes.php';
 
-$query = "SELECT id,event_title,place,datee,timee,photo FROM upcoming_events";
+$query = "SELECT * FROM upcomin_events";
 $result = mysqli_query($connection,$query);
 ?>
 
