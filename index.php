@@ -54,12 +54,7 @@
           <div id="p2">
             <hr />
             <p>
-              We believe in the transformative power of tree planting. <br />
-              Join us in the global movement to restore ecosystems, combat
-              climate change, and foster biodiversity through the simple act of
-              planting trees.Together, we can create a sustainable future for
-              generations to come.
-            </p>
+            Our focus lies in safeguarding and nurturing the environment of North Eastern Kenya through the application of sustainable strategies. Our aim is to enhance biodiversity, ensure the longevity of precious natural resources, and foster empowerment within the local communities.            </p>
           </div>
         </div>
         <div class="main-page-col-2">
@@ -86,6 +81,20 @@
             Overview
           </div>
           <div
+            class="about-us-button button4"
+            onclick="displayVisionmissionDiv()"
+          >
+            Vision & Mission
+          </div>
+          <div class="about-us-button button5" onclick="displayCorevaluesDiv()">
+            Core Values
+          </div>
+          
+          
+        </div>
+        <div class="about-us-navigation-column2">
+         
+        <div
             class="about-us-button button2"
             onclick="displayAreasoffocusDiv()"
           >
@@ -96,17 +105,6 @@
             onclick="displaypartnershipsDiv()"
           >
             Partnerships
-          </div>
-        </div>
-        <div class="about-us-navigation-column2">
-          <div
-            class="about-us-button button4"
-            onclick="displayVisionmissionDiv()"
-          >
-            Vision & Mission
-          </div>
-          <div class="about-us-button button5" onclick="displayCorevaluesDiv()">
-            Core Values
           </div>
           <div class="about-us-button" onclick="displaySuccessDiv()">
             Success Stories
@@ -157,6 +155,48 @@
           </div>
         </div>
       </div>
+      <div class="vision">
+        <div class="about-us-info-container">
+          <div class="about-us-card vision-card"></div>
+          <div class="blog-brief-svg about-us-card-svg">
+            <svg
+              width="203"
+              height="106"
+              viewBox="0 0 203 106"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M203 53L172.55 98.8993L172.55 7.10065L203 53Z"
+                fill="#2CB028"
+                fill-opacity="0.33"
+              />
+              <path
+                d="M121.8 53L91.35 98.8993L91.35 7.10065L121.8 53Z"
+                fill="#2EB229"
+                fill-opacity="0.65"
+              />
+              <path
+                d="M40.6001 53L10.1501 98.8993L10.1501 7.10065L40.6001 53Z"
+                fill="#2CB028"
+              />
+            </svg>
+          </div>
+          <div class="about-us-info-description">
+            <p>
+              <b>Mission: </b> Our mission is to protect and conserve the
+              environment in North Eastern Kenya by implementing sustainable
+              solutions that promote biodiversity, preserve natural resources,
+              and empower local communities. <br />
+              <b>Vision: </b> Our vision is to create a world where arid areas
+              thrive through the adoption of sustainable environmental
+              practices, leading to healthy ecosystems, increased economic
+              prosperity, and social well-being for all.
+            </p>
+          </div>
+        </div>
+      </div>
+
 
       <div class="areas-of-focus">
         <div class="about-us-info-container">
@@ -260,48 +300,7 @@
         </div>
       </div>
 
-      <div class="vision">
-        <div class="about-us-info-container">
-          <div class="about-us-card vision-card"></div>
-          <div class="blog-brief-svg about-us-card-svg">
-            <svg
-              width="203"
-              height="106"
-              viewBox="0 0 203 106"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M203 53L172.55 98.8993L172.55 7.10065L203 53Z"
-                fill="#2CB028"
-                fill-opacity="0.33"
-              />
-              <path
-                d="M121.8 53L91.35 98.8993L91.35 7.10065L121.8 53Z"
-                fill="#2EB229"
-                fill-opacity="0.65"
-              />
-              <path
-                d="M40.6001 53L10.1501 98.8993L10.1501 7.10065L40.6001 53Z"
-                fill="#2CB028"
-              />
-            </svg>
-          </div>
-          <div class="about-us-info-description">
-            <p>
-              <b>Mission: </b> Our mission is to protect and conserve the
-              environment in North Eastern Kenya by implementing sustainable
-              solutions that promote biodiversity, preserve natural resources,
-              and empower local communities. <br />
-              <b>Vision: </b> Our vision is to create a world where arid areas
-              thrive through the adoption of sustainable environmental
-              practices, leading to healthy ecosystems, increased economic
-              prosperity, and social well-being for all.
-            </p>
-          </div>
-        </div>
-      </div>
-
+      
       <div class="core-values">
         <div class="about-us-info-container">
           <div class="about-us-card core-values-card"></div>
