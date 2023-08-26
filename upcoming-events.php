@@ -88,6 +88,13 @@ $result = mysqli_query($connection,$query);
           <p>THERE ARE NO UPCOMNG EVENTS YET</p>
           <?php }?>
       </div>
+
+      <div class="upcoming-events-container2">
+          <div class="news-card">
+            <div class="news-picture"></div>
+            <div class="news-brief-description"></div>
+          </div>
+      </div>
       
       <footer>
         <div class="footer-upper-column">

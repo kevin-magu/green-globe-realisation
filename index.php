@@ -74,7 +74,7 @@
       <div class="about-us-main-title" id="aboutuFs"><p
         style="margin-top: 30px;"
         
-        >About Us</p></div>
+        >About hello Us</p></div>
       <div class="about-us-navigation">
         <div class="about-us-navigation-column1">
           <div class="about-us-button button1" onclick="displayOverviewDiv()">
@@ -411,7 +411,7 @@
           Planting trees is a powerful act of nurturing our planet's future
         </p>
         <p class="p3">
-          #ReduceReuseRecycle #BeatPlasticPollution #SaveThePlanet
+        #treeplanting #sustainability #plantfortheplanet
         </p>
       </div>
     </section>
