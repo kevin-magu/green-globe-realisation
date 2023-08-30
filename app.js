@@ -9,6 +9,9 @@ menuIcon = document.querySelector(".menu-bars");
 cancelIcon = document.querySelector(".cancel-bars");
 phoneNav = document.querySelector(".nav2");
 
+Paragraph1 = document.querySelector(".para1");
+Paragraph2 = document.querySelector("para2");
+
 
   
   

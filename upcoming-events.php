@@ -60,7 +60,7 @@ $result = mysqli_query($connection,$query);
       </div>
       <div class="event-type">
         <p>International Events</p>
-        <p>Our Events</p>
+        <p class="para2">Our Events</p>
       </div>
       <div class="upcoming-events-container"  style="display:none">
         <?php 

@@ -148,10 +148,21 @@ nav ul a li{
 }
 .event-type .para2{
     margin-left: 20px;
-}
-.event-type p{
+    background-color: rgb(29, 201, 66);
 
 }
+.event-type p{
+    margin-left: 20px;
+    background-color: rgb(65, 179, 90);
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.event-type p:hover{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1313px) {
     .event-card{
         scale: 1;
