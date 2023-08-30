@@ -35,6 +35,7 @@ nav ul a li{
 .upcoming-events-container{
     display: none;
 }
+
 .upcoming-events-container,.upcoming-events-container2{
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +43,7 @@ nav ul a li{
     margin-top: 50px;
     margin-bottom: 30px;
     min-height: 100vh;
-    
+    position: relative;
 }
 .event-card{
     width: 25%;
@@ -111,17 +112,29 @@ nav ul a li{
 }
 
 .news-card{
-    width: 300px;
-    height: 300px;
-    background-color: black;
+    width: 350px;
+    height: 350px;
+    border-radius: 6px;
+    background-color: rgb(192, 192, 192);
 }
 .news-picture{
     height: 50%;
+    border-radius: 6px;
     background: url(images/env.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
+.news-picture .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the color and opacity as needed */
+    color: rgb(0, 0, 0); /* Text color on the overlay */
+    padding: 0px; /* Adjust the padding as needed */
+  }
 .news-brief-description{
     
 }

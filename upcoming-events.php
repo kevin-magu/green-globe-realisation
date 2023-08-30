@@ -58,7 +58,7 @@ $result = mysqli_query($connection,$query);
       <div class="upcoming-events-main-page-title">
         <p>Upcoming Events</p>
       </div>
-      <div class="upcoming-events-container">
+      <div class="upcoming-events-container"  style="display:none">
         <?php 
         if ($result && mysqli_num_rows($result) > 0) {
           
@@ -91,8 +91,12 @@ $result = mysqli_query($connection,$query);
 
       <div class="upcoming-events-container2">
           <div class="news-card">
-            <div class="news-picture"></div>
-            <div class="news-brief-description"></div>
+            <div class="news-picture">
+              <div class="overlay"></div>
+            </div>
+            <div class="news-brief-description">
+              test text
+            </div>
           </div>
       </div>
       
