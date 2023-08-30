@@ -58,6 +58,10 @@ $result = mysqli_query($connection,$query);
       <div class="upcoming-events-main-page-title">
         <p>Upcoming Events</p>
       </div>
+      <div class="event-type">
+        <p>International Events</p>
+        <p>Our Events</p>
+      </div>
       <div class="upcoming-events-container"  style="display:none">
         <?php 
         if ($result && mysqli_num_rows($result) > 0) {

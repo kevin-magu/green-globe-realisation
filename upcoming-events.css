@@ -138,7 +138,20 @@ nav ul a li{
 .news-brief-description{
     
 }
+.event-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 20px;
+    font-size: 22px;
+}
+.event-type .para2{
+    margin-left: 20px;
+}
+.event-type p{
 
+}
 @media screen and (max-width: 1313px) {
     .event-card{
         scale: 1;
