@@ -6,7 +6,7 @@
     </div>    
     <a href="/green-globe-realisation" class="company-logo-a" id="top-page"></a>
     <ul id="navLinks">
-    <a href="/green-globe-realisation" class="actual-links">Home</a>
+    <a href="/test" class="actual-links">Home</a>
         <a href="" class="actual-links">Projects</a>
         <a href="" class="actual-links">Blogs</a>
         <a href="" class="actual-links">Gallery</a>
