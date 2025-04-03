@@ -464,6 +464,15 @@ body{
     height: 200px;
 }
 
+.pictures-container .nobility{
+    background: url(../images2/nobility.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+}
+
 .pictures-container .gecci{
     background: url(../images2/gecci.jpg);
     background-position: center;
@@ -607,6 +616,10 @@ body{
     }
 
     .pictures-container .kws{
+        width: 80px;
+        height: 80px;
+    }
+    .pictures-container .nobility{
         width: 80px;
         height: 80px;
     }

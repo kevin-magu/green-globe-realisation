@@ -6,6 +6,15 @@ html{
     scroll-behavior: smooth;
 }
 
+a:focus{
+    outline: none;
+    box-shadow: none;
+    text-decoration: underline;
+}
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 body{
     position: relative;
 }
@@ -289,6 +298,7 @@ footer .fa-youtube{
         color: white;
         margin: 30px;
         display: none;
+        position: relative;
     }
     nav ul.active{
         width: 200px;
@@ -298,6 +308,17 @@ footer .fa-youtube{
     nav ul a.active{
         display: block;
         transition: 2s linear;
+    }
+    nav ul a:hover::after{
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 2px;
+        background-color: #327e1c;
+        bottom: -5px; 
+        left: 50%;
+        border-radius: 3px;
+        transform: translateX(-50%);
     }
 
     nav{
@@ -330,6 +351,7 @@ footer .fa-youtube{
     footer{
         gap: 20px;
         padding: 20px;
+        margin-top: 50px;
     }
 
     footer .line1{

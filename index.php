@@ -244,7 +244,7 @@
     <div class="pictures-container">
         <a href="" class="slide-up"><div class="kws patners-image"></div></a>
         <a href="" class="slide-up"><div class="gecci patners-image"></div></a>
-        
+        <a href="" class="slide-up"><div class="nobility patners-image"></div></a>
     </div>
 </div>
 

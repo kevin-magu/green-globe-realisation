@@ -1,11 +1,4 @@
-a:focus{
-    outline: none;
-    box-shadow: none;
-    text-decoration: underline;
-}
-a {
-    -webkit-tap-highlight-color: transparent;
-}
+
 
 .sections-container{
     display: flex;
