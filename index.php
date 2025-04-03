@@ -106,10 +106,10 @@
 <div class="page3">
     <div class="page-title textShadow"><p>Our Initiatives</p></div>
     <div class="init-container">
-        <div class="init-card card1 slide-up"><div class="card-image card-image1"></div> <div class="blackOverlay"></div> <p>REFORESTATION & TREE PLANTING</p> <a class="textShadow" href="./initiatives.php">Read more</a> </div>
-        <div class="init-card card2 slide-up"><div class="card-image card-image2"></div> <div class="blackOverlay"></div> <p> CLIMATE ACTION </p> <a class="textShadow" href="./initiatives.php">Read more</a></div>
-        <div class="init-card card3 slide-up"><div class="card-image card-image3"></div> <div class="blackOverlay"></div> <p> WILDLIFE CONSERVATION </p> <a class="textShadow" href="./initiatives.php">Read more</a> </div>
-        <div class="init-card card4 slide-up"><div class="card-image card-image4"></div> <div class="blackOverlay"></div> <p> CLEAN ENERGY SOLUTIONS</p> <a class="textShadow" href="./initiatives.php">Read more</a> </div>
+        <div class="init-card card1 slide-up"><div class="card-image card-image1"></div> <div class="blackOverlay"></div> <p>REFORESTATION & TREE PLANTING</p> <a class="textShadow" href="./initiatives.php/#tree-planting">Read more</a> </div>
+        <div class="init-card card2 slide-up"><div class="card-image card-image2"></div> <div class="blackOverlay"></div> <p> CLIMATE ACTION </p> <a class="textShadow" href="./initiatives.php/#climate-action">Read more</a></div>
+        <div class="init-card card3 slide-up"><div class="card-image card-image3"></div> <div class="blackOverlay"></div> <p> WILDLIFE CONSERVATION </p> <a class="textShadow" href="./initiatives.php/#wildlife-conservation">Read more</a> </div>
+        <div class="init-card card4 slide-up"><div class="card-image card-image4"></div> <div class="blackOverlay"></div> <p> CLEAN ENERGY SOLUTIONS</p> <a class="textShadow" href="./initiatives.php/#clean-energy">Read more</a> </div>
     </div>
 </div>
 

@@ -21,7 +21,7 @@
     <p class="justify-center page-title margin-bottom50">OUR INITIATIVES</p>
 
     <div class="section-container">
-        <div class="section section1">
+        <div class="section section1" id="tree-planting">
             <p class="section-title">REFORESTATION & TREE PLANTING</p>
             <div class="section-picture slide-up"></div>
             <p class="section-context slide-up">
@@ -48,7 +48,7 @@
     </div>
 
     <div class="section-container">
-        <div class="section section2 margin-top50">
+        <div class="section section2 margin-top50" id="climate-action">
             <p class="section-title">Climate Action</p>
             <div class="section-picture slide-up"></div>
             <p class="section-context slide-up">
@@ -76,7 +76,7 @@
     </div>
 
     <div class="section-container">
-        <div class="section section3 margin-top50">
+        <div class="section section3 margin-top50" id="wildlife-conservation">
             <p class="section-title">Wildlife Conservation</p>
             <div class="section-picture slide-up"></div>
             <p class="section-context slide-up">
@@ -103,7 +103,7 @@
     </div>
 
     <div class="section-container">
-        <div class="section section4 margin-top50">
+        <div class="section section4 margin-top50" id="clean-energy">
             <p class="section-title">Clean Energy Solutions</p>
             <div class="section-picture slide-up"></div>
             <p class="section-context slide-up">

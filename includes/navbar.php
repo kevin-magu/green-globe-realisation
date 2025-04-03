@@ -4,7 +4,7 @@
         <p class="menu-bar" id="menu-bar2"></p>
         <p class="menu-bar  menu-bar3" id=""></p>
     </div>    
-    <a href="/green-globe-realisation" class="company-logo-a" id="top-page"></a>
+    <a href="/test" class="company-logo-a" id="top-page"></a>
     <ul id="navLinks">
     <a href="/test" class="actual-links">Home</a>
         <a href="" class="actual-links">Projects</a>
