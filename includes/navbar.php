@@ -1,17 +1,124 @@
-<nav id="navbar">
-    <div class="menu-bars" id="menuToggle">
-        <p class="menu-bar  menu-bar1" id=""></p>
-        <p class="menu-bar" id="menu-bar2"></p>
-        <p class="menu-bar  menu-bar3" id=""></p>
-    </div>    
-    <a href="/test" class="company-logo-a" id="top-page"></a>
-    <ul id="navLinks">
-    <a href="/test" class="actual-links">Home</a>
-        <a href="" class="actual-links">Projects</a>
-        <a href="" class="actual-links">Blogs</a>
-        <a href="" class="actual-links">Gallery</a>
-        <a href="" class="actual-links">About us</a>
-        <a href="" class="actual-links">Plant a Tree</a>
-        <a href="" class="actual-links">Contact</a>
-    </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Globe Realisation</title>
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/">
+                <div class="logo-container">
+                    <i class="fas fa-leaf logo-icon"></i>
+                    <span class="logo-text">Green Globe<br><span class="logo-subtext">Realisation</span></span>
+                </div>
+            </a>
+            <button class="navbar-toggler" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+        </div>
+
+        <div class="navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+                <li class="nav-item dropdown">
+                    <a href="/about" class="nav-link">About <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/about/mission" class="dropdown-item">Our Mission</a>
+                        <a href="/about/team" class="dropdown-item">Our Team</a>
+                        <a href="/about/history" class="dropdown-item">Our History</a>
+                        <a href="/about/partners" class="dropdown-item">Partners</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="/programs" class="nav-link">Programs <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="/programs/reforestation" class="dropdown-item">Reforestation</a>
+                        <a href="/programs/wildlife" class="dropdown-item">Wildlife Protection</a>
+                        <a href="/programs/water" class="dropdown-item">Water Conservation</a>
+                        <a href="/programs/energy" class="dropdown-item">Clean Energy</a>
+                        <a href="/programs/agriculture" class="dropdown-item">Sustainable Agriculture</a>
+                        <a href="/programs/education" class="dropdown-item">Environmental Education</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="/projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="/get-involved" class="nav-link">Get Involved</a></li>
+                <li class="nav-item"><a href="/news" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="navbar-actions">
+                <a href="/donate" class="btn-donate">Donate <i class="fas fa-heart"></i></a>
+                <a href="/volunteer" class="btn-volunteer">Volunteer</a>
+            </div>
+        </div>
+    </div>
 </nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const toggler = document.querySelector('.navbar-toggler');
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    
+    // Toggle mobile menu
+    toggler.addEventListener('click', function() {
+        navbarCollapse.classList.toggle('show');
+        toggler.classList.toggle('open');
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown')) {
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                menu.classList.remove('show');
+            });
+            document.querySelectorAll('.dropdown-icon').forEach(icon => {
+                icon.classList.remove('rotate');
+            });
+        }
+    });
+    
+    // Handle dropdown menus
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+        const link = dropdown.querySelector('.nav-link');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        const icon = dropdown.querySelector('.dropdown-icon');
+        
+        link.addEventListener('click', function(e) {
+            if (window.innerWidth < 992) {
+                e.preventDefault();
+                menu.classList.toggle('show');
+                icon.classList.toggle('rotate');
+                
+                // Close other open dropdowns
+                document.querySelectorAll('.dropdown-menu').forEach(otherMenu => {
+                    if (otherMenu !== menu) {
+                        otherMenu.classList.remove('show');
+                    }
+                });
+                document.querySelectorAll('.dropdown-icon').forEach(otherIcon => {
+                    if (otherIcon !== icon) {
+                        otherIcon.classList.remove('rotate');
+                    }
+                });
+            }
+        });
+    });
+    
+    // Update active link based on current page
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+        }
+    });
+});
+</script>
+</body>
+</html>

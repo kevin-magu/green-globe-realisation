@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+<?php include './includes/navbar.php' ?>
 
 <main class="home-page">
     <!-- Hero Swiper Section -->
