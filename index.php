@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
     <title>Document</title>
 </head>
 <body>
-
 
 <main class="home-page">
     <!-- Hero Swiper Section -->
@@ -475,9 +474,9 @@
 <script>
     // Hero Swiper
     const heroSwiper = new Swiper('.hero-swiper-container', {
-        loop: true,
+        loop: false,
         autoplay: {
-            delay: 5000,
+            delay: 500000000,
             disableOnInteraction: false,
         },
         pagination: {
