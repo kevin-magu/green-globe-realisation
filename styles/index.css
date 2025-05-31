@@ -495,7 +495,7 @@
   }
   
   .story-card:nth-child(1) .story-image {
-    background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-image: url(../images2/northern-kenya-seedball-throwing.jpeg);
   }
   
   .story-card:nth-child(2) .story-image {
@@ -559,7 +559,7 @@
   
   .partner-logo {
     width: 150px;
-    height: 80px;
+    height: 150px;
     background-color: var(--white);
     border-radius: var(--radius-sm);
     box-shadow: var(--shadow-sm);

@@ -224,7 +224,7 @@
                     <div class="story-content">
                         <span class="story-category">Reforestation</span>
                         <h3>Regreening Northern Kenya</h3>
-                        <p>How partnership with Maasai communities is restoring degraded grasslands and improving livelihoods.</p>
+                        <p>How we have involved the Northern Kenya communities in reforestation.</p>
                         <div class="story-meta">
                             <span class="location">Wajir County</span>
                             <span class="date">2022-Present</span>
@@ -280,6 +280,7 @@
                 <div class="partner-logo"></div>
                 <div class="partner-logo"></div>
                 <div class="partner-logo"></div>
+                <a href="/wildlife" class="btn btn-primary">View More</a>
             </div>
         </div>
     </section>
