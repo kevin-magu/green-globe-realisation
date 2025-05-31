@@ -280,7 +280,11 @@
                 <div class="partner-logo"></div>
                 <div class="partner-logo"></div>
                 <div class="partner-logo"></div>
-                <a href="/wildlife" class="btn btn-primary">View More</a>
+                <div class="partner-logo"></div>
+                <div class="partner-logo"></div>
+                <div class="partner-logo"></div>
+                <div class="partner-logo"></div>
+                <a href="/wildlife" class="btn btn-primary">Read More</a>
             </div>
         </div>
     </section>
@@ -299,7 +303,7 @@
                         <li>Community education and outreach</li>
                         <li>Research and data collection</li>
                     </ul>
-                    <a href="/volunteer" class="btn btn-primary">Volunteer With Us</a>
+                    <a href="/register" class="btn btn-primary">Volunteer With Us</a>
                 </div>
                 <div class="volunteer-image">
                     <div class="image-placeholder"></div>

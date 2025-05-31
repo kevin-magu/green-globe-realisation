@@ -569,6 +569,37 @@
     opacity: 0.7;
     transition: var(--transition);
   }
+  .partner-logo:nth-child(1){
+    background-image: url(../images2/logos/kdf-logo.png);
+  }
+  .partner-logo:nth-child(2){
+    background-image: url(../images2/logos/kfs-logo.png);
+  }
+  .partner-logo:nth-child(3){
+    background-image: url(../images2/logos/kws-logo.png);
+  }
+  .partner-logo:nth-child(4){
+    background-image: url(../images2/logos/madina-logo.png);
+  }
+  .partner-logo:nth-child(5){
+    background-image: url(../images2/logos/ministry-of-climate-change.png);
+  }
+  .partner-logo:nth-child(6){
+    background-image: url(../images2/logos/nema-logo.png);
+  }
+  .partner-logo:nth-child(7){
+    background-image: url(../images2/logos/Nobility-logo.png);
+  }
+  .partner-logo:nth-child(8){
+    background-image: url(../images2/logos/redcross-logo.png);
+  }
+  .partner-logo:nth-child(9){
+    background-image: url(../images2/logos/seedballs-logo.png);
+  }
+  .partner-logo:nth-child(10){
+    background-image: url(../images2/logos/wajir-county-logo.png);
+  }
+
   
   .partner-logo:hover {
     opacity: 1;
