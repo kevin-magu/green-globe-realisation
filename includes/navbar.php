@@ -13,8 +13,10 @@
         <div class="navbar-brand">
             <a href="/">
                 <div class="logo-container">
-                    <i class="fas fa-leaf logo-icon"></i>
-                    <span class="logo-text">Green Globe<br><span class="logo-subtext">Realisation</span></span>
+                <div class="navbar-logo">
+                    <img src="./images2/logos/ggr-logo-green.png" alt="Green Globe Realisation" class="logo-img">
+                </div>
+                    <span class="logo-text">Green Globe Realisation</span>
                 </div>
             </a>
             <button class="navbar-toggler" aria-label="Toggle navigation">

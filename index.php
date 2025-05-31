@@ -284,7 +284,7 @@
                 <div class="partner-logo"></div>
                 <div class="partner-logo"></div>
                 <div class="partner-logo"></div>
-                <a href="/wildlife" class="btn btn-primary">Read More</a>
+                <a href="/partners" class="btn btn-secondary">Read More</a>
             </div>
         </div>
     </section>
@@ -473,7 +473,7 @@
         </div>
     </section>
 </main>
-
+<?php include './includes/footer.php' ?>
 
 <!-- Initialize Swipers -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

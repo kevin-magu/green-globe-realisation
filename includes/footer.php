@@ -1,31 +1,64 @@
-<footer>
-    <div class="line1">
-        <a href=""> <i class="fa-brands fa-facebook"></i></a>
-        <a href=""> <i class="fa-brands fa-instagram"></i></a>
-        <a href=""> <i class="fa-brands fa-tiktok"></i></a>
-        <a href=""> <i class="fa-brands fa-youtube"></i></a>
-        <a href=""> <i class="fa-brands fa-x-twitter"></i></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles/footer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-about">
+        <div class="footer-logo">
+          <img src="./images2/logos/ggr-logo-white.png" alt="Green Globe Realisation" class="logo-img">
+          <span class="logo-text">Green Globe Realisation</span>
+        </div>
+        <p class="footer-description">Committed to sustainable real estate solutions that benefit both people and the planet.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/properties">Properties</a></li>
+          <li><a href="/sustainability">Sustainability</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h3 class="footer-title">Contact Us</h3>
+        <ul class="footer-contact-info">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Green Street, Eco City, 10101</li>
+          <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+          <li><i class="fas fa-envelope"></i> info@greengloberealisation.com</li>
+        </ul>
+      </div>
+
+     
     </div>
-    <div class="line2">
-        <p><i class="fa-solid fa-phone"></i>  +254 208-000-117</p>
-        <p><i class="fa-solid fa-envelope"></i> info@greengloberealisation.org</p>
-        <p><i class="fa-solid fa-location-dot"></i>  Kileleshwa, Mwingi Road</p>
+
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        &copy; <?php echo date('Y'); ?> Green Globe Realisation. All rights reserved.
+      </div>
+      <div class="footer-legal">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-of-service">Terms of Service</a>
+        <a href="/cookie-policy">Cookie Policy</a>
+      </div>
     </div>
-    <div class="line3">
-        <b>quick links:</b>
-        <a href="">About us</a>
-        <a href="">Our projects</a>
-        <a href="">Plant a Tree</a>
-    </div>
-    <div class="line4">
-        <p class="company-name">GREEN GLOBE REALISATION</p>
-        <p class="company-slogan">Plant For The Planet</p>
-    </div>
-    <div class="line5">
-        <p> &copy; <span id="year"></span> Green Globe Realisation. All rights reserved.</p>
-    </div>
-    <div class="line6">
-        <p class="developer">Developed by <a href="">Algorithm X Systems</a></p>
-    </div>
-    <a href="#navbar" class="return-to-page1"><i class="fa-solid fa-angle-up"></i></a>
+  </div>
 </footer>
+</body>
+</html>
