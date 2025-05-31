@@ -288,7 +288,7 @@
   
   .image-placeholder {
     height: 400px;
-    background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: url(../images2/aboutus-image.jpeg);
     background-size: cover;
     background-position: center;
     border-radius: var(--radius-lg);
@@ -374,7 +374,13 @@
   .featured-projects {
     background-color: var(--light-bg);
   }
-  
+  .featured-projects .swiper-slide::before{
+    display: none;
+  }
+  .featured-projects a{
+    z-index: 50;
+  }
+
   .projects-swiper {
     padding: 1rem;
   }
@@ -386,6 +392,8 @@
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
     height: auto;
+    display: flex;
+    flex-direction: column;
   }
   
   .project-slide:hover {
@@ -395,6 +403,7 @@
   
   .project-image {
     height: 250px;
+    width: 100%;
     background-size: cover;
     background-position: center;
   }

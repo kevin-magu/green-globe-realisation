@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
-    <title>Document</title>
+    <title>Home</title>
 </head>
 <body>
 <?php include './includes/navbar.php' ?>
@@ -63,11 +63,11 @@
                     <div class="mission-vision">
                         <div class="mv-card">
                             <h3>Our Mission</h3>
-                            <p>To protect and restore Kenya's ecosystems through community-driven conservation initiatives that promote biodiversity and sustainable livelihoods.</p>
+                            <p>Our mission is to protect and conserve the environment in North Eastern Kenya by implementing sustainable solutions that promote biodiversity, preserve natural resources, and empower local communities.</p>
                         </div>
                         <div class="mv-card">
                             <h3>Our Vision</h3>
-                            <p>A Kenya where people and nature thrive together through responsible environmental stewardship and sustainable development.</p>
+                            <p>Our vision is to create a world where arid areas thrive through the adoption of sustainable environmental practices, leading to healthy ecosystems, increased economic prosperity, and social well-being for all.</p>
                         </div>
                     </div>
                     <a href="/about" class="btn btn-secondary">Learn More About Us</a>
@@ -95,19 +95,19 @@
                     <a href="/programs/reforestation" class="program-link">Explore →</a>
                 </div>
                 <div class="program-card">
-                    <div class="program-icon">🦏</div>
-                    <h3>Wildlife Protection</h3>
-                    <p>Conserving endangered species and their habitats through community-based initiatives</p>
+                    <div class="program-icon">♻️</div>
+                    <h3>Biomedical Waste management</h3>
+                    <p>Promoting safe disposal of medical waste to protect public health and the environment</p>
                     <a href="/programs/wildlife" class="program-link">Explore →</a>
                 </div>
                 <div class="program-card">
-                    <div class="program-icon">💧</div>
-                    <h3>Water Conservation</h3>
-                    <p>Protecting watersheds and promoting sustainable water use practices</p>
+                    <div class="program-icon">🌿</div>
+                    <h3>Ecosystems Conservation</h3>
+                    <p>Protecting Kenya's forests, wetlands, and wildlife habitats from degradation.</p>
                     <a href="/programs/water" class="program-link">Explore →</a>
                 </div>
                 <div class="program-card">
-                    <div class="program-icon">🌞</div>
+                    <div class="program-icon">🔋</div>
                     <h3>Clean Energy</h3>
                     <p>Advancing renewable energy solutions for rural communities</p>
                     <a href="/programs/energy" class="program-link">Explore →</a>
