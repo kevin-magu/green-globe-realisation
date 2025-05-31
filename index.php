@@ -27,14 +27,14 @@
                 <div class="swiper-slide slide-2">
                     <div class="slide-content">
                         <h1>5 Million Trees Planted</h1>
-                        <p>Help us reach our goal of 10 million trees by 2025</p>
+                        <p>Help us reach our goal of 10 million trees by 2030</p>
                         <a href="/donate" class="btn btn-primary">Support Reforestation</a>
                     </div>
                 </div>
                 <!-- Slide 3 -->
                 <div class="swiper-slide slide-3">
                     <div class="slide-content">
-                        <h1>Wildlife Conservation</h1>
+                        <h1>Ecosystems Conservation</h1>
                         <p>Protecting endangered species and their habitats</p>
                         <a href="/wildlife" class="btn btn-primary">Learn More</a>
                     </div>
@@ -55,11 +55,11 @@
             <div class="section-header">
                 <span class="section-tag">Who We Are</span>
                 <h2 class="section-title">Green Globe Realisation</h2>
-                <p class="section-subtitle">Leading environmental conservation in Kenya since 2008</p>
+                <p class="section-subtitle">Leading environmental conservation in Kenya since 2021</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Founded in 2008, Green Globe Realisation has grown from a small community initiative to one of Kenya's most impactful environmental organizations. We combine scientific expertise with community knowledge to create sustainable solutions for Kenya's most pressing environmental challenges.</p>
+                    <p>Founded in 2021, Green Globe Realisation has grown from a small community initiative to one of Kenya's most impactful environmental organizations. We combine scientific expertise with community knowledge to create sustainable solutions for Kenya's most pressing environmental challenges.</p>
                     <div class="mission-vision">
                         <div class="mv-card">
                             <h3>Our Mission</h3>

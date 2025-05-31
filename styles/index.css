@@ -161,7 +161,7 @@
   /* Hero Swiper Section */
 .hero-swiper {
   position: relative;
-  height: 100vh;
+  height: 97vh;
   min-height: 600px;
   overflow: hidden;
   padding: 0;
@@ -193,15 +193,15 @@
 }
 
 .slide-1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images2/ggr-cover1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images2/ggr-cover3.jpeg);
 }
 
 .slide-2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images2/ggr-cover2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images2/ggr-cover2.jpeg);
 }
 
 .slide-3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images2/ggr-cover3.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images2/ggr-cover1.jpeg);
 }
 
 .slide-content {
