@@ -223,7 +223,7 @@
                     <div class="story-image"></div>
                     <div class="story-content">
                         <span class="story-category">Reforestation</span>
-                        <h3>Regreening Northern Kenya</h3>
+                        <h3>Greening Northern Kenya</h3>
                         <p>How we have involved the Northern Kenya communities in reforestation.</p>
                         <div class="story-meta">
                             <span class="location">Wajir County</span>
