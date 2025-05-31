@@ -15,7 +15,7 @@
           <img src="./images2/logos/ggr-logo-white.png" alt="Green Globe Realisation" class="logo-img">
           <span class="logo-text">Green Globe Realisation</span>
         </div>
-        <p class="footer-description">Committed to sustainable real estate solutions that benefit both people and the planet.</p>
+        <p class="footer-description">Plant for the planet.</p>
         <div class="footer-social">
           <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
           <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
@@ -39,9 +39,9 @@
       <div class="footer-col footer-contact">
         <h3 class="footer-title">Contact Us</h3>
         <ul class="footer-contact-info">
-          <li><i class="fas fa-map-marker-alt"></i> 123 Green Street, Eco City, 10101</li>
-          <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-          <li><i class="fas fa-envelope"></i> info@greengloberealisation.com</li>
+          <li><i class="fas fa-map-marker-alt"></i>Kileleshua, Mwingi Rd</li>
+          <li><i class="fas fa-phone"></i> +254 208 000 117</li>
+          <li><i class="fas fa-envelope"></i> info@greengloberealisation.org</li>
         </ul>
       </div>
 

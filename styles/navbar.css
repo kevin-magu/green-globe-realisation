@@ -14,12 +14,12 @@
 }
 
 
-a, i,.menu-bar,button, :focus, :active {
-    outline: none;
+a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active {
+    outline: none !important;
   }
   
   /* Optional: Remove tap highlight on mobile devices */
-  a, i,.menu-bar,button, input, textarea {
+  a, i,.menu-bar,button, input, textarea ,.swiper-button-next, .swiper-button-prev{
     -webkit-tap-highlight-color: transparent; /* For Safari/Chrome on iOS */
     tap-highlight-color: transparent; /* For other browsers */
   }
@@ -272,7 +272,7 @@ a, i,.menu-bar,button, :focus, :active {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1151px) {
     .navbar {
         height: var(--navbar-height-mobile);
     }

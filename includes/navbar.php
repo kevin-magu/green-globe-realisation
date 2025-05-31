@@ -11,7 +11,7 @@
 <nav class="navbar">
     <div class="container">
         <div class="navbar-brand">
-            <a href="/">
+            <a href="/green-globe-realisation">
                 <div class="logo-container">
                 <div class="navbar-logo">
                     <img src="./images2/logos/ggr-logo-green.png" alt="Green Globe Realisation" class="logo-img">
@@ -42,8 +42,8 @@
                     <a href="/programs" class="nav-link">Programs <i class="fas fa-chevron-down dropdown-icon"></i></a>
                     <div class="dropdown-menu">
                         <a href="/programs/reforestation" class="dropdown-item">Reforestation</a>
-                        <a href="/programs/wildlife" class="dropdown-item">Wildlife Protection</a>
-                        <a href="/programs/water" class="dropdown-item">Water Conservation</a>
+                        <a href="/programs/wildlife" class="dropdown-item">Biomedical Waste management</a>
+                        <a href="/programs/water" class="dropdown-item">Ecosystems Conservation</a>
                         <a href="/programs/energy" class="dropdown-item">Clean Energy</a>
                         <a href="/programs/agriculture" class="dropdown-item">Sustainable Agriculture</a>
                         <a href="/programs/education" class="dropdown-item">Environmental Education</a>
