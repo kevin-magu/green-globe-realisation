@@ -475,9 +475,9 @@
 <script>
     // Hero Swiper
     const heroSwiper = new Swiper('.hero-swiper-container', {
-        loop: false,
+        loop: true,
         autoplay: {
-            delay: 500000000,
+            delay: 5000,
             disableOnInteraction: false,
         },
         pagination: {
