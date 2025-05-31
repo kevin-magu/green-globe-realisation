@@ -184,7 +184,7 @@
                             <div class="project-image"></div>
                             <div class="project-content">
                                 <span class="project-status">Active</span>
-                                <h3>Urban Greening Nairobi</h3>
+                                <h3>Schools Greening Program</h3>
                                 <p>Creating green spaces in Nairobi's informal settlements to improve air quality and community wellbeing.</p>
                                 <div class="project-stats">
                                     <div class="stat">
