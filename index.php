@@ -189,7 +189,7 @@
                                 <div class="project-stats">
                                     <div class="stat">
                                         <span class="number">15</span>
-                                        <span class="label">Neighborhoods</span>
+                                        <span class="label">Schools</span>
                                     </div>
                                     <div class="stat">
                                         <span class="number">25,000</span>
@@ -223,10 +223,10 @@
                     <div class="story-image"></div>
                     <div class="story-content">
                         <span class="story-category">Reforestation</span>
-                        <h3>Regreening the Rift Valley</h3>
+                        <h3>Regreening Northern Kenya</h3>
                         <p>How partnership with Maasai communities is restoring degraded grasslands and improving livelihoods.</p>
                         <div class="story-meta">
-                            <span class="location">Nakuru County</span>
+                            <span class="location">Wajir County</span>
                             <span class="date">2022-Present</span>
                         </div>
                         <a href="/stories/rift-valley" class="story-link">Read Story →</a>
@@ -237,9 +237,9 @@
                     <div class="story-content">
                         <span class="story-category">Women Empowerment</span>
                         <h3>Women Leading Conservation</h3>
-                        <p>Empowering women's groups in Kitui to combat desertification through innovative water harvesting.</p>
+                        <p>Empowering women's groups in Wajir to combat desertification through innovative water harvesting.</p>
                         <div class="story-meta">
-                            <span class="location">Kitui County</span>
+                            <span class="location">Wajir County</span>
                             <span class="date">Ongoing</span>
                         </div>
                         <a href="/stories/women-conservation" class="story-link">Read Story →</a>
@@ -248,12 +248,12 @@
                 <div class="story-card">
                     <div class="story-image"></div>
                     <div class="story-content">
-                        <span class="story-category">Education</span>
-                        <h3>School Green Clubs</h3>
+                        <span class="story-category">Empowerment</span>
+                        <h3>Engaging the youth</h3>
                         <p>Engaging Kenya's youth in environmental stewardship through our nationwide network of school clubs.</p>
                         <div class="story-meta">
-                            <span class="location">Nationwide</span>
-                            <span class="date">Since 2015</span>
+                            <span class="location">Wajir</span>
+                            <span class="date">Since 2022</span>
                         </div>
                         <a href="/stories/green-clubs" class="story-link">Read Story →</a>
                     </div>

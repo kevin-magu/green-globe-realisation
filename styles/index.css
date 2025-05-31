@@ -409,15 +409,15 @@
   }
   
   .project-slide:nth-child(1) .project-image {
-    background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-image: url(../images2/northern-kneya-greening-program.jpg);
   }
   
   .project-slide:nth-child(2) .project-image {
-    background-image: url('https://images.unsplash.com/photo-1470114716159-e389f8712fda?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: url(../images2/lamu-mangroove.jpg);
   }
   
   .project-slide:nth-child(3) .project-image {
-    background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: url(../images2/school-greening-program.jpg);
   }
   
   .project-content {
@@ -499,11 +499,11 @@
   }
   
   .story-card:nth-child(2) .story-image {
-    background-image: url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: url(../images2/women-empowement.jpg);
   }
   
   .story-card:nth-child(3) .story-image {
-    background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-image: url(../images2/youth-empowerement-program.jpg);
   }
   
   .story-content {
