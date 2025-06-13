@@ -1,9 +1,9 @@
 <?php
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 $server = 'localhost';
-$username = 'root';
-$password = 'Zulu2003mysql';
-$database = 'ggr'; 
+$username = 'greenglo';
+$password = 'Green2030!';
+$database = 'greenglo_v2'; 
 
 $conn = mysqli_connect($server,$username,$password,$database);
 ?>

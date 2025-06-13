@@ -27,6 +27,7 @@
                         <li><a href="./uploadProject.php" >Add Project</a></li>
                         <li><a href="./uploadProgram.php" >Add Program</a></li>
                         <li><a href="./uploadStory.php">Add Story</a></li>
+                        <li><a href="./addExecutive.php">Add Executive</a></li>
                     </ul>
                 </nav>
             </div>
