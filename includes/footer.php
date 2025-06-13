@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -12,7 +12,7 @@
     <div class="footer-grid">
       <div class="footer-col footer-about">
         <div class="footer-logo">
-          <img src="/images2/logos/ggr-logo-white.png" alt="Green Globe Realisation" class="logo-img">
+          <img src="./images2/logos/ggr-logo-white.png" alt="Green Globe Realisation" class="logo-img">
           <span class="logo-text">Green Globe Realisation</span>
         </div>
         <p class="footer-description">Plant for the planet.</p>
@@ -27,12 +27,11 @@
       <div class="footer-col footer-links">
         <h3 class="footer-title">Quick Links</h3>
         <ul class="footer-menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/properties">Properties</a></li>
-          <li><a href="/sustainability">Sustainability</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><a href="./">Home</a></li>
+          <li><a href="./about-us.php">About Us</a></li>
+          <li><a href="./projects.php">Projects</a></li>
+          <li><a href="./news.php">News</a></li>
+          <li><a href="./contact-us">Contact us</a></li>
         </ul>
       </div>
 
@@ -53,9 +52,9 @@
         &copy; <?php echo date('Y'); ?> Green Globe Realisation. All rights reserved.
       </div>
       <div class="footer-legal">
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/terms-of-service">Terms of Service</a>
-        <a href="/cookie-policy">Cookie Policy</a>
+        <a href="./">Privacy Policy</a>
+        <a href="./">Terms of Service</a>
+        <a href="./">Cookie Policy</a>
       </div>
     </div>
   </div>

@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Globe Realisation</title>
-    <link rel="stylesheet" href="/styles/navbar.css">
+ 
+    <link rel="stylesheet" href="./styles/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <nav class="navbar">
     <div class="container">
         <div class="navbar-brand">
-            <a href="">
+            <a href="./">
                 <div class="logo-container">
                 <div class="navbar-logo">
-                    <img src="/images2/logos/ggr-logo-green.png" alt="Green Globe Realisation" class="logo-img">
+                    <img src="./images2/logos/ggr-logo-green.png" alt="Green Globe Realisation" class="logo-img">
                 </div>
                     <span class="logo-text">Green Globe Realisation</span>
                 </div>
@@ -28,30 +29,30 @@
 
         <div class="navbar-collapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="/" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="./" class="nav-link active">Home</a></li>
                 <li class="nav-item dropdown">
-                    <a href="/about" class="nav-link">About <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                    <a href="./about-us.php" class="nav-link">About <i class="fas fa-chevron-down dropdown-icon"></i></a>
                     <div class="dropdown-menu">
-                        <a href="/about/mission" class="dropdown-item">Our Mission</a>
-                        <a href="/about/team" class="dropdown-item">Our Team</a>
-                        <a href="/about/partners" class="dropdown-item">Partners</a>
+                        <a href="./about-us.php#ggr-mission" class="dropdown-item">Our Mission</a>
+                        <a href="./about-us.php#ggr-team" class="dropdown-item">Our Team</a>
+                        <a href="./partners.php" class="dropdown-item">Partners</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="/programs" class="nav-link">Programs <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                    <a href=".#ggr-programs" class="nav-link">Programs <i class="fas fa-chevron-down dropdown-icon"></i></a>
                     <div class="dropdown-menu">
-                        <a href="/programs/reforestation" class="dropdown-item">Reforestation</a>
-                        <a href="/programs/wildlife" class="dropdown-item">Biomedical Waste management</a>
-                        <a href="/programs/water" class="dropdown-item">Ecosystems Conservation</a>
-                        <a href="/programs/energy" class="dropdown-item">Clean Energy</a>
-                        <a href="/programs/agriculture" class="dropdown-item">Sustainable Agriculture</a>
-                        <a href="/programs/education" class="dropdown-item">Environmental Education</a>
+                        <a href="./program.php?programId=21" class="dropdown-item">Reforestation</a>
+                        <a href="./program.php?programId=23" class="dropdown-item">Biomedical Waste management</a>
+                        <a href="./program.php?programId=24" class="dropdown-item">Ecosystems Conservation</a>
+                        <a href="./program.php?programId=25" class="dropdown-item">Clean Energy</a>
+                        <a href="./program.php?programId=26" class="dropdown-item">Sustainable Agriculture</a>
+                        <a href="./program.php?programId=27" class="dropdown-item">Environmental Education</a>
                     </div>
                 </li>
-                <li class="nav-item"><a href="/projects.php" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="/get-involved" class="nav-link">Membeship</a></li>
-                <li class="nav-item"><a href="/news" class="nav-link">News</a></li>
-                <li class="nav-item"><a href="/contact" class="nav-link">Contactus</a></li>
+                <li class="nav-item"><a href="./projects.php" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="./register.php" class="nav-link">Membeship</a></li>
+                <li class="nav-item"><a href="./news.php" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="./contact-us.php" class="nav-link">Contact us</a></li>
             </ul>
 
             <div class="navbar-actions">

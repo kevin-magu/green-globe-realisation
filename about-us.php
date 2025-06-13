@@ -13,7 +13,7 @@
 
 <main class="about-page">
     <!-- Hero Section -->
-    <section class="about-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')">
+    <section class="about-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images2/contact-us-hero.jpg')">
         <div class="container">
             <div class="hero-content">
                 <h1>Our Story</h1>
@@ -23,10 +23,10 @@
     </section>
 
     <!-- About Content -->
-    <section class="about-content">
+    <section class="about-content" >
         <div class="container">
             <div class="content-grid">
-                <div class="about-text">
+                <div class="about-text" id="ggr-mission">
                     <h2>Who We Are</h2>
                     <p>Founded in 2021, Green Globe Realisation has grown from a small community initiative to one of Kenya's most impactful environmental organizations. We combine scientific expertise with community knowledge to create sustainable solutions for Kenya's most pressing environmental challenges.</p>
                     
@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Green Globe Realisation team">
+                    <img src="./images2/ggr-cover2.jpeg" alt="Green Globe Realisation team">
                     <div class="image-caption">Our team working with local community in North Eastern Kenya</div>
                 </div>
             </div>
@@ -85,7 +85,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="team-section">
+    <section class="team-section" id="ggr-team">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Our People</span>

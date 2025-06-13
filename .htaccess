@@ -1,10 +1,7 @@
 RewriteEngine On
+RewriteBase /programs/
 
-# Remove .php extension
+# Redirect any /programs/{slug} to program.php?slug={slug}
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^([^./]+)$ $1.php [L]
-
-# Redirect direct .php access to clean URL
-RewriteCond %{THE_REQUEST} \s/([^.]+)\.php [NC]
-RewriteRule ^ /%1 [R=301,L]
+RewriteRule ^(.+)$ program.php?slug=$1 [L,QSA]

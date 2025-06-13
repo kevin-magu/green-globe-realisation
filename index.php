@@ -20,7 +20,7 @@
                     <div class="slide-content">
                         <h1>Protecting Kenya's Natural Heritage</h1>
                         <p>Join our mission to conserve ecosystems and empower communities</p>
-                        <a href="/get-involved" class="btn btn-primary">Take Action</a>
+                        <a href="./program.php?programId=21" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
                 <!-- Slide 2 -->
@@ -28,7 +28,7 @@
                     <div class="slide-content">
                         <h1>5 Million Trees Planted</h1>
                         <p>Help us reach our goal of 10 million trees by 2030</p>
-                        <a href="/donate" class="btn btn-primary">Support Reforestation</a>
+                        <a href="./donate.php" class="btn btn-primary">Support Reforestation</a>
                     </div>
                 </div>
                 <!-- Slide 3 -->
@@ -36,7 +36,7 @@
                     <div class="slide-content">
                         <h1>Ecosystems Conservation</h1>
                         <p>Protecting endangered species and their habitats</p>
-                        <a href="/wildlife" class="btn btn-primary">Learn More</a>
+                        <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
                             <p>Our vision is to create a world where arid areas thrive through the adoption of sustainable environmental practices, leading to healthy ecosystems, increased economic prosperity, and social well-being for all.</p>
                         </div>
                     </div>
-                    <a href="/about" class="btn btn-secondary">Learn More About Us</a>
+                    <a href="./about-us.php" class="btn btn-secondary">Learn More About Us</a>
                 </div>
                 <div class="about-image">
                     <div class="image-placeholder"></div>
@@ -80,7 +80,7 @@
     </section>
 
     <!-- Core Programs Section -->
-    <section class="programs-section">
+    <section class="programs-section" id="ggr-programs">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Our Work</span>
@@ -92,27 +92,27 @@
 require_once './includes/connection.php';
 $conn->set_charset("utf8mb4");
 
-$query = "SELECT programName, programSbl, programDesc FROM programs";
+$query = "SELECT programId, programName, programSbl, programDesc FROM programs";
 $result = $conn->query($query);
 
 if ($result && $result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
+        $programId = (int) $row['programId'];
         $name = htmlspecialchars($row['programName']);
         $symbol = htmlspecialchars($row['programSbl']);
         $desc = htmlspecialchars($row['programDesc']);
-        
 
-        // Create slug for the link
-        $slug = strtolower(preg_replace('/[^a-z0-9]+/i', '-', $name));
+        // Truncate description to 20 words
         $words = explode(' ', $desc);
-        $shortDesc = implode(' ', array_slice($words, 0, 20)) . (count($words) > 10 ? '...' : '');
+        $shortDesc = implode(' ', array_slice($words, 0, 20)) . (count($words) > 20 ? '...' : '');
+
         echo <<<HTML
         <div class="program-card">
             <div class="program-icon">{$symbol}</div>
             <h3>{$name}</h3>
             <p>{$shortDesc}</p>
-            <a href="/programs/program.php?slug={$slug}" class="program-link">Read More →</a>   
-            </div>
+            <a href="./program.php?programId={$programId}" class="program-link">Read More →</a>   
+        </div>
         HTML;
     }
 } else {
@@ -121,6 +121,7 @@ if ($result && $result->num_rows > 0) {
 
 $conn->close();
 ?>
+
 </div>
 
         </div>
@@ -194,7 +195,7 @@ $conn->close();
             </div>
         </div>
         <div class="section-cta">
-            <a href="/projects" class="btn btn-primary">View All Projects</a>
+            <a href="./projects.php" class="btn btn-primary">View All Projects</a>
         </div>
     </div>
 </section>
@@ -259,7 +260,7 @@ $result = $conn->query($sql);
             <?php endwhile; ?>
         </div>
         <div class="section-cta">
-            <a href="/stories" class="btn btn-secondary">More Success Stories</a>
+            <a href="./stories.php" class="btn btn-secondary">More Success Stories</a>
         </div>
     </div>
 </section>
@@ -286,7 +287,7 @@ $result = $conn->query($sql);
                 <div class="partner-logo"></div>
                 <div class="partner-logo"></div>
                 <div class="partner-logo"></div>
-                <a href="/partners" class="btn btn-secondary">Read More</a>
+                <a href="./partners.php" class="btn btn-secondary">Read More</a>
             </div>
         </div>
     </section>
@@ -336,7 +337,7 @@ $result = $conn->query($sql);
                             <span class="description">Trains a conservation educator</span>
                         </div>
                     </div>
-                    <a href="/donate" class="btn btn-primary">Make a Donation</a>
+                    <a href="./donate.php" class="btn btn-primary">Make a Donation</a>
                 </div>
                 <div class="donation-image">
                     <div class="image-placeholder"></div>
@@ -353,37 +354,22 @@ $result = $conn->query($sql);
                 <h2 class="section-title">News & Updates</h2>
                 <p class="section-subtitle">Stay informed about our conservation work</p>
             </div>
+            <h6 style="display: flex; justify-content: center;">news are being updated. come back later.</h6>
             <div class="news-grid">
-                <div class="news-card">
+                
+              <!--  <div class="news-card">
                     <div class="news-image"></div>
                     <div class="news-content">
-                        <span class="news-date">June 15, 2023</span>
+                        <span class="news-date">Aug 15, 2025</span>
                         <h3>New Partnership Launches Coastal Conservation Program</h3>
                         <p>We've teamed up with local fishermen to protect marine ecosystems along Kenya's coast.</p>
                         <a href="/news/coastal-program" class="news-link">Read More →</a>
                     </div>
-                </div>
-                <div class="news-card">
-                    <div class="news-image"></div>
-                    <div class="news-content">
-                        <span class="news-date">May 28, 2023</span>
-                        <h3>Annual Tree Planting Day Breaks Records</h3>
-                        <p>Over 10,000 volunteers planted 250,000 trees in a single day across 15 counties.</p>
-                        <a href="/news/tree-planting" class="news-link">Read More →</a>
-                    </div>
-                </div>
-                <div class="news-card">
-                    <div class="news-image"></div>
-                    <div class="news-content">
-                        <span class="news-date">April 12, 2023</span>
-                        <h3>Women's Conservation Group Wins National Award</h3>
-                        <p>Our Kitui women's group recognized for innovative water conservation techniques.</p>
-                        <a href="/news/women-award" class="news-link">Read More →</a>
-                    </div>
-                </div>
+                </div>-->
+               
             </div>
             <div class="section-cta">
-                <a href="/news" class="btn btn-secondary">View All News</a>
+                <a href="./news.php" class="btn btn-secondary">View All News</a>
             </div>
         </div>
     </section>
@@ -397,7 +383,8 @@ $result = $conn->query($sql);
                 <p class="section-subtitle">Join us for conservation activities and educational programs</p>
             </div>
             <div class="events-list">
-                <div class="event-card">
+                <h6 style="display: flex; justify-content: center;">No upcoming event found</h6>
+               <!-- <div class="event-card">
                     <div class="event-date">
                         <span class="day">15</span>
                         <span class="month">Jul</span>
@@ -410,38 +397,10 @@ $result = $conn->query($sql);
                         </p>
                         <a href="/events/nairobi-planting" class="event-link">Register Now</a>
                     </div>
-                </div>
-                <div class="event-card">
-                    <div class="event-date">
-                        <span class="day">22</span>
-                        <span class="month">Jul</span>
-                    </div>
-                    <div class="event-details">
-                        <h3>Wildlife Conservation Workshop</h3>
-                        <p class="event-info">
-                            <span class="location">Online Webinar</span>
-                            <span class="time">2:00 PM - 4:00 PM</span>
-                        </p>
-                        <a href="/events/wildlife-workshop" class="event-link">Register Now</a>
-                    </div>
-                </div>
-                <div class="event-card">
-                    <div class="event-date">
-                        <span class="day">05</span>
-                        <span class="month">Aug</span>
-                    </div>
-                    <div class="event-details">
-                        <h3>Coastal Cleanup Day - Mombasa</h3>
-                        <p class="event-info">
-                            <span class="location">Nyali Beach, Mombasa</span>
-                            <span class="time">7:00 AM - 11:00 AM</span>
-                        </p>
-                        <a href="/events/coastal-cleanup" class="event-link">Register Now</a>
-                    </div>
-                </div>
+                </div>-->
             </div>
             <div class="section-cta">
-                <a href="/events" class="btn btn-secondary">View All Events</a>
+                <a href="./events.php" class="btn btn-secondary">View All Events</a>
             </div>
         </div>
     </section>
@@ -468,9 +427,9 @@ $result = $conn->query($sql);
             <h2>Ready to Make a Difference?</h2>
             <p>Join us in protecting Kenya's environment for future generations</p>
             <div class="cta-buttons">
-                <a href="/donate" class="btn btn-primary">Donate Now</a>
-                <a href="/volunteer" class="btn btn-secondary">Become a Volunteer</a>
-                <a href="/contact" class="btn btn-secondary">Contact Us</a>
+                <a href="./donate.php" class="btn btn-primary">Donate Now</a>
+                <a href="./register.php" class="btn btn-secondary">Become a Volunteer</a>
+                <a href="./contact-us.php" class="btn btn-secondary">Contact Us</a>
             </div>
         </div>
     </section>
