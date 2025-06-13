@@ -36,9 +36,12 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
     z-index: 1000;
     transition: var(--transition);
 }
+.navbar .nav-logo{
+    width: 100px;
+}
 .navbar .logo-img{
     height: 70px;
-    width: 200px;
+    width: 100%;
 }
 
 .navbar .container {

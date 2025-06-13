@@ -160,6 +160,9 @@
   
   /* Hero Swiper Section */
   /* Hero Swiper Section */
+.home-page{
+  padding-top: var(--navbar-height);
+}
 .hero-swiper {
   position: relative;
   height: 97vh;
@@ -321,7 +324,7 @@
   }
   
   .mv-card h3 {
-    color: var(--accent);
+    color: var(--primary-dark);
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
   }

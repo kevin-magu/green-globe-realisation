@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Globe Realisation</title>
-    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="/green-globe-realisation/styles/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
             <a href="/green-globe-realisation">
                 <div class="logo-container">
                 <div class="navbar-logo">
-                    <img src="./images2/logos/ggr-logo-green.png" alt="Green Globe Realisation" class="logo-img">
+                    <img src="/green-globe-realisation/images2/logos/ggr-logo-green.png" alt="Green Globe Realisation" class="logo-img">
                 </div>
                     <span class="logo-text">Green Globe Realisation</span>
                 </div>
@@ -34,7 +34,6 @@
                     <div class="dropdown-menu">
                         <a href="/about/mission" class="dropdown-item">Our Mission</a>
                         <a href="/about/team" class="dropdown-item">Our Team</a>
-                        <a href="/about/history" class="dropdown-item">Our History</a>
                         <a href="/about/partners" class="dropdown-item">Partners</a>
                     </div>
                 </li>
@@ -49,15 +48,14 @@
                         <a href="/programs/education" class="dropdown-item">Environmental Education</a>
                     </div>
                 </li>
-                <li class="nav-item"><a href="/projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="/get-involved" class="nav-link">Get Involved</a></li>
+                <li class="nav-item"><a href="/green-globe-realisation/projects.php" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="/get-involved" class="nav-link">Membeship</a></li>
                 <li class="nav-item"><a href="/news" class="nav-link">News</a></li>
-                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contactus</a></li>
             </ul>
 
             <div class="navbar-actions">
-                <a href="/donate" class="btn-donate">Donate <i class="fas fa-heart"></i></a>
-                <a href="/volunteer" class="btn-volunteer">Volunteer</a>
+                <a href="/donate" class="btn-volunteer" >Donate <i class="fas fa-heart" style="margin-left: 5px;"></i></a>
             </div>
         </div>
     </div>

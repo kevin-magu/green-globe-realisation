@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
-    <title>Home</title>
+    <title>GGR | Home</title>
 </head>
 <body>
 <?php include './includes/navbar.php' ?>
@@ -88,182 +88,184 @@
                 <p class="section-subtitle">Integrated approaches to environmental conservation</p>
             </div>
             <div class="programs-grid">
-                <div class="program-card">
-                    <div class="program-icon">🌳</div>
-                    <h3>Reforestation</h3>
-                    <p>Restoring degraded landscapes through native tree planting and sustainable land management</p>
-                    <a href="/programs/reforestation" class="program-link">Explore →</a>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">♻️</div>
-                    <h3>Biomedical Waste management</h3>
-                    <p>Promoting safe disposal of medical waste to protect public health and the environment</p>
-                    <a href="/programs/wildlife" class="program-link">Explore →</a>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">🌿</div>
-                    <h3>Ecosystems Conservation</h3>
-                    <p>Protecting Kenya's forests, wetlands, and wildlife habitats from degradation.</p>
-                    <a href="/programs/water" class="program-link">Explore →</a>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">🔋</div>
-                    <h3>Clean Energy</h3>
-                    <p>Advancing renewable energy solutions for rural communities</p>
-                    <a href="/programs/energy" class="program-link">Explore →</a>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">👩‍🌾</div>
-                    <h3>Sustainable Agriculture</h3>
-                    <p>Promoting climate-smart farming techniques that protect ecosystems</p>
-                    <a href="/programs/agriculture" class="program-link">Explore →</a>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">🏫</div>
-                    <h3>Environmental Education</h3>
-                    <p>Empowering future generations through conservation education</p>
-                    <a href="/programs/education" class="program-link">Explore →</a>
-                </div>
+<?php
+require_once './includes/connection.php';
+$conn->set_charset("utf8mb4");
+
+$query = "SELECT programName, programSbl, programDesc FROM programs";
+$result = $conn->query($query);
+
+if ($result && $result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $name = htmlspecialchars($row['programName']);
+        $symbol = htmlspecialchars($row['programSbl']);
+        $desc = htmlspecialchars($row['programDesc']);
+        
+
+        // Create slug for the link
+        $slug = strtolower(preg_replace('/[^a-z0-9]+/i', '-', $name));
+        $words = explode(' ', $desc);
+        $shortDesc = implode(' ', array_slice($words, 0, 20)) . (count($words) > 10 ? '...' : '');
+        echo <<<HTML
+        <div class="program-card">
+            <div class="program-icon">{$symbol}</div>
+            <h3>{$name}</h3>
+            <p>{$shortDesc}</p>
+            <a href="/green-globe-realisation/programs/program.php?slug={$slug}" class="program-link">Read More →</a>   
             </div>
+        HTML;
+    }
+} else {
+    echo '<p>No programs found.</p>';
+}
+
+$conn->close();
+?>
+</div>
+
         </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section class="featured-projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Impact</span>
-                <h2 class="section-title">Featured Projects</h2>
-                <p class="section-subtitle">Our current flagship initiatives making a difference</p>
-            </div>
-            <div class="projects-swiper">
-                <div class="swiper featured-projects-swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Project 1 -->
-                        <div class="swiper-slide project-slide">
-                            <div class="project-image"></div>
-                            <div class="project-content">
-                                <span class="project-status">Active</span>
-                                <h3>Northern Kenya Reforestation Initiative</h3>
-                                <p>Restoring 10,000 hectares of degraded land through community-led tree planting in Kenya's arid regions.</p>
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <span class="number">450,000</span>
-                                        <span class="label">Trees Planted</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="number">32</span>
-                                        <span class="label">Communities</span>
-                                    </div>
-                                </div>
-                                <a href="/projects/northern-kenya" class="btn btn-secondary">Project Details</a>
-                            </div>
-                        </div>
-                        <!-- Project 2 -->
-                        <div class="swiper-slide project-slide">
-                            <div class="project-image"></div>
-                            <div class="project-content">
-                                <span class="project-status highlight">New</span>
-                                <h3>Coastal Mangrove Restoration</h3>
-                                <p>Protecting vital mangrove ecosystems along Kenya's Indian Ocean coast through restoration and education.</p>
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <span class="number">120</span>
-                                        <span class="label">Hectares</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="number">800+</span>
-                                        <span class="label">Fisherfolk</span>
-                                    </div>
-                                </div>
-                                <a href="/projects/mangrove" class="btn btn-secondary">Project Details</a>
-                            </div>
-                        </div>
-                        <!-- Project 3 -->
-                        <div class="swiper-slide project-slide">
-                            <div class="project-image"></div>
-                            <div class="project-content">
-                                <span class="project-status">Active</span>
-                                <h3>Schools Greening Program</h3>
-                                <p>Creating green spaces in Nairobi's informal settlements to improve air quality and community wellbeing.</p>
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <span class="number">15</span>
-                                        <span class="label">Schools</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="number">25,000</span>
-                                        <span class="label">Trees Planted</span>
-                                    </div>
-                                </div>
-                                <a href="/projects/urban-greening" class="btn btn-secondary">Project Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-            <div class="section-cta">
-                <a href="/projects" class="btn btn-primary">View All Projects</a>
-            </div>
+  <!-- Featured Projects Section -->
+<section class="featured-projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Impact</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Our current flagship initiatives making a difference</p>
         </div>
-    </section>
+        <div class="projects-swiper">
+            <div class="swiper featured-projects-swiper">
+                <div class="swiper-wrapper">
+                    <?php
+                    include './includes/connection.php';
 
-    <!-- Impact Stories Section -->
-    <section class="impact-stories-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Stories</span>
-                <h2 class="section-title">Creating Lasting Change</h2>
-                <p class="section-subtitle">How our work is transforming communities and ecosystems</p>
-            </div>
-            <div class="stories-grid">
-                <div class="story-card">
-                    <div class="story-image"></div>
-                    <div class="story-content">
-                        <span class="story-category">Reforestation</span>
-                        <h3>Greening Northern Kenya</h3>
-                        <p>How we have involved the Northern Kenya communities in reforestation.</p>
-                        <div class="story-meta">
-                            <span class="location">Wajir County</span>
-                            <span class="date">2022-Present</span>
-                        </div>
-                        <a href="/stories/rift-valley" class="story-link">Read Story →</a>
-                    </div>
+                    // Get up to 3 featured project IDs
+                    $result = $conn->query("SELECT projectId FROM featuredProjects ORDER BY created_at DESC LIMIT 3");
+
+                    while ($row = $result->fetch_assoc()) {
+                        $projectId = $row['projectId'];
+
+                        // Get full project details from `projects`
+                        $stmt = $conn->prepare("SELECT projectId, projectTitle, projectDesc, projectStatus, impactValue1, impactLabel1, impactValue2, impactLabel2 FROM projects WHERE projectId = ?");
+                        $stmt->bind_param("i", $projectId);
+                        $stmt->execute();
+                        $project = $stmt->get_result()->fetch_assoc();
+
+                        if (!$project) continue;
+
+                        // Get the first image for this project from `projectImages`
+                        $imgStmt = $conn->prepare("SELECT projectImagePath FROM projectImages WHERE projectId = ? ORDER BY imageId ASC LIMIT 1");
+                        $imgStmt->bind_param("i", $projectId);
+                        $imgStmt->execute();
+                        $imgResult = $imgStmt->get_result()->fetch_assoc();
+
+                        $imageUrl = $imgResult ? htmlspecialchars($imgResult['projectImagePath']) : 'uploads/default.jpg'; // fallback image
+
+                        // Trim description to 14 words
+                        $descWords = explode(" ", strip_tags($project['projectDesc']));
+                        $descPreview = implode(" ", array_slice($descWords, 0, 14)) . (count($descWords) > 14 ? "..." : "");
+
+                        echo '
+                        <div class="swiper-slide project-slide">
+                            <div class="project-image" style="background-image: url(\'' . $imageUrl . '\');"></div>
+                            <div class="project-content">
+                                <span class="project-status">' . htmlspecialchars($project['projectStatus']) . '</span>
+                                <h3>' . htmlspecialchars($project['projectTitle']) . '</h3>
+                                <p>' . htmlspecialchars($descPreview) . '</p>
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="number">' . htmlspecialchars($project['impactValue1']) . '</span>
+                                        <span class="label">' . htmlspecialchars($project['impactLabel1']) . '</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="number">' . htmlspecialchars($project['impactValue2']) . '</span>
+                                        <span class="label">' . htmlspecialchars($project['impactLabel2']) . '</span>
+                                    </div>
+                                </div>
+                                <a href="project.php?projectId=' . urlencode($project['projectId']) . '" class="btn btn-secondary">Project Details</a>
+                            </div>
+                        </div>';
+                    }
+                    ?>
                 </div>
-                <div class="story-card">
-                    <div class="story-image"></div>
-                    <div class="story-content">
-                        <span class="story-category">Women Empowerment</span>
-                        <h3>Women Leading Conservation</h3>
-                        <p>Empowering women's groups in Wajir to combat desertification through innovative water harvesting.</p>
-                        <div class="story-meta">
-                            <span class="location">Wajir County</span>
-                            <span class="date">Ongoing</span>
-                        </div>
-                        <a href="/stories/women-conservation" class="story-link">Read Story →</a>
-                    </div>
-                </div>
-                <div class="story-card">
-                    <div class="story-image"></div>
-                    <div class="story-content">
-                        <span class="story-category">Empowerment</span>
-                        <h3>Engaging the youth</h3>
-                        <p>Engaging Kenya's youth in environmental stewardship through our nationwide network of school clubs.</p>
-                        <div class="story-meta">
-                            <span class="location">Wajir</span>
-                            <span class="date">Since 2022</span>
-                        </div>
-                        <a href="/stories/green-clubs" class="story-link">Read Story →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="section-cta">
-                <a href="/stories" class="btn btn-secondary">More Success Stories</a>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
-    </section>
+        <div class="section-cta">
+            <a href="/projects" class="btn btn-primary">View All Projects</a>
+        </div>
+    </div>
+</section>
+
+
+   <?php
+include './includes/connection.php'; // Update path if needed
+
+$sql = "
+    SELECT 
+        s.storyId,
+        s.storyTitle,
+        s.storyDescription,
+        s.location,
+        p.programName,
+        (
+            SELECT imagePath 
+            FROM storyImages 
+            WHERE storyId = s.storyId 
+            ORDER BY storyId ASC LIMIT 1
+        ) AS firstImage
+    FROM stories s
+    INNER JOIN programs p ON s.programId = p.programId
+    ORDER BY s.created_at DESC
+    LIMIT 3
+";
+
+$result = $conn->query($sql);
+?>
+
+<!-- Impact Stories Section -->
+<section class="impact-stories-section">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Stories</span>
+            <h2 class="section-title">Creating Lasting Change</h2>
+            <p class="section-subtitle">How our work is transforming communities and ecosystems</p>
+        </div>
+        <div class="stories-grid">
+            <?php while($row = $result->fetch_assoc()): ?>
+                <div class="story-card">
+                    <div class="story-image" style="background-image: url('<?php echo htmlspecialchars($row['firstImage'] ?: './default.jpg'); ?>');"></div>
+                    <div class="story-content">
+                        <span class="story-category"><?php echo htmlspecialchars($row['storyTitle']); ?></span>
+                        <h3><?php echo htmlspecialchars($row['programName']); ?></h3>
+                        <p>
+                        <?php
+                            $words = explode(' ', strip_tags($row['storyDescription']));
+                            $shortDesc = implode(' ', array_slice($words, 0, 14));
+                            echo htmlspecialchars($shortDesc) . (count($words) > 14 ? '...' : '');
+                            ?>
+                        </p>
+
+                        <div class="story-meta">
+                            <span class="location"><?php echo htmlspecialchars($row['location']); ?></span>
+                
+                        </div>
+                        <?php echo '<a href="story.php?storyId=' . $row['storyId'] . '" class="story-link">Read Story →</a>'; ?>
+                        
+                    </div>
+                </div>
+            <?php endwhile; ?>
+        </div>
+        <div class="section-cta">
+            <a href="/stories" class="btn btn-secondary">More Success Stories</a>
+        </div>
+    </div>
+</section>
+
+
+
 
     <!-- Partners Section -->
     <section class="partners-section">
