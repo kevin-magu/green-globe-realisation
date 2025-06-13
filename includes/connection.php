@@ -1,5 +1,4 @@
 <?php
-ini_set('display_errors', 0);
 $server = 'localhost';
 $username = 'greenglo';
 $password = 'Green2030!';

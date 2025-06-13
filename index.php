@@ -138,57 +138,53 @@ $conn->close();
         <div class="projects-swiper">
             <div class="swiper featured-projects-swiper">
                 <div class="swiper-wrapper">
-                    <?php
-                    include './includes/connection.php';
+                 <?php
+include './includes/connection.php';
 
-                    // Get up to 3 featured project IDs
-                    $result = $conn->query("SELECT projectId FROM featuredProjects ORDER BY created_at DESC LIMIT 3");
+$result = $conn->query("SELECT projectId FROM featuredProjects ORDER BY created_at DESC LIMIT 3");
 
-                    while ($row = $result->fetch_assoc()) {
-                        $projectId = $row['projectId'];
+while ($row = $result->fetch_assoc()) {
+    $projectId = $row['projectId'];
 
-                        // Get full project details from `projects`
-                        $stmt = $conn->prepare("SELECT projectId, projectTitle, projectDesc, projectStatus, impactValue1, impactLabel1, impactValue2, impactLabel2 FROM projects WHERE projectId = ?");
-                        $stmt->bind_param("i", $projectId);
-                        $stmt->execute();
-                        $project = $stmt->get_result()->fetch_assoc();
+    $stmt = $conn->prepare("SELECT projectId, projectTitle, projectDesc, projectStatus, impactValue1, impactLabel1, impactValue2, impactLabel2 FROM projects WHERE projectId = ?");
+    $stmt->bind_param("i", $projectId);
+    $stmt->execute();
+    $project = $stmt->get_result()->fetch_assoc();
 
-                        if (!$project) continue;
+    if (!$project) continue;
 
-                        // Get the first image for this project from `projectImages`
-                        $imgStmt = $conn->prepare("SELECT projectImagePath FROM projectImages WHERE projectId = ? ORDER BY imageId ASC LIMIT 1");
-                        $imgStmt->bind_param("i", $projectId);
-                        $imgStmt->execute();
-                        $imgResult = $imgStmt->get_result()->fetch_assoc();
+    $imgStmt = $conn->prepare("SELECT projectImagePath FROM projectImages WHERE projectId = ? ORDER BY imageId ASC LIMIT 1");
+    $imgStmt->bind_param("i", $projectId);
+    $imgStmt->execute();
+    $imgResult = $imgStmt->get_result()->fetch_assoc();
 
-                        $imageUrl = $imgResult ? htmlspecialchars($imgResult['projectImagePath']) : 'uploads/default.jpg'; // fallback image
+    $imageUrl = $imgResult ? htmlspecialchars($imgResult['projectImagePath']) : 'Uploads/default.jpg';
 
-                        // Trim description to 14 words
-                        $descWords = explode(" ", strip_tags($project['projectDesc']));
-                        $descPreview = implode(" ", array_slice($descWords, 0, 14)) . (count($descWords) > 14 ? "..." : "");
+    $descWords = explode(" ", strip_tags($project['projectDesc']));
+    $descPreview = implode(" ", array_slice($descWords, 0, 14)) . (count($descWords) > 14 ? "..." : "");
 
-                        echo '
-                        <div class="swiper-slide project-slide">
-                            <div class="project-image" style="background-image: url(\'' . $imageUrl . '\');"></div>
-                            <div class="project-content">
-                                <span class="project-status">' . htmlspecialchars($project['projectStatus']) . '</span>
-                                <h3>' . htmlspecialchars($project['projectTitle']) . '</h3>
-                                <p>' . htmlspecialchars($descPreview) . '</p>
-                                <div class="project-stats">
-                                    <div class="stat">
-                                        <span class="number">' . htmlspecialchars($project['impactValue1']) . '</span>
-                                        <span class="label">' . htmlspecialchars($project['impactLabel1']) . '</span>
-                                    </div>
-                                    <div class="stat">
-                                        <span class="number">' . htmlspecialchars($project['impactValue2']) . '</span>
-                                        <span class="label">' . htmlspecialchars($project['impactLabel2']) . '</span>
-                                    </div>
-                                </div>
-                                <a href="project.php?projectId=' . urlencode($project['projectId']) . '" class="btn btn-secondary">Project Details</a>
-                            </div>
-                        </div>';
-                    }
-                    ?>
+    echo '
+    <div class="swiper-slide project-slide">
+        <div class="project-image" style="background-image: url(\'' . $imageUrl . '\');"></div>
+        <div class="project-content">
+            <span class="project-status">' . htmlspecialchars($project['projectStatus']) . '</span>
+            <h3>' . htmlspecialchars($project['projectTitle']) . '</h3>
+            <p>' . htmlspecialchars($descPreview) . '</p>
+            <div class="project-stats">
+                <div class="stat">
+                    <span class="number">' . htmlspecialchars($project['impactValue1']) . '</span>
+                    <span class="label">' . htmlspecialchars($project['impactLabel1']) . '</span>
+                </div>
+                <div class="stat">
+                    <span class="number">' . htmlspecialchars($project['impactValue2']) . '</span>
+                    <span class="label">' . htmlspecialchars($project['impactLabel2']) . '</span>
+                </div>
+            </div>
+            <a href="project.php?projectId=' . urlencode($project['projectId']) . '" class="btn btn-secondary">Project Details</a>
+        </div>
+    </div>';
+}
+?>
                 </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
