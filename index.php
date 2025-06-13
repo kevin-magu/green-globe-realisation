@@ -80,14 +80,14 @@
     </section>
 
     <!-- Core Programs Section -->
-    <section class="programs-section" id="ggr-programs">
+    <section class="programs-section" id="programs">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Our Work</span>
                 <h2 class="section-title">Core Programs</h2>
                 <p class="section-subtitle">Integrated approaches to environmental conservation</p>
             </div>
-            <div class="programs-grid">
+          <div class="programs-grid">
 <?php
 require_once './includes/connection.php';
 $conn->set_charset("utf8mb4");
@@ -105,15 +105,14 @@ if ($result && $result->num_rows > 0) {
         // Truncate description to 20 words
         $words = explode(' ', $desc);
         $shortDesc = implode(' ', array_slice($words, 0, 20)) . (count($words) > 20 ? '...' : '');
-
-        echo <<<HTML
-        <div class="program-card">
-            <div class="program-icon">{$symbol}</div>
-            <h3>{$name}</h3>
-            <p>{$shortDesc}</p>
-            <a href="./program.php?programId={$programId}" class="program-link">Read More →</a>   
-        </div>
-        HTML;
+        
+        // Use regular echo instead of heredoc to avoid syntax issues
+        echo '<div class="program-card">';
+        echo '<div class="program-icon">' . $symbol . '</div>';
+        echo '<h3>' . $name . '</h3>';
+        echo '<p>' . $shortDesc . '</p>';
+        echo '<a href="./program.php?programId=' . $programId . '" class="program-link">Read More →</a>';
+        echo '</div>';
     }
 } else {
     echo '<p>No programs found.</p>';
@@ -121,71 +120,7 @@ if ($result && $result->num_rows > 0) {
 
 $conn->close();
 ?>
-
 </div>
-
-        </div>
-    </section>
-
-  <!-- Featured Projects Section -->
-<section class="featured-projects">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">Impact</span>
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">Our current flagship initiatives making a difference</p>
-        </div>
-        <div class="projects-swiper">
-            <div class="swiper featured-projects-swiper">
-                <div class="swiper-wrapper">
-                 <?php
-include './includes/connection.php';
-
-$result = $conn->query("SELECT projectId FROM featuredProjects ORDER BY created_at DESC LIMIT 3");
-
-while ($row = $result->fetch_assoc()) {
-    $projectId = $row['projectId'];
-
-    $stmt = $conn->prepare("SELECT projectId, projectTitle, projectDesc, projectStatus, impactValue1, impactLabel1, impactValue2, impactLabel2 FROM projects WHERE projectId = ?");
-    $stmt->bind_param("i", $projectId);
-    $stmt->execute();
-    $project = $stmt->get_result()->fetch_assoc();
-
-    if (!$project) continue;
-
-    $imgStmt = $conn->prepare("SELECT projectImagePath FROM projectImages WHERE projectId = ? ORDER BY imageId ASC LIMIT 1");
-    $imgStmt->bind_param("i", $projectId);
-    $imgStmt->execute();
-    $imgResult = $imgStmt->get_result()->fetch_assoc();
-
-    $imageUrl = $imgResult ? htmlspecialchars($imgResult['projectImagePath']) : 'Uploads/default.jpg';
-
-    $descWords = explode(" ", strip_tags($project['projectDesc']));
-    $descPreview = implode(" ", array_slice($descWords, 0, 14)) . (count($descWords) > 14 ? "..." : "");
-
-    echo '
-    <div class="swiper-slide project-slide">
-        <div class="project-image" style="background-image: url(\'' . $imageUrl . '\');"></div>
-        <div class="project-content">
-            <span class="project-status">' . htmlspecialchars($project['projectStatus']) . '</span>
-            <h3>' . htmlspecialchars($project['projectTitle']) . '</h3>
-            <p>' . htmlspecialchars($descPreview) . '</p>
-            <div class="project-stats">
-                <div class="stat">
-                    <span class="number">' . htmlspecialchars($project['impactValue1']) . '</span>
-                    <span class="label">' . htmlspecialchars($project['impactLabel1']) . '</span>
-                </div>
-                <div class="stat">
-                    <span class="number">' . htmlspecialchars($project['impactValue2']) . '</span>
-                    <span class="label">' . htmlspecialchars($project['impactLabel2']) . '</span>
-                </div>
-            </div>
-            <a href="project.php?projectId=' . urlencode($project['projectId']) . '" class="btn btn-secondary">Project Details</a>
-        </div>
-    </div>';
-}
-?>
-                </div>
                 <!-- Add Pagination -->
                 <div class="swiper-pagination"></div>
             </div>
