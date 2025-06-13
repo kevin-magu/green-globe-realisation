@@ -92,7 +92,7 @@
                 <h2 class="section-title">Meet The Team</h2>
                 <p class="section-subtitle">Dedicated professionals driving our mission forward</p>
             </div>
-            <div class="team-grid">
+          <!--  <div class="team-grid">
                 <div class="team-card">
                     <div class="team-image" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
                     <div class="team-info">
@@ -101,31 +101,7 @@
                         <p class="bio">Environmental scientist with 10+ years experience in arid land restoration.</p>
                     </div>
                 </div>
-                <div class="team-card">
-                    <div class="team-image" style="background-image: url('https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
-                    <div class="team-info">
-                        <h3>Mohamed Hassan</h3>
-                        <p class="position">Programs Manager</p>
-                        <p class="bio">Community development specialist focused on sustainable livelihoods.</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-image" style="background-image: url('https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
-                    <div class="team-info">
-                        <h3>Amina Khalif</h3>
-                        <p class="position">Field Coordinator</p>
-                        <p class="bio">Local expert in traditional ecological knowledge and practices.</p>
-                    </div>
-                </div>
-                <div class="team-card">
-                    <div class="team-image" style="background-image: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
-                    <div class="team-info">
-                        <h3>David Omondi</h3>
-                        <p class="position">Research Officer</p>
-                        <p class="bio">Conservation biologist monitoring ecosystem recovery.</p>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
