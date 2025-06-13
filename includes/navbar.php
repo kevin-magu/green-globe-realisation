@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Globe Realisation</title>
-    <link rel="stylesheet" href="/green-globe-realisation/styles/navbar.css">
+    <link rel="stylesheet" href="/styles/navbar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <nav class="navbar">
     <div class="container">
         <div class="navbar-brand">
-            <a href="/green-globe-realisation">
+            <a href="">
                 <div class="logo-container">
                 <div class="navbar-logo">
-                    <img src="/green-globe-realisation/images2/logos/ggr-logo-green.png" alt="Green Globe Realisation" class="logo-img">
+                    <img src="/images2/logos/ggr-logo-green.png" alt="Green Globe Realisation" class="logo-img">
                 </div>
                     <span class="logo-text">Green Globe Realisation</span>
                 </div>
@@ -48,7 +48,7 @@
                         <a href="/programs/education" class="dropdown-item">Environmental Education</a>
                     </div>
                 </li>
-                <li class="nav-item"><a href="/green-globe-realisation/projects.php" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="/projects.php" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="/get-involved" class="nav-link">Membeship</a></li>
                 <li class="nav-item"><a href="/news" class="nav-link">News</a></li>
                 <li class="nav-item"><a href="/contact" class="nav-link">Contactus</a></li>

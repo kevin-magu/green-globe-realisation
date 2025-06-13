@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="/green-globe-realisation/styles/footer.css">
+    <link rel="stylesheet" href="/styles/footer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -12,7 +12,7 @@
     <div class="footer-grid">
       <div class="footer-col footer-about">
         <div class="footer-logo">
-          <img src="/green-globe-realisation/images2/logos/ggr-logo-white.png" alt="Green Globe Realisation" class="logo-img">
+          <img src="/images2/logos/ggr-logo-white.png" alt="Green Globe Realisation" class="logo-img">
           <span class="logo-text">Green Globe Realisation</span>
         </div>
         <p class="footer-description">Plant for the planet.</p>

@@ -51,7 +51,7 @@ $imagePath = $program['programImagePath'];
     <section class="program-header">
         <div class="container">
             <div class="breadcrumb">
-                <a href="/green-globe-realisation">Home</a> / <a><?= htmlspecialchars($programName) ?></a>
+                <a href="">Home</a> / <a><?= htmlspecialchars($programName) ?></a>
             </div>
             <h1><?= htmlspecialchars($programName) ?></h1>
             <p class="program-subtitle"><?= htmlspecialchars($programTagline) ?></p>

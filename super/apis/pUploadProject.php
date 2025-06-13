@@ -99,8 +99,8 @@ $projectId = $stmt->insert_id;
 $stmt->close();
 
 // === Handle image uploads ===
-$uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/green-globe-realisation/uploads/projectImages/';
-$relativeDir = '/green-globe-realisation/uploads/projectImages/';
+$uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/projectImages/';
+$relativeDir = '/uploads/projectImages/';
 $uploadedPaths = [];
 
 if (isset($_FILES['projectImages'])) {

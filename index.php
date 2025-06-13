@@ -111,7 +111,7 @@ if ($result && $result->num_rows > 0) {
             <div class="program-icon">{$symbol}</div>
             <h3>{$name}</h3>
             <p>{$shortDesc}</p>
-            <a href="/green-globe-realisation/programs/program.php?slug={$slug}" class="program-link">Read More →</a>   
+            <a href="/programs/program.php?slug={$slug}" class="program-link">Read More →</a>   
             </div>
         HTML;
     }

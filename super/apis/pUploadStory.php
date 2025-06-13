@@ -95,8 +95,8 @@ $storyId = $stmt->insert_id;
 $stmt->close();
 
 // === Handle image uploads ===
-$uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/green-globe-realisation/uploads/storyImages/';
-$relativeDir = '/green-globe-realisation/uploads/storyImages/';
+$uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/storyImages/';
+$relativeDir = '/uploads/storyImages/';
 $uploadedPaths = [];
 
 if (isset($_FILES['storyImages'])) {

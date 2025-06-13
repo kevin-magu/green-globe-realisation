@@ -108,7 +108,7 @@ if (isset($_FILES['projectImages']) && isset($_FILES['projectImages']['error'][0
     }
 
     // Define upload directory and ensure it exists
-    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/green-globe-realisation/uploads/programImages/';
+    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/programImages/';
     if (!is_dir($uploadDir)) {
         if (!mkdir($uploadDir, 0755, true)) {
             echo json_encode([
@@ -155,7 +155,7 @@ if (isset($_FILES['projectImages']) && isset($_FILES['projectImages']['error'][0
     }
 
     // Relative path for DB (consistent with expected path)
-    $imagePath = '/green-globe-realisation/uploads/programImages/' . $newName;
+    $imagePath = '/uploads/programImages/' . $newName;
 } else {
     echo json_encode([
         'success' => false,

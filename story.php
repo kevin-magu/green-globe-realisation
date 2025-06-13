@@ -82,7 +82,7 @@ $relatedResult = $relatedQuery->get_result();
                     <h3>More Success Stories</h3>
                     <?php while ($related = $relatedResult->fetch_assoc()): ?>
                     <div class="story-card">
-                        <div class="story-image" style="background-image: url('<?php echo htmlspecialchars($related['imagePath'] ?? '/green-globe-realisation/uploads/storyImages/default.jpg'); ?>')"></div>
+                        <div class="story-image" style="background-image: url('<?php echo htmlspecialchars($related['imagePath'] ?? '/uploads/storyImages/default.jpg'); ?>')"></div>
                         <h4><?php echo htmlspecialchars($related['storyTitle'] ?? ''); ?></h4>
                         <a href="/story.php?storyId=<?php echo urlencode($related['storyId']); ?>" class="story-link">Read Story →</a>
                     </div>

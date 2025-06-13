@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /green-globe-realisation/programs/
+RewriteBase /programs/
 
 # Redirect any /programs/{slug} to program.php?slug={slug}
 RewriteCond %{REQUEST_FILENAME} !-f
