@@ -38,7 +38,7 @@
       <div class="footer-col footer-contact">
         <h3 class="footer-title">Contact Us</h3>
         <ul class="footer-contact-info">
-          <li><i class="fas fa-map-marker-alt"></i>Kileleshua, Mwingi Rd</li>
+          <li><i class="fas fa-map-marker-alt"></i>Kileleshwa, Mwingi Rd</li>
           <li><i class="fas fa-phone"></i> +254 208 000 117</li>
           <li><i class="fas fa-envelope"></i> info@greengloberealisation.org</li>
         </ul>

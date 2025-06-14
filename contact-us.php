@@ -33,7 +33,7 @@
                         </div>
                         <div class="info-text">
                             <h3>Our Location</h3>
-                            <p>Kileleshua, Mwingi Rd</p>
+                            <p>Kileleshwa, Mwingi Rd</p>
                         </div>
                     </div>
 

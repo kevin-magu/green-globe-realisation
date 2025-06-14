@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     formData.append("g-recaptcha-response", captcha);
 
     try {
-      const response = await fetch("./uploadMailingList.php", {
+      const response = await fetch("./apis/uploadMailingList.php", {
         method: "POST",
         body: formData,
         credentials: "same-origin",
