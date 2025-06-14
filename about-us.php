@@ -97,7 +97,8 @@
 include './includes/connection.php';
 $conn->set_charset("utf8mb4");
 
-$query = "SELECT executiveId, executiveName, position, description, profilePicture FROM executives ORDER BY executiveId DESC";
+$query = "SELECT executiveId, executiveName, position, description, profilePicture FROM executives";
+//ORDER BY executiveId DESC
 $result = $conn->query($query);
 
 
