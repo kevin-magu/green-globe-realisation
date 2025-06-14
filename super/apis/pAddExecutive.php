@@ -86,7 +86,7 @@ if (isset($_FILES['profilePicture']) && $_FILES['profilePicture']['error'] === U
         exit;
     }
 
-    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/green-globe-realisation/uploads/executiveImages/';
+    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/executiveImages/';
     if (!is_dir($uploadDir)) {
         if (!mkdir($uploadDir, 0777, true)) {
             echo json_encode([
@@ -126,7 +126,7 @@ if (isset($_FILES['profilePicture']) && $_FILES['profilePicture']['error'] === U
         exit;
     }
 
-    $imagePath = '/green-globe-realisation/uploads/executiveImages/' . $newName;
+    $imagePath = '/uploads/executiveImages/' . $newName;
 }
 
 // === Insert Into Database ===

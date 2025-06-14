@@ -1,16 +1,17 @@
-<?php
+<?php 
+file_put_contents('debug_post.log', print_r($_POST, true));
 header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: same-origin");
 
 require_once '../includes/connection.php'; 
 $conn->set_charset("utf8mb4");
 
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 ini_set('log_errors', 1);
-error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING); 
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
 
 // === Validate required fields ===
-$requiredFields = ['name', 'email', 'message'];
+$requiredFields = ['name', 'email', 'message', 'g-recaptcha-response'];
 $missingFields = [];
 
 foreach ($requiredFields as $field) {
@@ -66,7 +67,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 }
 
 // === Insert message into database ===
-$stmt = $conn->prepare("INSERT INTO contactMessages (name, email, subject, message, sent_at) VALUES (?, ?, ?, ?, NOW())");
+$stmt = $conn->prepare("INSERT INTO contactMessages (name, email, subject, message, submitted_at) VALUES (?, ?, ?, ?, NOW())");
 
 if (!$stmt) {
     echo json_encode([

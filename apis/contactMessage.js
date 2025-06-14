@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       setTimeout(() => {
         fb.style.display = 'none';
       }, 300);
-    }, 5000);
+    }, 10000);
   }
 
   // Handle form submission
@@ -45,7 +45,20 @@ document.addEventListener('DOMContentLoaded', function () {
     formData.append("subject", subject);
     formData.append("message", message);
     formData.append("g-recaptcha-response", captcha);
-
+          // Log FormData contents
+  const formDataObj = {};
+  for (const [key, value] of formData.entries()) {
+    if (value instanceof File) {
+      formDataObj[key] = {
+        name: value.name,
+        size: value.size,
+        type: value.type
+      };
+    } else {
+      formDataObj[key] = value;
+    }
+  }
+  console.log('FormData being sent:', JSON.stringify(formDataObj, null, 2));
     try {
       const response = await fetch("./apis/contactMessage.php", {
         method: "POST",
