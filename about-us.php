@@ -97,14 +97,16 @@
 include './includes/connection.php';
 $conn->set_charset("utf8mb4");
 
-$query = "SELECT executiveName, position, description, profilePicture FROM executives ORDER BY executiveId DESC";
+$query = "SELECT executiveId, executiveName, position, description, profilePicture FROM executives ORDER BY executiveId DESC";
 $result = $conn->query($query);
+
 
 if ($result && $result->num_rows > 0):
     while ($row = $result->fetch_assoc()):
         $name = htmlspecialchars($row['executiveName']);
         $position = htmlspecialchars($row['position']);
         $bio = htmlspecialchars($row['description']);
+        $execId = $row['executiveId'];
         $image = $row['profilePicture'] ?: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'; // fallback
 ?>
     <div class="team-card">
@@ -114,7 +116,7 @@ if ($result && $result->num_rows > 0):
             <p class="position"><?= $position ?></p>
             <?php $shortBio = implode(' ', array_slice(explode(' ', $bio), 0, 20)) . '...'; ?>
             <p class="bio"><?= $shortBio ?></p>
-
+           <?php echo ' <a href="./profile.php?id=' . urlencode($row['executiveId']) . '" class="story-link">View Bio →</a> '?>
         </div>
     </div>
 <?php

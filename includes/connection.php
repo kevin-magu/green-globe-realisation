@@ -6,5 +6,3 @@ $database = 'greenglo_v2';
 
 $conn = mysqli_connect($server,$username,$password,$database);
 ?>
-
-

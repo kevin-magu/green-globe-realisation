@@ -415,6 +415,18 @@
     filter: grayscale(0);
     opacity: 1;
 }
+.story-link {
+    font-weight: 600;
+    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .story-link:hover {
+    color: var(--primary-dark);
+    gap: 1rem;
+  }
 
 /* CTA Section */
 .about-cta {
