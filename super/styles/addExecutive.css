@@ -157,6 +157,34 @@ section {
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
 }
+/* Feedback box — fixed at top-center, small but readable */
+#feedback {
+  position: fixed;
+  top: 100px;                 /* distance from top */
+  left: 50%;                 /* center horizontally */
+  transform: translateX(-50%);
+  padding: 6px 12px;
+  font-size: 11px;       /* small but legible */
+  border-radius: 4px;
+  z-index: 10000;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+/* Success—green background, dark text */
+#feedback.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+/* Error—red background, dark text */
+#feedback.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+
 /* Executive Add Form Styles */
 .executive-add-section {
     padding: 3rem 0;

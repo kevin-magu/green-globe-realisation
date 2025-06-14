@@ -42,7 +42,6 @@ $relatedResult = $relatedQuery->get_result();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Story | Green Globe Realisation</title>
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/story.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -54,7 +53,7 @@ $relatedResult = $relatedQuery->get_result();
         <div class="container">
             <div class="hero-content">
                 <div class="breadcrumb">
-                    <a href="/">Home</a> / <a href="/stories">Stories</a> / <span><?php echo htmlspecialchars($story['storyTitle'] ?? ''); ?></span>
+                    <a href="./">Home</a> / <span><?php echo htmlspecialchars($story['storyTitle'] ?? ''); ?></span>
                 </div>
                 <h1><?php echo htmlspecialchars($story['storyTitle'] ?? ''); ?></h1>
                 <div class="story-meta">

@@ -78,9 +78,22 @@ document.addEventListener('DOMContentLoaded', function () {
     if (profileImage) {
       formData.append("profilePicture", profileImage);
     }
-
+      // Log FormData contents
+  const formDataObj = {};
+  for (const [key, value] of formData.entries()) {
+    if (value instanceof File) {
+      formDataObj[key] = {
+        name: value.name,
+        size: value.size,
+        type: value.type
+      };
+    } else {
+      formDataObj[key] = value;
+    }
+  }
+  console.log('FormData being sent:', JSON.stringify(formDataObj, null, 2));
     try {
-      const response = await fetch("addExecutiveHandler.php", {
+      const response = await fetch("./apis/pAddExecutive.php", {
         method: "POST",
         body: formData,
         credentials: "same-origin",

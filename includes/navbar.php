@@ -29,7 +29,6 @@
 
         <div class="navbar-collapse">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="./" class="nav-link active">Home</a></li>
                 <li class="nav-item dropdown">
                     <a href="./about-us.php" class="nav-link">About <i class="fas fa-chevron-down dropdown-icon"></i></a>
                     <div class="dropdown-menu">
@@ -38,6 +37,7 @@
                         <a href="./partners.php" class="dropdown-item">Partners</a>
                     </div>
                 </li>
+                
                 <li class="nav-item dropdown">
                     <a href=".#ggr-programs" class="nav-link">Programs <i class="fas fa-chevron-down dropdown-icon"></i></a>
                     <div class="dropdown-menu">
@@ -52,11 +52,12 @@
                 <li class="nav-item"><a href="./projects.php" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="./register.php" class="nav-link">Membeship</a></li>
                 <li class="nav-item"><a href="./news.php" class="nav-link">News</a></li>
-                <li class="nav-item"><a href="./contact-us.php" class="nav-link">Contact us</a></li>
+                <li class="nav-item"><a href="./advocacy.php" class="nav-link">Advocacy</a></li>
+                <li class="nav-item"><a href="./contact-us.php" class="nav-link">Contacts</a></li>
             </ul>
 
             <div class="navbar-actions">
-                <a href="/donate" class="btn-volunteer" >Donate <i class="fas fa-heart" style="margin-left: 5px;"></i></a>
+                <a href="./donate.php" class="btn-volunteer" >Donate <i class="fas fa-heart" style="margin-left: 5px;"></i></a>
             </div>
         </div>
     </div>

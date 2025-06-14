@@ -48,9 +48,11 @@
                             <li><i class="fas fa-check"></i> Premium recognition</li>
                         </ul>
                         <div class="card-footer">
-                            <button class="btn-membership executive" onclick="contactForExecutive()">
+                            <a href="./contact-us.php">
+                            <button class="btn-membership executive">
                                 Contact Us <i class="fas fa-arrow-right"></i>
                             </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +74,7 @@
                             <li><i class="fas fa-check"></i> Event participation</li>
                         </ul>
                         <div class="card-footer">
-                            <a href="/membership/volunteer" class="btn-membership volunteer">
+                            <a href="./register-volunteer.php" class="btn-membership volunteer">
                                 Join Now <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -96,7 +98,7 @@
                             <li><i class="fas fa-check"></i> Joint initiatives</li>
                         </ul>
                         <div class="card-footer">
-                            <a href="/membership/partner" class="btn-membership partner">
+                            <a href="./register-partner.php" class="btn-membership partner">
                                 Explore <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>
@@ -120,7 +122,7 @@
                             <li><i class="fas fa-check"></i> Impact reporting</li>
                         </ul>
                         <div class="card-footer">
-                            <a href="/membership/organization" class="btn-membership organization">
+                            <a href="./register-organization.php" class="btn-membership organization">
                                 Learn More <i class="fas fa-arrow-right"></i>
                             </a>
                         </div>

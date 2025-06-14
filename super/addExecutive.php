@@ -74,6 +74,7 @@ include '../includes/connection.php';
                 <button type="submit" class="btn-submit">
                     <i class="fas fa-user-plus"></i> Add Executive
                 </button>
+                
             </form>
         </div>
     </section>

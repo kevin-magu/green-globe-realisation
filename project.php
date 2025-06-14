@@ -22,6 +22,9 @@ if (isset($_GET['projectId'])) {
         }
     }
 }
+
+// Get first image for hero section
+$heroImage = !empty($projectImages) ? $projectImages[2] : './images/default-hero.jpg';
 ?>
 
 <!DOCTYPE html>
@@ -30,37 +33,26 @@ if (isset($_GET['projectId'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $project ? htmlspecialchars($project['projectTitle']) : 'Project Details'; ?> | Green Globe Realisation</title>
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/project.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
 <?php include './includes/navbar.php' ?>
 
 <main class="project-page">
-    <!-- Project Hero Swiper -->
-    <section class="project-hero-swiper">
-        <div class="swiper project-swiper-container">
-            <div class="swiper-wrapper">
-                <?php foreach ($projectImages as $imagePath): ?>
-                    <div class="swiper-slide">
-                        <div class="slide-image" style="background-image: url('<?php echo $imagePath; ?>')"></div>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-        <div class="project-hero-content">
-            <div class="container">
+    <!-- Project Hero Section -->
+    <section class="project-hero" style="background-image: url('<?php echo $heroImage; ?>')">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="hero-text">
                 <div class="breadcrumb">
                     <a href="./">Home</a> / <span><?php echo htmlspecialchars($project['projectTitle']); ?></span>
                 </div>
                 <h1><?php echo htmlspecialchars($project['projectTitle']); ?></h1>
                 <div class="project-meta">
                     <span class="status <?php echo strtolower($project['projectStatus']); ?>"><?php echo htmlspecialchars($project['projectStatus']); ?></span>
+                </div>
                 </div>
             </div>
         </div>
@@ -84,11 +76,6 @@ if (isset($_GET['projectId'])) {
                         </div>
                     </div>
                 </div>
-                <div class="overview-image">
-                    <?php if (!empty($projectImages)): ?>
-                        <img src="<?php echo $projectImages[0]; ?>" alt="<?php echo htmlspecialchars($project['projectTitle']); ?>">
-                    <?php endif; ?>
-                </div>
             </div>
         </div>
     </section>
@@ -109,25 +96,5 @@ if (isset($_GET['projectId'])) {
 </main>
 
 <?php include './includes/footer.php' ?>
-
-<!-- Initialize Swiper -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script>
-    const projectSwiper = new Swiper('.project-swiper-container', {
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-</script>
 </body>
 </html>

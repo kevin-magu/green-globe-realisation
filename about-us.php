@@ -92,16 +92,39 @@
                 <h2 class="section-title">Meet The Team</h2>
                 <p class="section-subtitle">Dedicated professionals driving our mission forward</p>
             </div>
-          <!--  <div class="team-grid">
-                <div class="team-card">
-                    <div class="team-image" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
-                    <div class="team-info">
-                        <h3>Fatima Abdi</h3>
-                        <p class="position">Executive Director</p>
-                        <p class="bio">Environmental scientist with 10+ years experience in arid land restoration.</p>
-                    </div>
-                </div>
-            </div> -->
+            <div class="team-grid">
+<?php
+include './includes/connection.php';
+$conn->set_charset("utf8mb4");
+
+$query = "SELECT executiveName, position, description, profilePicture FROM executives ORDER BY executiveId DESC";
+$result = $conn->query($query);
+
+if ($result && $result->num_rows > 0):
+    while ($row = $result->fetch_assoc()):
+        $name = htmlspecialchars($row['executiveName']);
+        $position = htmlspecialchars($row['position']);
+        $bio = htmlspecialchars($row['description']);
+        $image = $row['profilePicture'] ?: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80'; // fallback
+?>
+    <div class="team-card">
+        <div class="team-image" style="background-image: url('<?= $image ?>')"></div>
+        <div class="team-info">
+            <h3><?= $name ?></h3>
+            <p class="position"><?= $position ?></p>
+            <?php $shortBio = implode(' ', array_slice(explode(' ', $bio), 0, 20)) . '...'; ?>
+            <p class="bio"><?= $shortBio ?></p>
+
+        </div>
+    </div>
+<?php
+    endwhile;
+else:
+?>
+    <p>No executives found.</p>
+<?php endif; ?>
+</div>
+
         </div>
     </section>
 

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Green Globe Realisation</title>
-    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/contact-us.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -89,7 +88,9 @@
                             <label for="message">Your Message</label>
                             <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
                         </div>
-                        <button type="submit" class="btn-submit">
+                        <div id="feedback" style="color: green; margin-top: 4px; font-size: 12px;"></div>
+                        <div class="g-recaptcha" data-sitekey="6LeQzGArAAAAADJxJ7QF3Xu936mWw3yNRQyUCGb2"></div>
+                        <button type="submit" class="btn-submit" style="margin-top: 12px;">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </form>
@@ -110,5 +111,7 @@
 </main>
 
 <?php include './includes/footer.php' ?>
+<script src='./apis/contactMessage.js'></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
