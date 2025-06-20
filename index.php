@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
@@ -26,16 +27,56 @@
                 <!-- Slide 2 -->
                 <div class="swiper-slide slide-2">
                     <div class="slide-content">
-                        <h1>5 Million Trees Planted</h1>
-                        <p>Help us reach our goal of 10 million trees by 2030</p>
+                        <h1>1 Million Trees Planted</h1>
+                        <p>Help us reach our goal of 8 million trees by 2030</p>
                         <a href="./donate.php" class="btn btn-primary">Support Reforestation</a>
                     </div>
                 </div>
                 <!-- Slide 3 -->
                 <div class="swiper-slide slide-3">
                     <div class="slide-content">
-                        <h1>Ecosystems Conservation</h1>
-                        <p>Protecting endangered species and their habitats</p>
+                        <h1>Seed to Sequoia</h1>
+                        <p>We grow tree seedlings in nurseries then plant them in degraded areas</p>
+                        <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                 <!-- Slide 4 -->
+                <div class="swiper-slide slide-4">
+                    <div class="slide-content">
+                        <h1>We are regreening arid & semi arid areas</h1>
+                        <p>Our North Eastern Kenya projects are helping communities & surrounding ecosystems</p>
+                        <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <!-- Slide 5 -->
+                <div class="swiper-slide slide-5">
+                    <div class="slide-content">
+                        <h1>Involving the Youth</h1>
+                        <p>How we are involving the youth in conservation efforts</p>
+                        <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <!-- Slide 6 -->
+                <div class="swiper-slide slide-6">
+                    <div class="slide-content">
+                        <h1>Tree planting in Siaya</h1>
+                        <p>How we our conservation efforts have changed Siaya communities & ecosystems</p>
+                        <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <!-- Slide 7 -->
+                <div class="swiper-slide slide-7">
+                    <div class="slide-content">
+                        <h1>Tree planting in Siaya</h1>
+                        <p>How we our conservation efforts have changed Siaya communities & ecosystems</p>
+                        <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                <!-- Slide 8 -->
+                <div class="swiper-slide slide-8">
+                    <div class="slide-content">
+                        <h1>Creating a lasting change everywhere we go</h1>
+                        <p>Our goal is to regreen Kenya & empowering the society</p>
                         <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>

@@ -1,0 +1,32 @@
+.blogs-container{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+.page-title p {
+    margin-top: 35px;
+    font-size: 27px;
+}
+body{
+    background-color: #f5f5f5;
+}
+.menu-bars{
+    color: rgb(255, 0, 0);
+}
+#black-icon,.menu-bars{
+    color: black;
+}
+.blog-brief-card{
+    margin: 30px;
+}
+.blog-brief-card-description{
+    display: flexf;
+    flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+    .blog-brief-card-description{
+        font-size: 16px;
+    }
+}

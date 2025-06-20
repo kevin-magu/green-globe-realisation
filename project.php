@@ -34,6 +34,7 @@ $heroImage = !empty($projectImages) ? $projectImages[2] : './images/default-hero
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $project ? htmlspecialchars($project['projectTitle']) : 'Project Details'; ?> | Green Globe Realisation</title>
     <link rel="stylesheet" href="./styles/project.css">
+     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
