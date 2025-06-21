@@ -1,7 +1,3 @@
-
-
-
-
 <?php
 $server = 'localhost';
 $username = 'root';
@@ -10,3 +6,6 @@ $database = 'ggr';
 
 $conn = mysqli_connect($server,$username,$password,$database);
 ?>
+
+
+
