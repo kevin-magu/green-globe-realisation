@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
       setTimeout(() => {
         fb.style.display = 'none';
       }, 300);
-    }, 5000);
+    }, 10000);
   }
 
   // Handle form submission
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('FormData being sent:', JSON.stringify(formDataObj, null, 2));
 
     try {
-      const response = await fetch("./apis/registerVolunteer.php", {
+      const response = await fetch("./apis/pRegisterVolunteer.php", {
         method: "POST",
         body: formData,
         credentials: "same-origin",
@@ -91,13 +91,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const text = await response.text();
 
-      if (text.trim() === "success") {
+      let result;
+      try {
+        result = JSON.parse(text);
+      } catch (jsonError) {
+        console.error("Failed to parse JSON:", jsonError);
+        console.error("Server responded with:", text);
+        showFeedback("Unexpected server response.", "error");
+        return;
+      }
+
+      if (!result.success) {
+        showFeedback(result.message, "error");
+      } else {
         showFeedback("Application submitted successfully!", "success");
         form.reset();
         preview.innerHTML = "";
-      } else {
-        console.error("Server responded with:", text);
-        showFeedback("Error: " + text, "error");
       }
     } catch (error) {
       console.error("Fetch/network error:", error);
