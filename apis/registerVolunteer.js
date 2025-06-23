@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('FormData being sent:', JSON.stringify(formDataObj, null, 2));
 
     try {
-      const response = await fetch("process_volunteer.php", {
+      const response = await fetch("./apis/registerVolunteer.php", {
         method: "POST",
         body: formData,
         credentials: "same-origin",

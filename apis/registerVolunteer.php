@@ -2,7 +2,7 @@
 header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: same-origin");
 
-require_once '../../includes/connection.php';
+require_once '../includes/connection.php';
 $conn->set_charset("utf8mb4");
 
 ini_set('display_errors', 0);
@@ -89,7 +89,7 @@ if (isset($_FILES['profilePicture']) && $_FILES['profilePicture']['error'] === U
         exit;
     }
 
-    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/volunteers/';
+    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/green-globe-realisation/uploads/volunteers/';
     if (!is_dir($uploadDir)) {
         if (!mkdir($uploadDir, 0777, true)) {
             echo json_encode([
@@ -129,7 +129,7 @@ if (isset($_FILES['profilePicture']) && $_FILES['profilePicture']['error'] === U
         exit;
     }
 
-    $imagePath = '/uploads/volunteers/' . $newName;
+    $imagePath = '/green-globe-realisation/uploads/volunteers/' . $newName;
 } else {
     echo json_encode([
         'success' => false,
