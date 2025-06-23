@@ -28,7 +28,7 @@
                 <div class="swiper-slide slide-2">
                     <div class="slide-content">
                         <h1>Protecting our wetlands</h1>
-                        <p>Our North Eastern Kenya projects are helping communities & surrounding ecosystems</p>
+                        <p>Conserving endangered ecosysts which comminities depend on</p>
                         <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
                     </div>
                 </div> 
