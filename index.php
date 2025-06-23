@@ -36,7 +36,7 @@
                 <div class="swiper-slide slide-3">
                     <div class="slide-content">
                         <h1>Biomedical Waste</h1>
-                        <p>Sustainable Biomedical Waste Solutions for Kenya</p>
+                        <p>Sustainable Biomedical Waste Management Solutions for Kenya</p>
                         <a href="./program.php?programId=23" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
