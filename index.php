@@ -28,7 +28,7 @@
                 <div class="swiper-slide slide-2">
                     <div class="slide-content">
                         <h1>Protecting our wetlands</h1>
-                        <p>Sustainable Biomedical Waste Solutions for Kenya</p>
+                        <p>Our North Eastern Kenya projects are helping communities & surrounding ecosystems</p>
                         <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
                     </div>
                 </div> 
@@ -36,7 +36,7 @@
                 <div class="swiper-slide slide-3">
                     <div class="slide-content">
                         <h1>Biomedical Waste</h1>
-                        <p>Our North Eastern Kenya projects are helping communities & surrounding ecosystems</p>
+                        <p>Sustainable Biomedical Waste Solutions for Kenya</p>
                         <a href="./program.php?programId=23" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
