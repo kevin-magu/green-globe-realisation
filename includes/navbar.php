@@ -54,6 +54,7 @@
                 <li class="nav-item"><a href="./news.php" class="nav-link">News</a></li>
                 <li class="nav-item"><a href="./advocacy.php" class="nav-link">Advocacy</a></li>
                 <li class="nav-item"><a href="./contact-us.php" class="nav-link">Contacts</a></li>
+                <li class="nav-item"><a href="./contact-us.php" class="nav-link">Account</a></li>
             </ul>
 
             <div class="navbar-actions">
