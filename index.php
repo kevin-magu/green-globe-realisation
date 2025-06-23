@@ -28,7 +28,7 @@
                 <div class="swiper-slide slide-2">
                     <div class="slide-content">
                         <h1>Protecting our wetlands</h1>
-                        <p>Conserving endangered ecosysts which comminities depend on</p>
+                        <p>Safeguarding critical ecosystems that sustain local communities</p>
                         <a href="./program.php?programId=24" class="btn btn-primary">Learn More</a>
                     </div>
                 </div> 
