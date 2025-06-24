@@ -45,7 +45,7 @@ function compressImageIfLargerThan($tmpPath, $destinationPath, $maxSizeKB = 800)
 }
 
 // === Required Fields Validation ===
-$requiredFields = ['firstName', 'lastName', 'email'];
+$requiredFields = ['firstName', 'lastName', 'email', 'g-recaptcha-response'];
 $missingFields = [];
 
 foreach ($requiredFields as $field) {
@@ -57,7 +57,7 @@ foreach ($requiredFields as $field) {
 if (!empty($missingFields)) {
     echo json_encode([
         'success' => false,
-        'message' => 'Missing or empty required fields.',
+        'message' => 'Missing or empty required fields :'. $field,
         'fields' => $missingFields
     ]);
     exit;
@@ -71,6 +71,63 @@ $phone     = trim($_POST['phone'] ?? '');
 $address   = trim($_POST['address'] ?? '');
 $city      = trim($_POST['city'] ?? '');
 $skills    = trim($_POST['skills'] ?? '');
+$recaptcha = $_POST['g-recaptcha-response'] ?? '';
+
+//verify captcha
+if (empty($recaptcha)) {
+    echo json_encode([
+        'success' => false,
+        'message' => 'CAPTCHA not completed.'
+    ]);
+    exit;
+}
+
+$secretKey = '6LeQzGArAAAAAJ6IRjKzflWUnMEeURS27zA49ok5'; // Replace with your actual secret key
+$verifyUrl = "https://www.google.com/recaptcha/api/siteverify";
+$response = file_get_contents("$verifyUrl?secret=$secretKey&response=$recaptcha");
+$responseData = json_decode($response, true);
+
+if (!$responseData["success"]) {
+    echo json_encode([
+        'success' => false,
+        'message' => 'CAPTCHA verification failed.'
+    ]);
+    exit;
+}
+
+
+// === Check if email already exists in volunteers ===
+$checkVolunteers = $conn->prepare("SELECT 1 FROM volunteers WHERE email = ? LIMIT 1");
+$checkVolunteers->bind_param("s", $email);
+$checkVolunteers->execute();
+$checkVolunteers->store_result();
+
+if ($checkVolunteers->num_rows > 0) {
+    echo json_encode([
+        'success' => false,
+        'message' => "You're already a member."
+    ]);
+    $checkVolunteers->close();
+    exit;
+}
+$checkVolunteers->close();
+
+// === Check if email is already pending approval ===
+$checkApprovals = $conn->prepare("SELECT 1 FROM volunteer_approvals WHERE email = ? LIMIT 1");
+$checkApprovals->bind_param("s", $email);
+$checkApprovals->execute();
+$checkApprovals->store_result();
+
+if ($checkApprovals->num_rows > 0) {
+    echo json_encode([
+        'success' => false,
+        'message' => "Your account is waiting approval."
+    ]);
+    $checkApprovals->close();
+    exit;
+}
+$checkApprovals->close();
+
 
 // === Handle Image Upload ===
 $imagePath = null;

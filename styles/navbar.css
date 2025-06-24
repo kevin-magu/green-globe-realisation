@@ -13,7 +13,6 @@
     --transition: all 0.3s ease;
 }
 
-
 a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active {
     outline: none !important;
   }
@@ -36,9 +35,11 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
     z-index: 1000;
     transition: var(--transition);
 }
+
 .navbar .nav-logo{
-    width: 100px;
+    width: 260px;
 }
+
 .navbar .logo-img{
     height: 70px;
     width: 100%;

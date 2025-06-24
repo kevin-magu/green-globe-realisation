@@ -86,7 +86,7 @@
             <textarea id="skills" name="skills" rows="3" placeholder="Please describe your skills, experience, or areas of expertise"></textarea>
           </div>
         </div>
-
+        <div class="g-recaptcha" data-sitekey="6LeQzGArAAAAADJxJ7QF3Xu936mWw3yNRQyUCGb2"></div>
         <div class="form-actions">
           <button type="submit" class="btn btn-primary">Submit Application</button>
         </div>
@@ -139,5 +139,6 @@
 
 <?php include './includes/footer.php'; ?>
 <script src='./apis/registerVolunteer.js'></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

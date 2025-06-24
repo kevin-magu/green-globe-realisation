@@ -36,13 +36,13 @@ $conn->close();
 
             <div class="metrics-grid">
                 <div class="metric-card">
-                    <h3><?php echo '2' ?></h3>
-                    <p>Active Projects</p>
+                    <h3><?php echo $volunteerApptovalRow['total']; ?></h3>
+                    <p>Volunteers to approve</p>
                 </div>
-                <a href="./super/approveVolunteers.php">
+                <a href="./approveVolunteers.php">
                     <div class="metric-card">
                     <h3><?php echo $volunteerApptovalRow['total']; ?></h3>
-                    <p>Volunteers Engaged</p>
+                    <p>Partners to approve</p>
                     </div>
                 </a>
                 <div class="metric-card">

@@ -71,6 +71,7 @@
 
                 <!-- Contact Form -->
                 <div class="contact-form">
+                    <div id="feedback" style="color: green; margin-top: 4px; font-size: 12px;"></div>
                     <h2>Send Us a Message</h2>
                     <form class="message-form">
                         <div class="form-group">
@@ -89,7 +90,7 @@
                             <label for="message">Your Message</label>
                             <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
                         </div>
-                        <div id="feedback" style="color: green; margin-top: 4px; font-size: 12px;"></div>
+                        
                         <div class="g-recaptcha" data-sitekey="6LeQzGArAAAAADJxJ7QF3Xu936mWw3yNRQyUCGb2"></div>
                         <button type="submit" class="btn-submit" style="margin-top: 12px;">
                             <i class="fas fa-paper-plane"></i> Send Message
