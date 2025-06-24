@@ -37,7 +37,7 @@
                             <div class="drop-zone" id="dropZone">
                                 <i class="fas fa-cloud-upload-alt upload-icon"></i>
                                 <p>Drag & drop your logo or click to browse</p>
-                                <input type="file" id="fileInput" name="organizationLogo" accept="image/*" required>
+                                <input type="file" id="fileInput" name="organizationLogo" accept="image/*">
                             </div>
                             <div class="preview-container" id="previewContainer"></div>
                         </div>
@@ -149,7 +149,7 @@
                     <div class="g-recaptcha" data-sitekey="6LeQzGArAAAAADJxJ7QF3Xu936mWw3yNRQyUCGb2"></div>
                     
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Submit Partnership Application</button>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
                     </div>
                 </form>
             </div>

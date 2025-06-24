@@ -186,33 +186,33 @@
   color: #a94442;
 }
 
-/* Partner Registration Styles */
-.partner-page {
+/* Organization Registration Styles */
+.organization-page {
     background-color: #f9f9f9;
 }
 
-.partner-hero {
+.organization-hero {
     background: linear-gradient(rgba(46, 125, 50, 0.9), rgba(46, 125, 50, 0.8));
     background-size: cover;
+    color: white;
     padding: 6rem 0;
     text-align: center;
-    color: white;
 }
 
-.partner-hero .section-title {
+.organization-hero .section-title {
+    color: white;
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
-    color: white;
 }
 
-.partner-hero .section-subtitle {
+.organization-hero .section-subtitle {
+    color: rgba(255, 255, 255, 0.9);
     font-size: 1.2rem;
     max-width: 700px;
     margin: 0 auto;
-    color: rgba(255, 255, 255, 0.9);
 }
 
-.partner-form-section {
+.organization-form-section {
     padding: 4rem 0;
 }
 
@@ -239,7 +239,7 @@
     font-size: 1.05rem;
 }
 
-.partner-form {
+.organization-form {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -290,6 +290,27 @@
 .form-field textarea {
     min-height: 100px;
     resize: vertical;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.checkbox-item input {
+    width: auto;
+}
+
+.mt-1 {
+    margin-top: 0.5rem;
 }
 
 .checkbox-field {
@@ -382,7 +403,7 @@
     box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
 }
 
-.partner-benefits {
+.organization-benefits {
     padding: 5rem 0;
     background-color: white;
 }
@@ -431,14 +452,15 @@
         grid-template-columns: 1fr;
     }
     
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+    
     .form-container {
         padding: 1.5rem;
     }
     
-    .partner-hero .section-title {
+    .organization-hero .section-title {
         font-size: 2.2rem;
-    }
-    .btn {
-      font-size: 12px;
     }
 }

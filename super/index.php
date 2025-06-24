@@ -6,9 +6,15 @@ $conn->set_charset("utf8mb4");
 $sql = "SELECT COUNT(*) AS total FROM volunteer_approvals";
 $result = $conn->query($sql);
 
+$partnerSql = "SELECT COUNT(*) AS total FROM partner_approvals";
+$partnerResult = $conn->query($partnerSql);
+
 if ($result) {
     $volunteerApptovalRow = $result->fetch_assoc();
-   
+}
+
+if($partnerResult){
+    $partnerApprovalRow = $partnerResult->fetch_assoc();
 }
 
 $conn->close();
@@ -41,7 +47,7 @@ $conn->close();
                 </div>
                 <a href="./approveVolunteers.php">
                     <div class="metric-card">
-                    <h3><?php echo $volunteerApptovalRow['total']; ?></h3>
+                    <h3><?php echo $partnerApprovalRow['total']; ?></h3>
                     <p>Partners to approve</p>
                     </div>
                 </a>
