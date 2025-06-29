@@ -23,7 +23,7 @@ $result = $conn->query($sql);
       <p class="section-subtitle">Review and approve incoming organization applications</p>
       <button class='btn btn-approve' style='margin-top: 20px;'>Approve All</button>
     </div>
-
+<div id="feedback" style="color: green; margin-top: 10px;"></div>
     <div class="card-grid">
       <?php while ($row = $result->fetch_assoc()): ?>
         <div class="organization-card">

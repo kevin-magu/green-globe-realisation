@@ -23,7 +23,7 @@ $result = $conn->query($sql);
       <p class="section-subtitle">Review and approve incoming partnership applications</p>
       <button class='btn btn-approve' style='margin-top: 20px;'>Approve All</button>
     </div>
-
+<div id="feedback" style="color: green; margin-top: 10px;"></div>
     <div class="card-grid">
       <?php while ($row = $result->fetch_assoc()): ?>
         <div class="partner-card">
@@ -71,5 +71,7 @@ $result = $conn->query($sql);
       <?php endwhile; ?>
     </div>
   </section>
+
+<script src='./apis/approvePartner.js'></script>
 </body>
 </html>
