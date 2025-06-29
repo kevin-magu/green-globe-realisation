@@ -9,12 +9,19 @@ $result = $conn->query($sql);
 $partnerSql = "SELECT COUNT(*) AS total FROM partner_approvals";
 $partnerResult = $conn->query($partnerSql);
 
+$organizationSql = "SELECT COUNT(*) AS total FROM organization_approvals";
+$organizationResult = $conn->query($partnerSql);
+
 if ($result) {
     $volunteerApptovalRow = $result->fetch_assoc();
 }
 
 if($partnerResult){
     $partnerApprovalRow = $partnerResult->fetch_assoc();
+}
+
+if($organizationResult){
+    $organizationApprovalRow = $organizationResult->fetch_assoc();
 }
 
 $conn->close();
@@ -41,24 +48,30 @@ $conn->close();
             </div>
 
             <div class="metrics-grid">
-                <div class="metric-card">
-                    <h3><?php echo $volunteerApptovalRow['total']; ?></h3>
-                    <p>Volunteers to approve</p>
-                </div>
                 <a href="./approveVolunteers.php">
+                    <div class="metric-card">
+                        <h3><?php echo $volunteerApptovalRow['total']; ?></h3>
+                        <p>Volunteers to approve</p>
+                    </div>
+                </a>
+                <a href="./approvePartners.php">
                     <div class="metric-card">
                     <h3><?php echo $partnerApprovalRow['total']; ?></h3>
                     <p>Partners to approve</p>
                     </div>
                 </a>
-                <div class="metric-card">
-                    <h3><?php echo 2; ?></h3>
-                    <p>Carbon Reduced</p>
-                </div>
-                <div class="metric-card">
-                    <h3><?php echo 2; ?></h3>
-                    <p>Trees Planted</p>
-                </div>
+                <a href="./approveOrganization.php">
+                    <div class="metric-card">
+                        <h3><?php echo $organizationApprovalRow['total']; ?></h3>
+                        <p>Organizations to approve</p>
+                    </div>
+                </a>
+                <a href="./approveOrganization.php">
+                    <div class="metric-card">
+                        <h3><?php echo 2; ?></h3>
+                        <p>Active projects</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>

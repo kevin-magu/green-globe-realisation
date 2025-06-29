@@ -157,35 +157,6 @@
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
   }
-
-  /* Feedback box — fixed at top-center, small but readable */
-#feedback {
-  position: fixed;
-  top: 100px;                 /* distance from top */
-  left: 50%;                 /* center horizontally */
-  transform: translateX(-50%);
-  padding: 6px 12px;
-  font-size: 11px;       /* small but legible */
-  border-radius: 4px;
-  z-index: 10000;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  text-align: center;
-}
-
-/* Success—green background, dark text */
-#feedback.success {
-  background-color: #dff0d8;
-  color: #3c763d;
-}
-
-/* Error—red background, dark text */
-#feedback.error {
-  background-color: #f2dede;
-  color: #a94442;
-}
-
 /* Volunteer Cards Styles */
 .card-grid {
   display: grid;
@@ -212,7 +183,7 @@
 
 .card-image {
   position: relative;
-  height: 200px;
+  height: 180px;
   overflow: hidden;
 }
 
@@ -240,65 +211,6 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-.possible-scroll{
-  max-height: 150px;
-  overflow-y: scroll;
-}
-
-.card-content h4{
-  font-size: 0.8rem;
-}
-
-/* Custom Scrollbar Styling */
-/* Works for Chrome, Edge, Safari */
-::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--light-bg);
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary-light);
-    border-radius: 4px;
-    border: 2px solid transparent;
-    background-clip: content-box;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--primary);
-}
-
-::-webkit-scrollbar-corner {
-    background: transparent;
-}
-
-/* For Firefox */
-* {
-    scrollbar-width: thin;
-    scrollbar-color: var(--primary-light) var(--light-bg);
-}
-
-/* Specific scrollbar for card details only */
-.card-details::-webkit-scrollbar {
-    width: 6px;
-}
-
-.card-details::-webkit-scrollbar-track {
-    background: rgba(245, 245, 245, 0.5);
-    visibility: visible !important;
-}
-
-.card-details::-webkit-scrollbar-thumb {
-    background: rgba(129, 199, 132, 0.6);
-}
-
-.card-details::-webkit-scrollbar-thumb:hover {
-    background: var(--primary);
-}
 
 .card-content {
   padding: 1.5rem;
@@ -308,7 +220,7 @@
 }
 
 .card-content h3 {
-  font-size: 0.7rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: var(--primary-dark);
 }
@@ -317,7 +229,7 @@
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  font-size: 0.58rem;
+  font-size: 0.85rem;
   color: var(--text-lighter);
 }
 
@@ -333,7 +245,7 @@
 
 .card-details p {
   margin-bottom: 0.75rem;
-  font-size: 0.62rem;
+  font-size: 0.95rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -427,14 +339,5 @@
   
   .card-actions {
     flex-direction: column;
-  }
-  .section-title{
-    font-size: 1rem;
-  }
-  .section-tag{
-    font-size: 0.8rem;
-  }
-  .section-subtitle{
-    font-size: 0.6rem;
   }
 }

@@ -19,12 +19,11 @@ $result = $conn->query($sql);
  <?php require_once './includes/adminNav.php'; ?>
   <section class="container">
     <div class="section-header">
-      <span class="section-tag">Admin Panel</span>
       <h2 class="section-title">Pending Volunteer Approvals</h2>
       <p class="section-subtitle">Review and approve incoming volunteer applications</p>
       <button class='btn btn-approve' style='margin-top: 20px;'>Approve All</button>
     </div>
-
+    <div id="feedback" style="color: green; margin-top: 10px;"></div>
     <div class="card-grid">
       <?php while ($row = $result->fetch_assoc()): ?>
         <div class="volunteer-card">
@@ -61,5 +60,6 @@ $result = $conn->query($sql);
       <?php endwhile; ?>
     </div>
   </section>
+  <script src='./apis/approveVolunteer.js'></script>
 </body>
 </html>
