@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="./styles/projects.css">
     <title>GGR | Projects</title>
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKXH6ENQNG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RKXH6ENQNG');
+</script>
 <body>
    <?php include './includes/navbar.php'; ?>
    <!-- All Projects -->

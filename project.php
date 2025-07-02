@@ -37,6 +37,15 @@ $heroImage = !empty($projectImages) ? $projectImages[2] : './images/default-hero
      <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RKXH6ENQNG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RKXH6ENQNG');
+</script>
 <body>
 <?php include './includes/navbar.php' ?>
 
