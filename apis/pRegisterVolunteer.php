@@ -146,7 +146,7 @@ if (isset($_FILES['profilePicture']) && $_FILES['profilePicture']['error'] === U
         exit;
     }
 
-    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/green-globe-realisation/uploads/volunteers/';
+    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/volunteers/';
     if (!is_dir($uploadDir)) {
         if (!mkdir($uploadDir, 0777, true)) {
             echo json_encode([
@@ -186,7 +186,7 @@ if (isset($_FILES['profilePicture']) && $_FILES['profilePicture']['error'] === U
         exit;
     }
 
-    $imagePath = '/green-globe-realisation/uploads/volunteers/' . $newName;
+    $imagePath = '/uploads/volunteers/' . $newName;
 } else {
     echo json_encode([
         'success' => false,
