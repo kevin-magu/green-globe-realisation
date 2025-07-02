@@ -248,18 +248,36 @@ $mail = new PHPMAILER(true);
     // Email Content
     $mail->isHTML(true);
     $mail->Subject = "RE: VOLUNTEER APPLICATION";
-    $mail->Body    = "
-        <h2>Hello {$firstName},</h2>
-        <hr>
-        <p><strong>Subject:</strong> VOLUNTEER APPLICATION</p>
-        <p><strong>Message:</strong></p>
-        <p>
-            Thank you for submitting your application to Green Globe Realisation.  
-            We are currently reviewing your details and will get back to you shortly.
-        </p>
-        <hr>
-        <p style='color: #555;'>We'll get back to you shortly.<br>Green Globe Team</p>
-    ";
+  $mail->Body = '
+<h2 style="font-family: Arial, sans-serif; color: #2e6c80;">Dear ' . htmlspecialchars($firstName) . ',</h2>
+
+<p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
+<strong>Subject:</strong> Volunteer Application Acknowledgement
+</p>
+
+<p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
+Thank you for your interest in joining <strong>Green Globe Realisation</strong>. We have successfully received your volunteer application and our team is currently reviewing your submission.
+</p>
+
+<p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
+Should your profile align with our current initiatives, one of our team members will be in touch with you shortly to discuss the next steps.
+</p>
+
+<p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
+We sincerely appreciate your desire to contribute to meaningful change, and we look forward to the possibility of working together to drive sustainable impact.
+</p>
+
+<hr style="margin: 30px 0;">
+
+<p style="font-family: Arial, sans-serif; font-size: 14px; color: #555; line-height: 1.5;">
+Kind regards,<br>
+<strong>Green Globe Realisation</strong><br>
+📍 Kileleshwa, Mwingi Rd<br>
+📞 +254 208 000 117<br>
+🌐 <a href="https://greengloberealisation.org" style="color: #2e6c80; text-decoration: none;">greengloberealisation.org</a>
+</p>
+';
+
     $mail->AltBody = "Hi {$firstName},\n\nYour application is being reviewed. We will get back to you shortly.\n\n{$message}";
 
     // Send
@@ -271,9 +289,67 @@ $mail = new PHPMAILER(true);
         ]);
         exit;
     }
-
-
 // end
+
+// send an email to the admin
+
+$mail2 = new PHPMAILER(true);
+
+    // SMTP Settings
+    $mail2->isSMTP();
+    $mail2->Host       = 'mail.greengloberealisation.org';
+    $mail2->SMTPAuth   = true;
+    $mail2->Username   = 'info@greengloberealisation.org';
+    $mail2->Password   = 'Green2030!'; // 🔒 Consider moving to environment variables later
+
+    $mail2->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail2->Port       = 465;
+
+    // Recipients
+    $mail2->setFrom('info@greengloberealisation.org', 'Green Globe Realisation');
+    $mail2->addAddress('captainkevinjets@gmail.com', 'Wanjau Kevin');
+
+    // Email Content
+    $mail2->isHTML(true);
+    $mail2->Subject = "RE: VOLUNTEER APPLICATION";
+$mail2->Body = '
+<h2 style="font-family: Arial, sans-serif; color: #2e6c80;">Hello Kevin,</h2>
+
+<p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
+<strong>Subject:</strong> Volunteer Application Pending Approval
+</p>
+
+<p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
+A new volunteer application has been submitted by <strong>' . htmlspecialchars($firstName) . '</strong>. Please log in to the administrator dashboard to review and take the appropriate action.
+</p>
+
+<p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
+Timely review of volunteer submissions ensures an efficient onboarding process and helps us maintain a strong and responsive team.
+</p>
+
+<hr style="margin: 30px 0;">
+
+<p style="font-family: Arial, sans-serif; font-size: 14px; color: #555; line-height: 1.5;">
+Kind regards,<br>
+<strong>Green Globe Realisation</strong><br>
+📍 Kileleshwa, Mwingi Rd<br>
+📞 +254 208 000 117<br>
+🌐 <a href="https://greengloberealisation.org" style="color: #2e6c80; text-decoration: none;">greengloberealisation.org</a>
+</p>
+';
+
+    $mail2->AltBody = "Hi {$firstName},\n\nReview submitted application.\n\n{$message}";
+
+    // Send
+    $mail2->send();
+    if(!$mail2){
+        echo json_encode([
+        'success' => false,
+        'message' => 'Email to admin not sent', 
+        ]);
+        exit;
+    }
+//end
 // ✅ Success
 echo json_encode([
     'success' => true,

@@ -10,7 +10,7 @@ $partnerSql = "SELECT COUNT(*) AS total FROM partner_approvals";
 $partnerResult = $conn->query($partnerSql);
 
 $organizationSql = "SELECT COUNT(*) AS total FROM organization_approvals";
-$organizationResult = $conn->query($partnerSql);
+$organizationResult = $conn->query($organizationSql);
 
 if ($result) {
     $volunteerApptovalRow = $result->fetch_assoc();
