@@ -78,8 +78,6 @@ $result = $conn->query($sql);
     </div>
   </section>
 
-  <script>
-    // You can add JavaScript functionality here for approval/rejection
-  </script>
+  <script src='./apis/approveOrganization.js'></script>
 </body>
 </html>

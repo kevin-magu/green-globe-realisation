@@ -224,6 +224,56 @@ if (!$stmt->execute()) {
     exit;
 }
 
+// send an email to the user
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '../vendor/autoload.php'; // Adjust path if necessary
+$mail = new PHPMAILER(true);
+
+    // SMTP Settings
+    $mail->isSMTP();
+    $mail->Host       = 'mail.greengloberealisation.org';
+    $mail->SMTPAuth   = true;
+    $mail->Username   = 'info@greengloberealisation.org';
+    $mail->Password   = 'Green2030!'; // 🔒 Consider moving to environment variables later
+
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port       = 465;
+
+    // Recipients
+    $mail->setFrom('info@greengloberealisation.org', 'Green Globe Realisation');
+    $mail->addAddress($email, $firstName);
+
+    // Email Content
+    $mail->isHTML(true);
+    $mail->Subject = "RE: VOLUNTEER APPLICATION";
+    $mail->Body    = "
+        <h2>Hello {$firstName},</h2>
+        <hr>
+        <p><strong>Subject:</strong> VOLUNTEER APPLICATION</p>
+        <p><strong>Message:</strong></p>
+        <p>
+            Thank you for submitting your application to Green Globe Realisation.  
+            We are currently reviewing your details and will get back to you shortly.
+        </p>
+        <hr>
+        <p style='color: #555;'>We'll get back to you shortly.<br>Green Globe Team</p>
+    ";
+    $mail->AltBody = "Hi {$firstName},\n\nYour application is being reviewed. We will get back to you shortly.\n\n{$message}";
+
+    // Send
+    $mail->send();
+    if(!$mail){
+        echo json_encode([
+        'success' => false,
+        'message' => 'Email not sent', 
+        ]);
+        exit;
+    }
+
+
+// end
 // ✅ Success
 echo json_encode([
     'success' => true,

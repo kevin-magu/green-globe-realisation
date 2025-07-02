@@ -1,9 +1,8 @@
 <?php
 $server = 'localhost';
-$username = 'greenglo';
-$password = 'Green2030!';
-$database = 'greenglo_v2'; 
-
+$username = 'root';
+$password = 'Zulu2003mysql';
+$database = 'ggr'; 
 $conn = mysqli_connect($server,$username,$password,$database);
 ?>
 
