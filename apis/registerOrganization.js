@@ -56,6 +56,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   form?.addEventListener("submit", async function (e) {
     e.preventDefault();
+    // get submit button
+    const submitButton = document.getElementById('submit-button')
+    const inputs = form.querySelectorAll('button');
+
+    inputs.forEach(input => input.disabled = true );
+    submitButton.innerHTML = 'Processing...';
 
     const formData = new FormData(form);
 
@@ -91,7 +97,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
       try {
         result = JSON.parse(text);
+        inputs.forEach(input => input.disabled = false );
+        submitButton.innerHTML = 'Submit Application';
       } catch (err) {
+        inputs.forEach(input => input.disabled = false );
+        submitButton.innerHTML = 'Submit Application';
         console.error("Invalid JSON:", text);
         showFeedback("Unexpected server response.", "error");
         return;
@@ -99,12 +109,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (!result.success) {
         showFeedback(result.message, "error");
+        inputs.forEach(input => input.disabled = false );
+        submitButton.innerHTML = 'Submit Application';
       } else {
         showFeedback("Organization registered successfully!", "success");
         form.reset();
         preview.innerHTML = "";
+        inputs.forEach(input => input.disabled = false );
+        submitButton.innerHTML = 'Submit Application';
       }
     } catch (err) {
+      inputs.forEach(input => input.disabled = false );
+      submitButton.innerHTML = 'Submit Application';
       console.error("Fetch error:", err);
       showFeedback("Network error. Please try again later.", "error");
     }

@@ -158,7 +158,7 @@
                     <div class="g-recaptcha" data-sitekey="6LeQzGArAAAAADJxJ7QF3Xu936mWw3yNRQyUCGb2"></div>
                     
                     <div class="form-actions">
-                        <button type="submit" class="btn btn-primary">Submit Application</button>
+                        <button type="submit" class="btn btn-primary" id='submit-button'>Submit Application</button>
                     </div>
                 </form>
             </div>

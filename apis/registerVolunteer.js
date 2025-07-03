@@ -59,9 +59,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 10000);
   }
 
+
   // Handle form submission
   form?.addEventListener("submit", async function (e) {
     e.preventDefault();
+    // get submit button
+    const submitButton = document.getElementById('submit-button')
+    const inputs = form.querySelectorAll('button');
+
+    inputs.forEach(input => input.disabled = true );
+    submitButton.innerHTML = 'Processing...'
+    
 
     const formData = new FormData(form); // Auto collects input fields
 
@@ -81,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function () {
         : value;
     }
     console.log('FormData being sent:', JSON.stringify(formDataObj, null, 2));
+    
+
 
     try {
       const response = await fetch("./apis/pRegisterVolunteer.php", {
@@ -94,6 +104,8 @@ document.addEventListener('DOMContentLoaded', function () {
       let result;
       try {
         result = JSON.parse(text);
+        inputs.forEach(input => input.disabled = false );
+        submitButton.innerHTML = 'Submit Application'
       } catch (jsonError) {
         console.error("Failed to parse JSON:", jsonError);
         console.error("Server responded with:", text);
@@ -102,13 +114,19 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (!result.success) {
+        inputs.forEach(input => input.disabled = false );
+        submitButton.innerHTML = 'Submit Application'
         showFeedback(result.message, "error");
       } else {
+        inputs.forEach(input => input.disabled = false );
+        submitButton.innerHTML = 'Submit Application'
         showFeedback("Application submitted successfully!", "success");
         form.reset();
         preview.innerHTML = "";
       }
     } catch (error) {
+      inputs.forEach(input => input.disabled = false );
+      submitButton.innerHTML = 'Submit Application'
       console.error("Fetch/network error:", error);
       showFeedback("Network error. Try again later.", "error");
     }

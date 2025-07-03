@@ -224,7 +224,7 @@ if (!$stmt->execute()) {
     exit;
 }
 
-// send an email to the user
+/* send an email to the user
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -349,7 +349,7 @@ Kind regards,<br>
         ]);
         exit;
     }
-//end
+//end */
 // ✅ Success
 echo json_encode([
     'success' => true,
