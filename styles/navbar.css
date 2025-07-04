@@ -37,7 +37,7 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
 }
 
 .navbar .navbar-logo{
-    width: 100px;
+    width: 80px;
 }
 
 .navbar .logo-img{
@@ -237,16 +237,13 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
     font-size: 0.9rem;
     transition: var(--transition);
     white-space: nowrap;
-}
-
-.btn-donate {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: var(--white);
     width: 100%;
 }
 
 .btn-donate:hover {
-    background-color: var(--primary);
+    background-color: var(--white);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 143, 0, 0.3);
 }
@@ -271,6 +268,9 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
     .navbar .logo-img{
         width: 60px;
         height: 60px;
+    }
+    .navbar-logo{
+        width: 60px !important;
     }
     
     .navbar {
@@ -364,7 +364,7 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
     }
     
     .logo-text {
-        font-size: 1.1rem;
+        font-size: 0.8rem !important;
     }
     
     .logo-subtext {
