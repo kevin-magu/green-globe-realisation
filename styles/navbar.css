@@ -227,8 +227,7 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
     margin-left: auto;
 }
 
-.btn-donate,
-.btn-volunteer {
+.btn-donate{
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -243,27 +242,15 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
 .btn-donate {
     background-color: var(--secondary);
     color: var(--white);
-    
+    width: 100%;
 }
 
 .btn-donate:hover {
-    background-color: #e65100;
+    background-color: var(--primary);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 143, 0, 0.3);
 }
 
-.btn-volunteer {
-    background-color: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
-}
-
-.btn-volunteer:hover {
-    background-color: var(--primary);
-    color: var(--white);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
-}
 
 /* Responsive Styles */
 @media (max-width: 1199px) {
@@ -293,21 +280,24 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
     }
 
     .navbar-collapse {
-        position: absolute; /* Change from absolute to relative */
+        position: fixed;
         top: var(--navbar-height-mobile);
-        left: auto;
+        display: none;
+        left: 0;
+        min-height: 0;
         width: 100%;
-        background-color: var(--white);
-        box-shadow: none; /* Optional: remove if you want shadow */
+        background-color: var(--navbar-bg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 1.5rem;
+        padding: 1.5rem;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease;
+        transition: max-height 0.3s ease, padding 0.3s ease;
     }
 
     .navbar-collapse.show {
+        display: flex;
         max-height: fit-content; /* Adjust as needed */
         padding: 0 1.5rem 1.5rem;
     }
@@ -365,12 +355,6 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
         width: 100%;
         flex-direction: column;
         gap: 1rem;
-    }
-    
-    .btn-donate,
-    .btn-volunteer {
-        width: 50%;
-        padding: 0.75rem;
     }
 }
 
