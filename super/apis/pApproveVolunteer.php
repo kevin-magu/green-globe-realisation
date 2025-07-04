@@ -21,60 +21,6 @@ if (!$id || !in_array($action, ['approve', 'reject'])) {
     exit;
 }
 
-/* ✅ APPROVE ALL
-if ($id === "all" && $action === "approve") {
-    $result = $conn->query("SELECT * FROM volunteer_approvals");
-    if ($result->num_rows === 0) {
-        echo json_encode([
-            'success' => false,
-            'message' => 'No volunteers to approve.'
-        ]);
-        exit;
-    }
-
-    $insertStmt = $conn->prepare("
-        INSERT INTO volunteers (first_name, last_name, imagePath, email, phone, address, city, skills, submitted_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ");
-    $deleteStmt = $conn->prepare("DELETE FROM volunteer_approvals WHERE id = ?");
-
-    $errors = [];
-    while ($row = $result->fetch_assoc()) {
-        $insertStmt->bind_param(
-            "sssssssss",
-            $row['first_name'],
-            $row['last_name'],
-            $row['imagePath'],
-            $row['email'],
-            $row['phone'],
-            $row['address'],
-            $row['city'],
-            $row['skills'],
-            $row['submitted_at']
-        );
-
-        if (!$insertStmt->execute()) {
-            $errors[] = "Insert failed for ID {$row['id']}: " . $insertStmt->error;
-            continue;
-        }
-
-        $deleteStmt->bind_param("i", $row['id']);
-        if (!$deleteStmt->execute()) {
-            $errors[] = "Delete failed for ID {$row['id']}: " . $deleteStmt->error;
-        }
-    }
-
-    $insertStmt->close();
-    $deleteStmt->close();
-
-    echo json_encode([
-        'success' => empty($errors),
-        'message' => empty($errors) ? 'All volunteers approved successfully.' : 'Some approvals failed.',
-        'errors' => $errors
-    ]);
-    exit;
-} */
-
 // ✅ HANDLE SINGLE APPROVE/REJECT
 $stmt = $conn->prepare("SELECT * FROM volunteer_approvals WHERE id = ?");
 $stmt->bind_param("i", $id);
@@ -96,7 +42,7 @@ $stmt->close();
 $firstName = $volunteer['first_name'];
 $email = $volunteer['email'];
 $imagePath = $volunteer['imagePath'];
-$fullPath = '../../../'.$imagePath;
+$fullPath = '../../'.$imagePath;
 
 // ✅ ACTION: APPROVE
 if ($action === 'approve') {
@@ -147,7 +93,7 @@ if ($action === 'approve') {
         $mail->Body = '
             <h2 style="font-family: Arial, sans-serif; color: #2e7d32;">Dear ' . htmlspecialchars($firstName) . ',</h2>
             <p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
-            <strong>Subject:</strong> Volunteer Application Approval</p>
+            <strong>Subject:</strong> Volunteer Application Approval.</p>
             <p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
             We are pleased to inform you that your volunteer application to <strong>Green Globe Realisation</strong> has been <strong>approved</strong>.</p>
             <p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
