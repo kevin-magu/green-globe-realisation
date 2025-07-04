@@ -144,7 +144,7 @@ if ($action === 'reject') {
         $mail->Subject = "RE: ORGANIZATION PARTNERSHIP APPLICATION";
 
         $mail->Body = '
-        <h2 style="font-family: Arial, sans-serif; color: #b71c1c;">Dear ' . htmlspecialchars($name) . ',</h2>
+        <h2 style="font-family: Arial, sans-serif; color: green;">Dear ' . htmlspecialchars($name) . ',</h2>
         <p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
         <strong>Subject:</strong> Partnership Application Rejected.</p>
         <p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
@@ -157,7 +157,7 @@ if ($action === 'reject') {
         <strong>Green Globe Realisation</strong><br>
         📍 Kileleshwa, Mwingi Rd<br>
         📞 +254 208 000 117<br>
-        🌐 <a href="https://greengloberealisation.org" style="color: #b71c1c;">greengloberealisation.org</a></p>';
+        🌐 <a href="https://greengloberealisation.org" style="color: green;">greengloberealisation.org</a></p>';
 
         $mail->AltBody = "Hi {$name}, your organization's application has been rejected. - Green Globe Realisation";
         $mail->send();

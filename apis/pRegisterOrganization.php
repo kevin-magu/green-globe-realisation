@@ -215,7 +215,7 @@ $mail = new PHPMAILER(true);
     $mail->isHTML(true);
     $mail->Subject = "RE: ORGANIZATION COLLABORATION APPLICATION";
   $mail->Body = '
-<h2 style="font-family: Arial, sans-serif; color: #2e6c80;">Dear ' . htmlspecialchars($contact) . ',</h2>
+<h2 style="font-family: Arial, sans-serif; color: green;">Dear ' . htmlspecialchars($contact) . ',</h2>
 
 <p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
 <strong>Subject:</strong> Organization Collaboration Application Acknowledgement
@@ -240,7 +240,7 @@ Kind regards,<br>
 <strong>Green Globe Realisation</strong><br>
 📍 Kileleshwa, Mwingi Rd<br>
 📞 +254 208 000 117<br>
-🌐 <a href="https://greengloberealisation.org" style="color: #2e6c80; text-decoration: none;">greengloberealisation.org</a>
+🌐 <a href="https://greengloberealisation.org" style="color: green; text-decoration: none;">greengloberealisation.org</a>
 </p>
 ';
 
@@ -279,7 +279,7 @@ $mail2 = new PHPMAILER(true);
     $mail2->isHTML(true);
     $mail2->Subject = "RE: ORGANIZATION COLLABORATION APPLICATION";
 $mail2->Body = '
-<h2 style="font-family: Arial, sans-serif; color: #2e6c80;">Hello Kevin,</h2>
+<h2 style="font-family: Arial, sans-serif; color: green;">Hello Kevin,</h2>
 
 <p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
 <strong>Subject:</strong> Organization Collaboration Application Pending Approval
@@ -300,7 +300,7 @@ Kind regards,<br>
 <strong>Green Globe Realisation</strong><br>
 📍 Kileleshwa, Mwingi Rd<br>
 📞 +254 208 000 117<br>
-🌐 <a href="https://greengloberealisation.org" style="color: #2e6c80; text-decoration: none;">greengloberealisation.org</a>
+🌐 <a href="https://greengloberealisation.org" style="color: green; text-decoration: none;">greengloberealisation.org</a>
 </p>
 ';
 
