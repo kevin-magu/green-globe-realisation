@@ -21,7 +21,7 @@ $result = $conn->query($sql);
     <div class="section-header">
       <h2 class="section-title">Pending Volunteer Approvals</h2>
       <p class="section-subtitle">Review and approve incoming volunteer applications</p>
-      <button class="btn btn-approve btn-approve-all" style="margin-top: 20px;">Approve All</button>
+     <!-- <button class="btn btn-approve btn-approve-all" style="margin-top: 20px;">Approve All</button> -->
     </div>
     <div id="feedback" style="color: green; margin-top: 10px;"></div>
     <div class="card-grid">

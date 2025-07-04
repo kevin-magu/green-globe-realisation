@@ -82,8 +82,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   rejectButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const id = btn.getAttribute("data-id");
-      handleAction(id, "reject", btn);
+      const userOption = confirm('Do you want to reject this application?')
+      if(userOption){
+        const id = btn.getAttribute("data-id");
+        handleAction(id, "reject", btn);
+      }
     });
   });
 

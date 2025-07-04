@@ -146,7 +146,7 @@ if (isset($_FILES['profilePicture']) && $_FILES['profilePicture']['error'] === U
         exit;
     }
 
-    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/uploads/volunteers/';
+    $uploadDir = $_SERVER['DOCUMENT_ROOT'] . '/green-globe-realisation/uploads/volunteers/';
     if (!is_dir($uploadDir)) {
         if (!mkdir($uploadDir, 0777, true)) {
             echo json_encode([
@@ -186,7 +186,7 @@ if (isset($_FILES['profilePicture']) && $_FILES['profilePicture']['error'] === U
         exit;
     }
 
-    $imagePath = '/uploads/volunteers/' . $newName;
+    $imagePath = '/green-globe-realisation/uploads/volunteers/' . $newName;
 } else {
     echo json_encode([
         'success' => false,
@@ -224,7 +224,7 @@ if (!$stmt->execute()) {
     exit;
 }
 
-/* send an email to the user
+//send an email to the user
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -349,7 +349,7 @@ Kind regards,<br>
         ]);
         exit;
     }
-//end */
+//end 
 // ✅ Success
 echo json_encode([
     'success' => true,
