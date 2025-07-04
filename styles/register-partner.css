@@ -441,4 +441,7 @@
     .btn {
       font-size: 12px;
     }
+     iframe{
+      width: 98% !important;
+    }
 }

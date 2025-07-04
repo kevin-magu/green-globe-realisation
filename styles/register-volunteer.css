@@ -463,6 +463,9 @@
     .volunteer-hero .section-title {
         font-size: 2.5rem;
     }
+    iframe{
+      width: 98% !important;
+    }
 }
 
 @media (max-width: 480px) {
@@ -474,4 +477,5 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    
 }

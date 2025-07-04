@@ -253,13 +253,13 @@ $mail2 = new PHPMAILER(true);
 
     // Recipients
     $mail2->setFrom('info@greengloberealisation.org', 'Green Globe Realisation');
-    $mail2->addAddress('captainkevinjets@gmail.com', 'Wanjau Kevin');
+    $mail2->addAddress('info@greengloberealisation.org', 'Green Globe Realisation');
 
     // Email Content
     $mail2->isHTML(true);
     $mail2->Subject = "RE: PARTNER APPLICATION";
 $mail2->Body = '
-<h2 style="font-family: Arial, sans-serif; color: #2e6c80;">Hello Kevin,</h2>
+<h2 style="font-family: Arial, sans-serif; color: green;">Hello Kevin,</h2>
 
 <p style="font-family: Arial, sans-serif; font-size: 15px; color: #333;">
 <strong>Subject:</strong> Partner Application Pending Approval
@@ -280,7 +280,7 @@ Kind regards,<br>
 <strong>Green Globe Realisation</strong><br>
 📍 Kileleshwa, Mwingi Rd<br>
 📞 +254 208 000 117<br>
-🌐 <a href="https://greengloberealisation.org" style="color: #2e6c80; text-decoration: none;">greengloberealisation.org</a>
+🌐 <a href="https://greengloberealisation.org" style="color: green; text-decoration: none;">greengloberealisation.org</a>
 </p>
 ';
 

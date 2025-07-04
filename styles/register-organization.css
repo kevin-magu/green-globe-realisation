@@ -463,4 +463,7 @@
     .organization-hero .section-title {
         font-size: 2.2rem;
     }
+     iframe{
+      width: 98% !important;
+    }
 }

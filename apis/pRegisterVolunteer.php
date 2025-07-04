@@ -307,7 +307,7 @@ $mail2 = new PHPMAILER(true);
 
     // Recipients
     $mail2->setFrom('info@greengloberealisation.org', 'Green Globe Realisation');
-    $mail2->addAddress('captainkevinjets@gmail.com', 'Wanjau Kevin');
+    $mail2->addAddress('info@greengloberealisation.org', 'Green Globe Realisation');
 
     // Email Content
     $mail2->isHTML(true);
