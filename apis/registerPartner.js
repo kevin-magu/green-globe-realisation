@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const inputs = form.querySelectorAll('button');
 
     inputs.forEach(input => input.disabled = true );
-    submitButton.innerHTML = 'Processing...';
+    submitButton.innerHTML = 'Processing Please wait...';
 
     const formData = new FormData(form);
 
