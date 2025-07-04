@@ -58,7 +58,7 @@
             </ul>
 
             <div class="navbar-actions">
-                <a href="./donate.php" class="btn-volunteer" >Donate <i class="fas fa-heart" style="margin-left: 5px;"></i></a>
+                <a href="./donate.php" class="btn-volunteer btn-donate" >Donate <i class="fas fa-heart" style="margin-left: 5px;"></i></a>
             </div>
         </div>
     </div>

@@ -243,6 +243,7 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
 .btn-donate {
     background-color: var(--secondary);
     color: var(--white);
+    
 }
 
 .btn-donate:hover {
@@ -276,33 +277,39 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
 }
 
 @media (max-width: 1151px) {
-    .navbar {
-        height: var(--navbar-height-mobile);
-    }
+    /*.navbar {
+        height: var(--navbar-height-mobile);  
+        z-index: 1300;      
+    } */
     .navbar .logo-img{
         width: 60px;
         height: 60px;
     }
     
+    .navbar {
+        height: auto; /* Change from fixed height to auto */
+        min-height: var(--navbar-height-mobile);
+
+    }
+
     .navbar-collapse {
-        position: fixed;
+        position: absolute; /* Change from absolute to relative */
         top: var(--navbar-height-mobile);
-        left: 0;
+        left: auto;
         width: 100%;
         background-color: var(--white);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        box-shadow: none; /* Optional: remove if you want shadow */
         flex-direction: column;
         align-items: flex-start;
-        padding: 1.5rem;
+        padding: 0 1.5rem;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s ease, padding 0.3s ease;
+        transition: max-height 0.3s ease;
     }
-    
+
     .navbar-collapse.show {
-        max-height: calc(100vh - var(--navbar-height-mobile));
-        padding: 1.5rem;
-        overflow-y: auto;
+        max-height: fit-content; /* Adjust as needed */
+        padding: 0 1.5rem 1.5rem;
     }
     
     .navbar-toggler {
@@ -362,7 +369,7 @@ a, i,.menu-bar,button,.swiper-button-next, .swiper-button-prev, :focus, :active 
     
     .btn-donate,
     .btn-volunteer {
-        width: 100%;
+        width: 50%;
         padding: 0.75rem;
     }
 }
